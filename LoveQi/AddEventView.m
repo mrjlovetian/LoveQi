@@ -51,7 +51,7 @@
 - (YYAnimatedImageView *)leftView
 {
     if (!_leftView) {
-        _leftView = [[YYAnimatedImageView alloc] initWithFrame:CGRectMake(0, 9, imageViewWidth, btnWidth - 9)];
+        _leftView = [[YYAnimatedImageView alloc] initWithFrame:CGRectMake(0, 0, imageViewWidth, btnWidth)];
         UIImage *image = [UIImage imageNamed:@"ico/left.png"];
         _leftView.contentMode = UIViewContentModeCenter;
         [_leftView setImageWithURL:[NSURL URLWithString:@""] placeholder:image];
