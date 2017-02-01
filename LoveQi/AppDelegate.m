@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "RootViewController.h"
+#import "LaunchImageView.h"
 
 @interface AppDelegate ()
 
@@ -24,6 +25,11 @@
     UINavigationController *Nav = [[UINavigationController alloc] initWithRootViewController:RootVC];
     self.window.rootViewController = Nav;
     [self.window makeKeyAndVisible];
+    
+    [LaunchImageView loadLaunchImage];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [LaunchImageView removeLaunch];
+    });
     
     // Override point for customization after application launch.
     return YES;

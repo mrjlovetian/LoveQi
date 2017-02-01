@@ -1,12 +1,62 @@
 PODS:
-  - PDTSimpleCalendar (0.9.1)
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking/NSURLConnection (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - BHBPopView (1.2.0)
+  - FMDB (2.3):
+    - FMDB/standard (= 2.3)
+  - FMDB/common (2.3)
+  - FMDB/standard (2.3):
+    - FMDB/common
+  - FSCalendar (2.3.0)
+  - MBProgressHUD (0.9.2)
+  - TRCache (0.2):
+    - AFNetworking (~> 2.6.0)
+  - TRMJPhotoBrowser (1.0.6):
+    - MBProgressHUD (~> 0.9.1)
+    - TRWebImage (= 0.4)
+  - TRWebImage (0.4):
+    - TRCache (~> 0.2)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
-  - PDTSimpleCalendar (~> 0.9.1)
+  - BHBPopView
+  - FMDB
+  - FSCalendar (= 2.3)
+  - TRMJPhotoBrowser (~> 1.0.6)
+  - YYKit
 
 SPEC CHECKSUMS:
-  PDTSimpleCalendar: d1c03387678422715dc021aa1a85d70f4d1014f2
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  BHBPopView: ea1c5a614e6bbbbc64c873d52fb1b5b60378cef0
+  FMDB: e78c5941bb10563f2b707255119e3655e790c29e
+  FSCalendar: cbcca5ee332cf8d348db77ccda6b029ced42f84a
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  TRCache: 21b10c27918df7ecbd6aaeb6cd7f84451dc0fa2a
+  TRMJPhotoBrowser: dab5955d19230509fe47e7d500bacee58e61beea
+  TRWebImage: a0bf13ffbf5b292d7884c7184f24932b03003a2b
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 452ceab9eb302f7ff15b17fb73a3cf5b0814a77f
+PODFILE CHECKSUM: ccde317148241121e310dc2ce3093176bf9892cc
 
-COCOAPODS: 1.0.0
+COCOAPODS: 1.1.1

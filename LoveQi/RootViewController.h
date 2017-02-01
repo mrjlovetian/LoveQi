@@ -6,8 +6,8 @@
 //  Copyright © 2017年 李琦. All rights reserved.
 //
 
-#import <PDTSimpleCalendar.h>
+#import <UIKit/UIKit.h>
 
-@interface RootViewController : PDTSimpleCalendarViewController
+@interface RootViewController : UIViewController
 
 @end
