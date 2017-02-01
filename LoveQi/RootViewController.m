@@ -262,7 +262,7 @@
 //    AddEvevtVC *VC = [[AddEvevtVC alloc] init];
 //    [self.navigationController pushViewController:VC animated:YES];
     
-    [BHBPopView showToView:self.view andImages:@[@"/biaoqing/smiley_002", @"/biaoqing/smiley_003", @"/biaoqing/smiley_011", @"/biaoqing/smiley_010", @"/biaoqing/addEvevt"] andTitles:@[@"生气", @"不开心", @"开心", @"喜欢", @"日记"] andSelectBlock:^(BHBItem *item) {
+    [BHBPopView showToView:[[UIApplication sharedApplication].delegate window] andImages:@[@"/biaoqing/smiley_002", @"/biaoqing/smiley_003", @"/biaoqing/smiley_011", @"/biaoqing/smiley_010", @"/biaoqing/addEvevt"] andTitles:@[@"生气", @"不开心", @"开心", @"喜欢", @"日记"] andSelectBlock:^(BHBItem *item) {
         
         if ([item.title isEqualToString:@"日记"]) {
             AddEvevtVC *VC = [[AddEvevtVC alloc] init];
