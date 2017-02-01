@@ -71,7 +71,7 @@
 {
     if (!_backImageView) {
         _backImageView = [[YYAnimatedImageView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREENH_HEIGHT)];
-        [_backImageView setImageWithURL:[NSURL URLWithString:@"https://raw.githubusercontent.com/mrjlovetian/image/master/005.JPG"] options:YYWebImageOptionShowNetworkActivity];
+        [_backImageView setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://raw.githubusercontent.com/mrjlovetian/image/master/eventBackGround/background00%d.jpg", arc4random()%10]] options:YYWebImageOptionShowNetworkActivity];
     }
     return _backImageView;
 }
@@ -89,6 +89,7 @@
 {
     if (!_textView) {
         _textView = [[YYTextView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREENH_HEIGHT-Navight)];
+        _textView.font = [UIFont systemFontOfSize:16];
     }
     return _textView;
 }
@@ -146,6 +147,7 @@
 {
     NSData *data = [DateModel getDataWithPathFile:self.date];
     NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithData:data options:@{NSDocumentTypeDocumentAttribute : NSRTFDTextDocumentType} documentAttributes:nil error:nil];
+    [str addAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:16]} range:NSMakeRange(0, str.length)];
     self.textView.attributedText = str;
 }
 

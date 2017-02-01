@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A7AFF5A1E41DB8C0071B29B /* ico in Resources */ = {isa = PBXBuildFile; fileRef = 0A7AFF591E41DB8C0071B29B /* ico */; };
 		0ACF68961E3DD70700BEA229 /* AddEventView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF68951E3DD70700BEA229 /* AddEventView.m */; };
 		0ACF689A1E3DDDCB00BEA229 /* AddEvevtVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF68991E3DDDCB00BEA229 /* AddEvevtVC.m */; };
 		0ACF689F1E3F166100BEA229 /* LaunchImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF689E1E3F166100BEA229 /* LaunchImageView.m */; };
 		0ACF68A11E3F252700BEA229 /* 001.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 0ACF68A01E3F252700BEA229 /* 001.JPG */; };
 		0ACF68A61E3F7E7000BEA229 /* biaoqing in Resources */ = {isa = PBXBuildFile; fileRef = 0ACF68A51E3F7E7000BEA229 /* biaoqing */; };
 		0ACF68A91E40C76800BEA229 /* DateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF68A81E40C76800BEA229 /* DateModel.m */; };
-		0ACF68AB1E40E13200BEA229 /* cooltext228422199634003.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ACF68AA1E40E13200BEA229 /* cooltext228422199634003.png */; };
 		51797A3810964178EDCD4186 /* libPods-LoveQi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F73172D3C7F27BD14CD5B03 /* libPods-LoveQi.a */; };
 		C2CE1BFC1E2E2347003AE6D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2CE1BFB1E2E2347003AE6D3 /* main.m */; };
 		C2CE1BFF1E2E2347003AE6D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2CE1BFE1E2E2347003AE6D3 /* AppDelegate.m */; };
@@ -41,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A7AFF591E41DB8C0071B29B /* ico */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ico; sourceTree = "<group>"; };
 		0A87B9711E3CB11D00C3CD15 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		0ACF68941E3DD70700BEA229 /* AddEventView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEventView.h; sourceTree = "<group>"; };
 		0ACF68951E3DD70700BEA229 /* AddEventView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEventView.m; sourceTree = "<group>"; };
@@ -53,7 +54,6 @@
 		0ACF68A51E3F7E7000BEA229 /* biaoqing */ = {isa = PBXFileReference; lastKnownFileType = folder; path = biaoqing; sourceTree = "<group>"; };
 		0ACF68A71E40C76800BEA229 /* DateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateModel.h; sourceTree = "<group>"; };
 		0ACF68A81E40C76800BEA229 /* DateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateModel.m; sourceTree = "<group>"; };
-		0ACF68AA1E40E13200BEA229 /* cooltext228422199634003.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cooltext228422199634003.png; sourceTree = "<group>"; };
 		4D08DA4073AEB9E969B717BA /* Pods-LoveQi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoveQi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoveQi/Pods-LoveQi.debug.xcconfig"; sourceTree = "<group>"; };
 		5F73172D3C7F27BD14CD5B03 /* libPods-LoveQi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LoveQi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2CE1BF71E2E2347003AE6D3 /* LoveQi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoveQi.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,9 +141,9 @@
 		C2CE1BF91E2E2347003AE6D3 /* LoveQi */ = {
 			isa = PBXGroup;
 			children = (
+				0A7AFF591E41DB8C0071B29B /* ico */,
 				0ACF68A51E3F7E7000BEA229 /* biaoqing */,
 				0ACF68A01E3F252700BEA229 /* 001.JPG */,
-				0ACF68AA1E40E13200BEA229 /* cooltext228422199634003.png */,
 				C2CE1BFD1E2E2347003AE6D3 /* AppDelegate.h */,
 				C2CE1BFE1E2E2347003AE6D3 /* AppDelegate.m */,
 				C2CE1C2D1E2E23B9003AE6D3 /* RootViewController.h */,
@@ -303,8 +303,8 @@
 			files = (
 				C2CE1C071E2E2347003AE6D3 /* Assets.xcassets in Resources */,
 				0ACF68A61E3F7E7000BEA229 /* biaoqing in Resources */,
+				0A7AFF5A1E41DB8C0071B29B /* ico in Resources */,
 				0ACF68A11E3F252700BEA229 /* 001.JPG in Resources */,
-				0ACF68AB1E40E13200BEA229 /* cooltext228422199634003.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
