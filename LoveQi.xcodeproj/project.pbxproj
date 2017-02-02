@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0A7AFF5A1E41DB8C0071B29B /* ico in Resources */ = {isa = PBXBuildFile; fileRef = 0A7AFF591E41DB8C0071B29B /* ico */; };
+		0A963A0C1E42398800B4F626 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A963A0B1E42398800B4F626 /* NotificationCenter.framework */; };
+		0A963A101E42398800B4F626 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A963A0F1E42398800B4F626 /* TodayViewController.m */; };
+		0A963A171E42398800B4F626 /* LoveQiWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0A963A0A1E42398800B4F626 /* LoveQiWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0ACF68961E3DD70700BEA229 /* AddEventView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF68951E3DD70700BEA229 /* AddEventView.m */; };
 		0ACF689A1E3DDDCB00BEA229 /* AddEvevtVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF68991E3DDDCB00BEA229 /* AddEvevtVC.m */; };
 		0ACF689F1E3F166100BEA229 /* LaunchImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF689E1E3F166100BEA229 /* LaunchImageView.m */; };
@@ -15,6 +18,7 @@
 		0ACF68A61E3F7E7000BEA229 /* biaoqing in Resources */ = {isa = PBXBuildFile; fileRef = 0ACF68A51E3F7E7000BEA229 /* biaoqing */; };
 		0ACF68A91E40C76800BEA229 /* DateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF68A81E40C76800BEA229 /* DateModel.m */; };
 		51797A3810964178EDCD4186 /* libPods-LoveQi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F73172D3C7F27BD14CD5B03 /* libPods-LoveQi.a */; };
+		96D78EE764673C3FB2EA232C /* libPods-LoveQi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F73172D3C7F27BD14CD5B03 /* libPods-LoveQi.a */; };
 		C2CE1BFC1E2E2347003AE6D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2CE1BFB1E2E2347003AE6D3 /* main.m */; };
 		C2CE1BFF1E2E2347003AE6D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2CE1BFE1E2E2347003AE6D3 /* AppDelegate.m */; };
 		C2CE1C071E2E2347003AE6D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2CE1C061E2E2347003AE6D3 /* Assets.xcassets */; };
@@ -24,6 +28,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0A963A151E42398800B4F626 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2CE1BEF1E2E2347003AE6D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A963A091E42398800B4F626;
+			remoteInfo = LoveQiWidget;
+		};
 		C2CE1C111E2E2347003AE6D3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C2CE1BEF1E2E2347003AE6D3 /* Project object */;
@@ -40,9 +51,30 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0A963A1B1E42398800B4F626 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0A963A171E42398800B4F626 /* LoveQiWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0A7AFF591E41DB8C0071B29B /* ico */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ico; sourceTree = "<group>"; };
 		0A87B9711E3CB11D00C3CD15 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		0A963A0A1E42398800B4F626 /* LoveQiWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LoveQiWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A963A0B1E42398800B4F626 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		0A963A0E1E42398800B4F626 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		0A963A0F1E42398800B4F626 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		0A963A141E42398800B4F626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A963A1C1E42465000B4F626 /* libPods-LoveQiWidget.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-LoveQiWidget.a"; path = "Pods/../build/Debug-iphoneos/libPods-LoveQiWidget.a"; sourceTree = "<group>"; };
+		0A963A1F1E4246CF00B4F626 /* libPods-LoveQiWidget.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-LoveQiWidget.a"; path = "Pods/../build/Debug-iphoneos/libPods-LoveQiWidget.a"; sourceTree = "<group>"; };
 		0ACF68941E3DD70700BEA229 /* AddEventView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEventView.h; sourceTree = "<group>"; };
 		0ACF68951E3DD70700BEA229 /* AddEventView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEventView.m; sourceTree = "<group>"; };
 		0ACF68971E3DDAA800BEA229 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -71,14 +103,24 @@
 		C2CE1C2D1E2E23B9003AE6D3 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		C2CE1C2E1E2E23B9003AE6D3 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		C41EE10A5322E24B0FEACDD6 /* Pods-LoveQi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoveQi.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoveQi/Pods-LoveQi.release.xcconfig"; sourceTree = "<group>"; };
+		FCEB03AB92596D867E27E643 /* libPods-LoveQiWidget.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LoveQiWidget.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0A963A071E42398800B4F626 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A963A0C1E42398800B4F626 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C2CE1BF41E2E2347003AE6D3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				51797A3810964178EDCD4186 /* libPods-LoveQi.a in Frameworks */,
+				96D78EE764673C3FB2EA232C /* libPods-LoveQi.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,9 +144,23 @@
 		09814C739295F6B0A960080C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0A963A1F1E4246CF00B4F626 /* libPods-LoveQiWidget.a */,
+				0A963A1C1E42465000B4F626 /* libPods-LoveQiWidget.a */,
 				5F73172D3C7F27BD14CD5B03 /* libPods-LoveQi.a */,
+				0A963A0B1E42398800B4F626 /* NotificationCenter.framework */,
+				FCEB03AB92596D867E27E643 /* libPods-LoveQiWidget.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0A963A0D1E42398800B4F626 /* LoveQiWidget */ = {
+			isa = PBXGroup;
+			children = (
+				0A963A0E1E42398800B4F626 /* TodayViewController.h */,
+				0A963A0F1E42398800B4F626 /* TodayViewController.m */,
+				0A963A141E42398800B4F626 /* Info.plist */,
+			);
+			path = LoveQiWidget;
 			sourceTree = "<group>";
 		};
 		89DA11229FF76934AD079537 /* Pods */ = {
@@ -122,6 +178,7 @@
 				C2CE1BF91E2E2347003AE6D3 /* LoveQi */,
 				C2CE1C131E2E2347003AE6D3 /* LoveQiTests */,
 				C2CE1C1E1E2E2347003AE6D3 /* LoveQiUITests */,
+				0A963A0D1E42398800B4F626 /* LoveQiWidget */,
 				C2CE1BF81E2E2347003AE6D3 /* Products */,
 				89DA11229FF76934AD079537 /* Pods */,
 				09814C739295F6B0A960080C /* Frameworks */,
@@ -134,6 +191,7 @@
 				C2CE1BF71E2E2347003AE6D3 /* LoveQi.app */,
 				C2CE1C101E2E2347003AE6D3 /* LoveQiTests.xctest */,
 				C2CE1C1B1E2E2347003AE6D3 /* LoveQiUITests.xctest */,
+				0A963A0A1E42398800B4F626 /* LoveQiWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -194,6 +252,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0A963A091E42398800B4F626 /* LoveQiWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A963A1A1E42398800B4F626 /* Build configuration list for PBXNativeTarget "LoveQiWidget" */;
+			buildPhases = (
+				0A963A061E42398800B4F626 /* Sources */,
+				0A963A071E42398800B4F626 /* Frameworks */,
+				0A963A081E42398800B4F626 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LoveQiWidget;
+			productName = LoveQiWidget;
+			productReference = 0A963A0A1E42398800B4F626 /* LoveQiWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		C2CE1BF61E2E2347003AE6D3 /* LoveQi */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C2CE1C241E2E2347003AE6D3 /* Build configuration list for PBXNativeTarget "LoveQi" */;
@@ -204,10 +279,12 @@
 				C2CE1BF51E2E2347003AE6D3 /* Resources */,
 				0110E71C65348CEB9786EADE /* [CP] Embed Pods Frameworks */,
 				2DC501E749F40AB2DB357A71 /* [CP] Copy Pods Resources */,
+				0A963A1B1E42398800B4F626 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0A963A161E42398800B4F626 /* PBXTargetDependency */,
 			);
 			name = LoveQi;
 			productName = LoveQi;
@@ -259,6 +336,11 @@
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "李琦";
 				TargetAttributes = {
+					0A963A091E42398800B4F626 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = W3S42S92Y7;
+						ProvisioningStyle = Automatic;
+					};
 					C2CE1BF61E2E2347003AE6D3 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = W3S42S92Y7;
@@ -292,11 +374,19 @@
 				C2CE1BF61E2E2347003AE6D3 /* LoveQi */,
 				C2CE1C0F1E2E2347003AE6D3 /* LoveQiTests */,
 				C2CE1C1A1E2E2347003AE6D3 /* LoveQiUITests */,
+				0A963A091E42398800B4F626 /* LoveQiWidget */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0A963A081E42398800B4F626 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C2CE1BF51E2E2347003AE6D3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -373,6 +463,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0A963A061E42398800B4F626 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A963A101E42398800B4F626 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C2CE1BF31E2E2347003AE6D3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -406,6 +504,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0A963A161E42398800B4F626 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A963A091E42398800B4F626 /* LoveQiWidget */;
+			targetProxy = 0A963A151E42398800B4F626 /* PBXContainerItemProxy */;
+		};
 		C2CE1C121E2E2347003AE6D3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C2CE1BF61E2E2347003AE6D3 /* LoveQi */;
@@ -419,6 +522,38 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0A963A181E42398800B4F626 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEVELOPMENT_TEAM = W3S42S92Y7;
+				INFOPLIST_FILE = LoveQiWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = MRJ.LoveQi.LoveQiWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s armv8";
+			};
+			name = Debug;
+		};
+		0A963A191E42398800B4F626 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEVELOPMENT_TEAM = W3S42S92Y7;
+				INFOPLIST_FILE = LoveQiWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = MRJ.LoveQi.LoveQiWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s armv8";
+			};
+			name = Release;
+		};
 		C2CE1C221E2E2347003AE6D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -519,6 +654,10 @@
 				GCC_PREFIX_HEADER = /Users/mrj/Desktop/LoveQi/LoveQi/PrefixHeader.pch;
 				INFOPLIST_FILE = LoveQi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = MRJ.LoveQi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -534,6 +673,10 @@
 				GCC_PREFIX_HEADER = /Users/mrj/Desktop/LoveQi/LoveQi/PrefixHeader.pch;
 				INFOPLIST_FILE = LoveQi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = MRJ.LoveQi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -588,6 +731,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0A963A1A1E42398800B4F626 /* Build configuration list for PBXNativeTarget "LoveQiWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A963A181E42398800B4F626 /* Debug */,
+				0A963A191E42398800B4F626 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C2CE1BF21E2E2347003AE6D3 /* Build configuration list for PBXProject "LoveQi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

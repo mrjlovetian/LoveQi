@@ -15,3 +15,7 @@ target :'LoveQi' do
   pod 'TRMJPhotoBrowser', '~> 1.0.6'
 
 end
+
+#target :'LoveQiWidget' do
+#    pod 'FSCalendar', '2.3'
+#end
