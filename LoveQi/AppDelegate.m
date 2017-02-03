@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "RootViewController.h"
 #import "LaunchImageView.h"
+#import "AddEvevtVC.h"
 
 @interface AppDelegate ()
 
@@ -60,6 +61,23 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark 3d touch
+-(void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler
+{
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    dateFormatter.dateFormat = @"yyyy-MM-dd";
+    UINavigationController *nav = (UINavigationController *)self.window.rootViewController;
+    if([shortcutItem.type isEqualToString:@"one"]){
+        AddEvevtVC *vc = [[AddEvevtVC alloc] init];
+        vc.date = [dateFormatter stringFromDate:[NSDate date]];
+        [nav pushViewController:vc animated:YES];
+    }
+//    else if ([shortcutItem.type isEqualToString:@"two"]){
+//        AddEvevtVC *vc = [[AddEvevtVC alloc] init];
+//        [nav pushViewController:vc animated:YES];
+//    }
 }
 
 
