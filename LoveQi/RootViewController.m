@@ -93,7 +93,8 @@
 //        _fscalendar.scrollDirection = FSCalendarScrollDirectionVertical;
 //        _fscalendar.allowsMultipleSelection = YES;
 //        _fscalendar.firstWeekday = 2;
-        _fscalendar.placeholderType = FSCalendarPlaceholderTypeFillHeadTail;
+        
+        _fscalendar.placeholderType = FSCalendarPlaceholderTypeFillSixRows;
         _fscalendar.appearance.caseOptions = FSCalendarCaseOptionsWeekdayUsesSingleUpperCase|FSCalendarCaseOptionsHeaderUsesUpperCase;
     }
     return _fscalendar;
@@ -132,12 +133,21 @@
     [self.cache removeAllObjects];
 }
 
-- (UIColor *)calendar:(FSCalendar *)calendar appearance:(FSCalendarAppearance *)appearance fillDefaultColorForDate:(NSDate *)date
+//- (UIColor *)calendar:(FSCalendar *)calendar appearance:(FSCalendarAppearance *)appearance fillDefaultColorForDate:(NSDate *)date
+//{
+//    NSString *key = [self.dateFormatter stringFromDate:date];
+//    if ([self.mindDictionary.allKeys containsObject:key]) {
+//        return _mindDictionary[key];
+//    }
+//    return nil;
+//}
+
+- (UIImage *)calendar:(FSCalendar *)calendar imageForDate:(NSDate *)date
 {
     NSString *key = [self.dateFormatter stringFromDate:date];
-//    LRLog(@"shuchudekeyshiduoshao+%@-=-======%@", key, _mindDictionary);
     if ([self.mindDictionary.allKeys containsObject:key]) {
-        return _mindDictionary[key];
+        UIImage *image = [UIImage imageNamed:_mindDictionary[key]];
+        return image;
     }
     return nil;
 }
@@ -229,7 +239,6 @@
             
         }
         
-//        [weakSelf.fscalendar selectDate:[NSDate date]];
     }];
     
 }
@@ -262,28 +271,31 @@
 //    AddEvevtVC *VC = [[AddEvevtVC alloc] init];
 //    [self.navigationController pushViewController:VC animated:YES];
     
-    [BHBPopView showToView:[[UIApplication sharedApplication].delegate window] andImages:@[@"/biaoqing/smiley_002", @"/biaoqing/smiley_003", @"/biaoqing/smiley_011", @"/biaoqing/smiley_010", @"/biaoqing/addEvevt"] andTitles:@[@"生气", @"不开心", @"开心", @"喜欢", @"日记"] andSelectBlock:^(BHBItem *item) {
+    [BHBPopView showToView:[[UIApplication sharedApplication].delegate window] andImages:@[@"/biaoqing/addEvevt", @"/biaoqing/smiley_002", @"/biaoqing/smiley_003", @"/biaoqing/smiley_011", @"/biaoqing/smiley_010", @"/biaoqing/smiley_015", @"/biaoqing/smiley_014", @"/biaoqing/smiley_006"] andTitles:@[ @"日记", @"不开心", @"难受", @"开心", @"喜欢", @"感动", @"伤心", @"委屈"] andSelectBlock:^(BHBItem *item) {
         
         if ([item.title isEqualToString:@"日记"]) {
             AddEvevtVC *VC = [[AddEvevtVC alloc] init];
             VC.date = self.selectDate;
             
+            
+            
             [self.navigationController pushViewController:VC animated:YES];
         }else
         {
-            if ([item.title isEqualToString:@"开心"])
-            {
-                [self.mindDictionary addEntriesFromDictionary:@{self.selectDate:[UIColor colorWithHexString:@"ed1b21"]}];
-            }else if ([item.title isEqualToString:@"生气"])
-            {
-                [self.mindDictionary addEntriesFromDictionary:@{self.selectDate:[UIColor colorWithHexString:@"0091e8"]}];
-            }else if ([item.title isEqualToString:@"不开心"])
-            {
-                [self.mindDictionary addEntriesFromDictionary:@{self.selectDate:[UIColor colorWithHexString:@"d9d9d9"]}];
-            }else if ([item.title isEqualToString:@"喜欢"])
-            {
-                [self.mindDictionary addEntriesFromDictionary:@{self.selectDate:[UIColor colorWithHexString:@"ff80a1"]}];
-            }
+            [self.mindDictionary addEntriesFromDictionary:@{self.selectDate:[NSString stringWithFormat:@"biaoqing/%@", item.title]}];
+//            if ([item.title isEqualToString:@"开心"])
+//            {
+//                [self.mindDictionary addEntriesFromDictionary:@{self.selectDate:@"biaoqing/smiley_011"}];
+//            }else if ([item.title isEqualToString:@"生气"])
+//            {
+//                [self.mindDictionary addEntriesFromDictionary:@{self.selectDate:@"biaoqing/smiley_002"}];
+//            }else if ([item.title isEqualToString:@"不开心"])
+//            {
+//                [self.mindDictionary addEntriesFromDictionary:@{self.selectDate:@"biaoqing/smiley_003"}];
+//            }else if ([item.title isEqualToString:@"喜欢"])
+//            {
+//                [self.mindDictionary addEntriesFromDictionary:@{self.selectDate:@"biaoqing/smiley_010"}];
+//            }
             [self saveMyMind];
         }
         LRLog(@"-=-=-==-=-=%@", item.title);

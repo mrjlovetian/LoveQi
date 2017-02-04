@@ -46,8 +46,6 @@
 			<string>日记</string>
 			<key>UIApplicationShortcutItemSubTitle</key>
 			<string>几天的日记</string>
-			<key>UIApplicationShortcutItemIconFile</key>
-			<string></string>
 			<key>UIApplicationShortcutItemIconType</key>
 			<string>UIApplicationShortcutIconTypeCompose</string>
 			<key>UIApplicationShortcutItemType</key>
@@ -58,8 +56,6 @@
 			<string>爱你</string>
 			<key>UIApplicationShortcutItemSubTitle</key>
 			<string>我爱你</string>
-			<key>UIApplicationShortcutItemIconFile</key>
-			<string></string>
 			<key>UIApplicationShortcutItemIconType</key>
 			<string>UIApplicationShortcutIconTypeLove</string>
 			<key>UIApplicationShortcutItemType</key>

@@ -46,4 +46,11 @@
     //    NSLog(@"%@", myDictionary);
     return myDictionary;
 }
+
++ (NSData *)getDataFormImage:(NSString *)imageName
+{
+    UIImage *image = [UIImage imageNamed:imageName];
+    NSData *data = UIImagePNGRepresentation(image);
+    return data;
+}
 @end
