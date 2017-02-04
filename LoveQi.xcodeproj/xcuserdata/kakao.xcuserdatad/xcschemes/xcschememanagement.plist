@@ -9,9 +9,19 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>LoveQiWidget.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0A963A091E42398800B4F626</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>C2CE1BF61E2E2347003AE6D3</key>
 		<dict>
 			<key>primary</key>

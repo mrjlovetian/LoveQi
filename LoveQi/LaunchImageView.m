@@ -7,6 +7,7 @@
 //
 
 #import "LaunchImageView.h"
+#import <UIImageView+YYWebImage.h>
 
 @interface LaunchImageView()
 @property (nonatomic, strong)UIImageView *imageView;
@@ -49,6 +50,9 @@
     if (!_imageView) {
         _imageView = [[UIImageView alloc] initWithFrame:[UIScreen mainScreen].bounds];
         _imageView.image = [LaunchImage getImage];
+        /*
+         YYWebImageOptionUseNSURLCache
+         */
     }
     return _imageView;
 }
@@ -65,17 +69,22 @@
 @implementation LaunchImage
 + (UIImage *)getImage
 {
-    NSData *data = [[NSUserDefaults standardUserDefaults] objectForKey:@"launchImage"];
+    __block NSData *data = [[NSUserDefaults standardUserDefaults] objectForKey:@"launchImage"];
     NSString *imageUrl = [NSString stringWithFormat:@"https://raw.githubusercontent.com/mrjlovetian/image/master/launchImage/00%d.JPG", (arc4random() % 4) + 1];
-    data = [NSData dataWithContentsOfURL:[NSURL URLWithString:imageUrl]];
-    UIImage *image = [UIImage imageWithData:data];
-    if (!data) {
-        image = [UIImage imageNamed:@"001.JPG"];
+    
+    UIImage *image = [UIImage imageNamed:@"001.JPG"];
+    if (data) {
+        image = [UIImage imageWithData:data];
     }
-    [[NSUserDefaults standardUserDefaults] setObject:data forKey:@"launchImage"];
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        data = [NSData dataWithContentsOfURL:[NSURL URLWithString:imageUrl]];
+        
+        [[NSUserDefaults standardUserDefaults] setObject:data forKey:@"launchImage"];
+    });
+    
+    
    
-    
-    
     return image;
 }
 
