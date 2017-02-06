@@ -133,24 +133,27 @@
     [self.cache removeAllObjects];
 }
 
-//- (UIColor *)calendar:(FSCalendar *)calendar appearance:(FSCalendarAppearance *)appearance fillDefaultColorForDate:(NSDate *)date
-//{
-//    NSString *key = [self.dateFormatter stringFromDate:date];
-//    if ([self.mindDictionary.allKeys containsObject:key]) {
-//        return _mindDictionary[key];
-//    }
-//    return nil;
-//}
-
-- (UIImage *)calendar:(FSCalendar *)calendar imageForDate:(NSDate *)date
+- (UIColor *)calendar:(FSCalendar *)calendar appearance:(FSCalendarAppearance *)appearance fillDefaultColorForDate:(NSDate *)date
 {
     NSString *key = [self.dateFormatter stringFromDate:date];
     if ([self.mindDictionary.allKeys containsObject:key]) {
         UIImage *image = [UIImage imageNamed:_mindDictionary[key]];
-        return image;
+        UIColor *backColor = [UIColor colorWithPatternImage:[DateModel image:image rotation:UIImageOrientationDown]];
+        return backColor;
     }
     return nil;
 }
+
+//- (UIImage *)calendar:(FSCalendar *)calendar imageForDate:(NSDate *)date
+//{
+//    NSString *key = [self.dateFormatter stringFromDate:date];
+//    if ([self.mindDictionary.allKeys containsObject:key]) {
+//        UIImage *image = [UIImage imageNamed:_mindDictionary[key]];
+//        
+//        return [DateModel imageByApplyingAlpha:0.5 image:image];
+//    }
+//    return nil;
+//}
 
 #pragma mark - FSCalendarDataSource
 

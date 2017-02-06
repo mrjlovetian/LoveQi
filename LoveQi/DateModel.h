@@ -20,4 +20,10 @@
 
 ///data文件转dictonary
 +(NSDictionary *)returnDictionaryWithData:(NSData *)data;
+
+///设置图片透明度
++ (UIImage *)imageByApplyingAlpha:(CGFloat)alpha  image:(UIImage*)image;
+
+///图片旋转
++ (UIImage *)image:(UIImage *)image rotation:(UIImageOrientation)orientation;
 @end

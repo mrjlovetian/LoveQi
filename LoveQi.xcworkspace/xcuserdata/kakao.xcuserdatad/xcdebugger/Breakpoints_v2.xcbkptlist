@@ -16,16 +16,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LoveQi/RootViewController.m"
-            timestampString = "507895205.763362"
+            filePath = "Pods/BHBPopView/BHBPopViewDemo/BHBPopViewDemo/BHBPopView/BHBCenterView.m"
+            timestampString = "507977453.580437"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "150"
-            endingLineNumber = "150"
-            landmarkName = "-calendar:imageForDate:"
+            startingLineNumber = "140"
+            endingLineNumber = "140"
+            landmarkName = "-didClickBtn:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
