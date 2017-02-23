@@ -25,6 +25,8 @@
 		C2CE1C151E2E2347003AE6D3 /* LoveQiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2CE1C141E2E2347003AE6D3 /* LoveQiTests.m */; };
 		C2CE1C201E2E2347003AE6D3 /* LoveQiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2CE1C1F1E2E2347003AE6D3 /* LoveQiUITests.m */; };
 		C2CE1C2F1E2E23B9003AE6D3 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2CE1C2E1E2E23B9003AE6D3 /* RootViewController.m */; };
+		C2EE6B651E5EB91B003CD60E /* JumpDateView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EE6B641E5EB91B003CD60E /* JumpDateView.m */; };
+		C2EE6B681E5EBCA1003CD60E /* BtnColumnView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EE6B671E5EBCA1003CD60E /* BtnColumnView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +104,10 @@
 		C2CE1C211E2E2347003AE6D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2CE1C2D1E2E23B9003AE6D3 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		C2CE1C2E1E2E23B9003AE6D3 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		C2EE6B631E5EB91B003CD60E /* JumpDateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JumpDateView.h; sourceTree = "<group>"; };
+		C2EE6B641E5EB91B003CD60E /* JumpDateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JumpDateView.m; sourceTree = "<group>"; };
+		C2EE6B661E5EBCA1003CD60E /* BtnColumnView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BtnColumnView.h; sourceTree = "<group>"; };
+		C2EE6B671E5EBCA1003CD60E /* BtnColumnView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BtnColumnView.m; sourceTree = "<group>"; };
 		C41EE10A5322E24B0FEACDD6 /* Pods-LoveQi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoveQi.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoveQi/Pods-LoveQi.release.xcconfig"; sourceTree = "<group>"; };
 		FCEB03AB92596D867E27E643 /* libPods-LoveQiWidget.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LoveQiWidget.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -206,6 +212,10 @@
 				C2CE1BFE1E2E2347003AE6D3 /* AppDelegate.m */,
 				C2CE1C2D1E2E23B9003AE6D3 /* RootViewController.h */,
 				C2CE1C2E1E2E23B9003AE6D3 /* RootViewController.m */,
+				C2EE6B631E5EB91B003CD60E /* JumpDateView.h */,
+				C2EE6B641E5EB91B003CD60E /* JumpDateView.m */,
+				C2EE6B661E5EBCA1003CD60E /* BtnColumnView.h */,
+				C2EE6B671E5EBCA1003CD60E /* BtnColumnView.m */,
 				0ACF68941E3DD70700BEA229 /* AddEventView.h */,
 				0ACF68951E3DD70700BEA229 /* AddEventView.m */,
 				0ACF68981E3DDDCB00BEA229 /* AddEvevtVC.h */,
@@ -481,6 +491,8 @@
 				C2CE1BFC1E2E2347003AE6D3 /* main.m in Sources */,
 				C2CE1C2F1E2E23B9003AE6D3 /* RootViewController.m in Sources */,
 				0ACF68961E3DD70700BEA229 /* AddEventView.m in Sources */,
+				C2EE6B651E5EB91B003CD60E /* JumpDateView.m in Sources */,
+				C2EE6B681E5EBCA1003CD60E /* BtnColumnView.m in Sources */,
 				0ACF689F1E3F166100BEA229 /* LaunchImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -16,8 +16,9 @@
 #import <YYAnimatedImageView.h>
 #import <BHBPopView.h>
 #import "DateModel.h"
+#import "JumpDateView.h"
 
-@interface RootViewController ()<FSCalendarDataSource, FSCalendarDelegate, FSCalendarDelegateAppearance>
+@interface RootViewController ()<FSCalendarDataSource, FSCalendarDelegate, FSCalendarDelegateAppearance, JumpDateViewDelegate>
 
 @property (nonatomic, strong)YYAnimatedImageView *backImageView;
 
@@ -39,6 +40,8 @@
 
 @property (nonatomic, strong)AddEventView *bottomView;
 
+@property (nonatomic, strong)JumpDateView *jumpDateView;
+
 @property (nonatomic, copy)NSString *selectDate;
 
 @property (nonatomic, strong)NSMutableDictionary *mindDictionary;
@@ -56,6 +59,9 @@
     
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithTitle:@"今天" style:UIBarButtonItemStylePlain target:self action:@selector(today)];
     self.navigationItem.rightBarButtonItem = rightItem;
+    
+    UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithTitle:@"选择" style:UIBarButtonItemStylePlain target:self action:@selector(selectDateFromWheel)];
+    self.navigationItem.leftBarButtonItem = leftItem;
     
     self.view.backgroundColor = [UIColor whiteColor];
     
@@ -81,129 +87,6 @@
     
 //    NSLog(@"-=-=-=-=-=-==%f", FSCalendarVersionNumber);
     
-}
-
-- (FSCalendar *)fscalendar
-{
-    if (!_fscalendar) {
-        _fscalendar = [[FSCalendar alloc] initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREENH_HEIGHT - 64 - 44)];
-        _fscalendar.dataSource = self;
-        _fscalendar.delegate = self;
-        _fscalendar.pagingEnabled = NO; // important
-//        _fscalendar.scrollDirection = FSCalendarScrollDirectionVertical;
-//        _fscalendar.allowsMultipleSelection = YES;
-//        _fscalendar.firstWeekday = 2;
-        
-        _fscalendar.placeholderType = FSCalendarPlaceholderTypeFillSixRows;
-        _fscalendar.appearance.caseOptions = FSCalendarCaseOptionsWeekdayUsesSingleUpperCase|FSCalendarCaseOptionsHeaderUsesUpperCase;
-    }
-    return _fscalendar;
-}
-
-- (NSCalendar *)lunarCalendar
-{
-    if (!_lunarCalendar) {
-        _lunarCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierChinese];
-        _lunarCalendar.locale = [NSLocale localeWithLocaleIdentifier:@"zh-CN"];
-    }
-    return _lunarCalendar;
-}
-
-- (AddEventView *)bottomView
-{
-    if (!_bottomView) {
-        _bottomView = [[AddEventView alloc] initWithFrame:CGRectMake(0, SCREENH_HEIGHT - 44, SCREEN_WIDTH, 44)];
-        [_bottomView.addEventBtn addTarget:self action:@selector(addEvent) forControlEvents:UIControlEventTouchUpInside];
-    }
-    return _bottomView;
-}
-
-- (YYAnimatedImageView *)backImageView
-{
-    if (!_backImageView) {
-        _backImageView = [[YYAnimatedImageView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREENH_HEIGHT)];
-        [_backImageView setImageWithURL:[NSURL URLWithString:@"https://raw.githubusercontent.com/mrjlovetian/image/master/002.JPG"] options:YYWebImageOptionShowNetworkActivity];
-    }
-    return _backImageView;
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    [self.cache removeAllObjects];
-}
-
-- (UIColor *)calendar:(FSCalendar *)calendar appearance:(FSCalendarAppearance *)appearance fillDefaultColorForDate:(NSDate *)date
-{
-    NSString *key = [self.dateFormatter stringFromDate:date];
-    if ([self.mindDictionary.allKeys containsObject:key]) {
-        UIImage *image = [UIImage imageNamed:_mindDictionary[key]];
-        UIColor *backColor = [UIColor colorWithPatternImage:[DateModel image:image rotation:UIImageOrientationDown]];
-        return backColor;
-    }
-    return nil;
-}
-
-//- (UIImage *)calendar:(FSCalendar *)calendar imageForDate:(NSDate *)date
-//{
-//    NSString *key = [self.dateFormatter stringFromDate:date];
-//    if ([self.mindDictionary.allKeys containsObject:key]) {
-//        UIImage *image = [UIImage imageNamed:_mindDictionary[key]];
-//        
-//        return [DateModel imageByApplyingAlpha:0.5 image:image];
-//    }
-//    return nil;
-//}
-
-#pragma mark - FSCalendarDataSource
-
-- (NSDate *)minimumDateForCalendar:(FSCalendar *)calendar
-{
-    return self.minimumDate;
-}
-
-- (NSDate *)maximumDateForCalendar:(FSCalendar *)calendar
-{
-    return self.maximumDate;
-}
-
-- (NSString *)calendar:(FSCalendar *)calendar subtitleForDate:(NSDate *)date
-{
-    EKEvent *event = [self eventsForDate:date].firstObject;
-    if (event) {
-        return event.title;
-    }
-    NSInteger day = [self.lunarCalendar component:NSCalendarUnitDay fromDate:date];
-    return self.lunarChars[day-1];
-}
-
-#pragma mark - FSCalendarDelegate
-
-- (void)calendar:(FSCalendar *)calendar didSelectDate:(NSDate *)date
-{
-    NSLog(@"did select %@",[self.dateFormatter stringFromDate:date]);
-    self.selectDate = [self.dateFormatter stringFromDate:date];
-}
-
-- (void)calendarCurrentPageDidChange:(FSCalendar *)calendar
-{
-    NSLog(@"did change page %@",[self.dateFormatter stringFromDate:calendar.currentPage]);
-}
-
-- (NSInteger)calendar:(FSCalendar *)calendar numberOfEventsForDate:(NSDate *)date
-{
-    NSArray<EKEvent *> *events = [self eventsForDate:date];
-    return events.count;
-}
-
-- (NSArray<UIColor *> *)calendar:(FSCalendar *)calendar appearance:(FSCalendarAppearance *)appearance eventDefaultColorsForDate:(NSDate *)date
-{
-    NSArray<EKEvent *> *events = [self eventsForDate:date];
-    NSMutableArray<UIColor *> *colors = [NSMutableArray arrayWithCapacity:events.count];
-    [events enumerateObjectsUsingBlock:^(EKEvent * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        [colors addObject:[UIColor colorWithCGColor:obj.calendar.CGColor]];
-    }];
-    return colors.copy;
 }
 
 #pragma mark - Private methods
@@ -268,11 +151,16 @@
     [self.fscalendar selectDate:[NSDate date] scrollToDate:YES];
 }
 
+- (void)selectDateFromWheel
+{
+    [self.view addSubview:self.jumpDateView];
+}
+
 - (void)addEvent
 {
-//    RootViewController *VC = [[RootViewController alloc] init];
-//    AddEvevtVC *VC = [[AddEvevtVC alloc] init];
-//    [self.navigationController pushViewController:VC animated:YES];
+    //    RootViewController *VC = [[RootViewController alloc] init];
+    //    AddEvevtVC *VC = [[AddEvevtVC alloc] init];
+    //    [self.navigationController pushViewController:VC animated:YES];
     
     [BHBPopView showToView:[[UIApplication sharedApplication].delegate window] andImages:@[@"/biaoqing/addEvevt", @"/biaoqing/smiley_002", @"/biaoqing/smiley_003", @"/biaoqing/smiley_011", @"/biaoqing/smiley_010", @"/biaoqing/smiley_015", @"/biaoqing/smiley_014", @"/biaoqing/smiley_006"] andTitles:@[ @"日记", @"不开心", @"难受", @"开心", @"喜欢", @"感动", @"伤心", @"委屈"] andSelectBlock:^(BHBItem *item) {
         
@@ -286,32 +174,32 @@
         }else
         {
             [self.mindDictionary addEntriesFromDictionary:@{self.selectDate:[NSString stringWithFormat:@"biaoqing/%@", item.title]}];
-//            if ([item.title isEqualToString:@"开心"])
-//            {
-//                [self.mindDictionary addEntriesFromDictionary:@{self.selectDate:@"biaoqing/smiley_011"}];
-//            }else if ([item.title isEqualToString:@"生气"])
-//            {
-//                [self.mindDictionary addEntriesFromDictionary:@{self.selectDate:@"biaoqing/smiley_002"}];
-//            }else if ([item.title isEqualToString:@"不开心"])
-//            {
-//                [self.mindDictionary addEntriesFromDictionary:@{self.selectDate:@"biaoqing/smiley_003"}];
-//            }else if ([item.title isEqualToString:@"喜欢"])
-//            {
-//                [self.mindDictionary addEntriesFromDictionary:@{self.selectDate:@"biaoqing/smiley_010"}];
-//            }
+            //            if ([item.title isEqualToString:@"开心"])
+            //            {
+            //                [self.mindDictionary addEntriesFromDictionary:@{self.selectDate:@"biaoqing/smiley_011"}];
+            //            }else if ([item.title isEqualToString:@"生气"])
+            //            {
+            //                [self.mindDictionary addEntriesFromDictionary:@{self.selectDate:@"biaoqing/smiley_002"}];
+            //            }else if ([item.title isEqualToString:@"不开心"])
+            //            {
+            //                [self.mindDictionary addEntriesFromDictionary:@{self.selectDate:@"biaoqing/smiley_003"}];
+            //            }else if ([item.title isEqualToString:@"喜欢"])
+            //            {
+            //                [self.mindDictionary addEntriesFromDictionary:@{self.selectDate:@"biaoqing/smiley_010"}];
+            //            }
             [self saveMyMind];
         }
-        LRLog(@"-=-=-==-=-=%@", item.title);
+        YHJLog(@"-=-=-==-=-=%@", item.title);
     }];
 }
 
 - (void)saveMyMind
 {
-//    self.mindDictionary = [NSMutableDictionary dictionaryWithDictionary:@{@"2017-02-08":[UIColor purpleColor],
-//                                                                          @"2017-02-06":[UIColor greenColor],
-//                                                                          @"2017-02-18":[UIColor cyanColor],
-//                                                                          @"2017-02-22":[UIColor yellowColor],
-//                                                                         }];
+    //    self.mindDictionary = [NSMutableDictionary dictionaryWithDictionary:@{@"2017-02-08":[UIColor purpleColor],
+    //                                                                          @"2017-02-06":[UIColor greenColor],
+    //                                                                          @"2017-02-18":[UIColor cyanColor],
+    //                                                                          @"2017-02-22":[UIColor yellowColor],
+    //                                                                         }];
     [self.fscalendar reloadData];
     [DateModel writeDtatWithPathFile:@"mind" data:[DateModel returnDataWithDictionary:self.mindDictionary]];
 }
@@ -323,6 +211,136 @@
         self.mindDictionary = [NSMutableDictionary dictionaryWithDictionary:[DateModel returnDictionaryWithData:data]];
         [self.fscalendar reloadData];
     }
+}
+
+#pragma mark JumpDateViewDelegate
+- (void)JumpDateViewSelectDate:(NSDate *)date
+{
+    [self.fscalendar selectDate:date scrollToDate:YES];
+}
+
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    [self.cache removeAllObjects];
+}
+
+- (UIColor *)calendar:(FSCalendar *)calendar appearance:(FSCalendarAppearance *)appearance fillDefaultColorForDate:(NSDate *)date
+{
+    NSString *key = [self.dateFormatter stringFromDate:date];
+    if ([self.mindDictionary.allKeys containsObject:key]) {
+        UIImage *image = [UIImage imageNamed:_mindDictionary[key]];
+        UIColor *backColor = [UIColor colorWithPatternImage:[DateModel image:image rotation:UIImageOrientationDown]];
+        return backColor;
+    }
+    return nil;
+}
+
+#pragma mark - FSCalendarDataSource
+
+- (NSDate *)minimumDateForCalendar:(FSCalendar *)calendar
+{
+    return self.minimumDate;
+}
+
+- (NSDate *)maximumDateForCalendar:(FSCalendar *)calendar
+{
+    return self.maximumDate;
+}
+
+- (NSString *)calendar:(FSCalendar *)calendar subtitleForDate:(NSDate *)date
+{
+    EKEvent *event = [self eventsForDate:date].firstObject;
+    if (event) {
+        return event.title;
+    }
+    NSInteger day = [self.lunarCalendar component:NSCalendarUnitDay fromDate:date];
+    return self.lunarChars[day-1];
+}
+
+#pragma mark - FSCalendarDelegate
+
+- (void)calendar:(FSCalendar *)calendar didSelectDate:(NSDate *)date
+{
+    NSLog(@"did select %@",[self.dateFormatter stringFromDate:date]);
+    self.selectDate = [self.dateFormatter stringFromDate:date];
+}
+
+- (void)calendarCurrentPageDidChange:(FSCalendar *)calendar
+{
+    NSLog(@"did change page %@",[self.dateFormatter stringFromDate:calendar.currentPage]);
+}
+
+- (NSInteger)calendar:(FSCalendar *)calendar numberOfEventsForDate:(NSDate *)date
+{
+    NSArray<EKEvent *> *events = [self eventsForDate:date];
+    return events.count;
+}
+
+- (NSArray<UIColor *> *)calendar:(FSCalendar *)calendar appearance:(FSCalendarAppearance *)appearance eventDefaultColorsForDate:(NSDate *)date
+{
+    NSArray<EKEvent *> *events = [self eventsForDate:date];
+    NSMutableArray<UIColor *> *colors = [NSMutableArray arrayWithCapacity:events.count];
+    [events enumerateObjectsUsingBlock:^(EKEvent * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [colors addObject:[UIColor colorWithCGColor:obj.calendar.CGColor]];
+    }];
+    return colors.copy;
+}
+
+#pragma mark UI
+- (JumpDateView *)jumpDateView
+{
+    if (!_jumpDateView) {
+        _jumpDateView = [[JumpDateView alloc] initWithFrame:[UIScreen mainScreen].bounds maxDate:self.maximumDate minDate:self.minimumDate];
+        _jumpDateView.delegate = self;
+    }
+    return _jumpDateView;
+}
+
+- (FSCalendar *)fscalendar
+{
+    if (!_fscalendar) {
+        _fscalendar = [[FSCalendar alloc] initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREENH_HEIGHT - 64 - 44)];
+        _fscalendar.dataSource = self;
+        _fscalendar.delegate = self;
+        _fscalendar.pagingEnabled = NO; // important
+        //        _fscalendar.scrollDirection = FSCalendarScrollDirectionVertical;
+        //        _fscalendar.allowsMultipleSelection = YES;
+        //        _fscalendar.firstWeekday = 2;
+        _fscalendar.scope = FSCalendarScopeMonth;
+        
+        _fscalendar.placeholderType = FSCalendarPlaceholderTypeNone;
+        _fscalendar.appearance.caseOptions = FSCalendarCaseOptionsWeekdayUsesSingleUpperCase|FSCalendarCaseOptionsHeaderUsesUpperCase;
+    }
+    return _fscalendar;
+}
+
+- (NSCalendar *)lunarCalendar
+{
+    if (!_lunarCalendar) {
+        _lunarCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierChinese];
+        _lunarCalendar.locale = [NSLocale localeWithLocaleIdentifier:@"zh-CN"];
+    }
+    return _lunarCalendar;
+}
+
+- (AddEventView *)bottomView
+{
+    if (!_bottomView) {
+        _bottomView = [[AddEventView alloc] initWithFrame:CGRectMake(0, SCREENH_HEIGHT - 44, SCREEN_WIDTH, 44)];
+        [_bottomView.addEventBtn addTarget:self action:@selector(addEvent) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _bottomView;
+}
+
+- (YYAnimatedImageView *)backImageView
+{
+    if (!_backImageView) {
+        _backImageView = [[YYAnimatedImageView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREENH_HEIGHT)];
+        [_backImageView setImageWithURL:[NSURL URLWithString:@"https://raw.githubusercontent.com/mrjlovetian/image/master/002.JPG"] options:YYWebImageOptionShowNetworkActivity];
+    }
+    return _backImageView;
 }
 /*
 #pragma mark - Navigation
