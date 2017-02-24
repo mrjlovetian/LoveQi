@@ -36,12 +36,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LoveQi/RootViewController.m"
-            timestampString = "509528721.436739"
+            timestampString = "509535764.426071"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "219"
-            endingLineNumber = "219"
+            startingLineNumber = "222"
+            endingLineNumber = "222"
             landmarkName = "-JumpDateViewSelectDate:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LoveQi/DataBaseHander.m"
+            timestampString = "509594125.81175"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "+selectSql:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

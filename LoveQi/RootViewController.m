@@ -17,6 +17,7 @@
 #import <BHBPopView.h>
 #import "DateModel.h"
 #import "JumpDateView.h"
+#import "SQLViewconTroller.h"
 
 @interface RootViewController ()<FSCalendarDataSource, FSCalendarDelegate, FSCalendarDelegateAppearance, JumpDateViewDelegate>
 
@@ -148,7 +149,9 @@
 
 - (void)today
 {
-    [self.fscalendar selectDate:[NSDate date] scrollToDate:YES];
+    SQLViewconTroller *vc = [[SQLViewconTroller alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+//    [self.fscalendar selectDate:[NSDate date] scrollToDate:YES];
 }
 
 - (void)selectDateFromWheel
