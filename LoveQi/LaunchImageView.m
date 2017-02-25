@@ -71,7 +71,7 @@
 {
     __block NSData *data = [[NSUserDefaults standardUserDefaults] objectForKey:@"launchImage"];
     NSString *imageUrl = [NSString stringWithFormat:@"https://raw.githubusercontent.com/mrjlovetian/image/master/launchImage/00%d.JPG", (arc4random() % 4) + 1];
-    
+    YHJLog(@"wode image is %@", imageUrl);
     UIImage *image = [UIImage imageNamed:@"001.JPG"];
     if (data) {
         image = [UIImage imageWithData:data];
