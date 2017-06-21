@@ -19,6 +19,8 @@
 		0ACF68A91E40C76800BEA229 /* DateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF68A81E40C76800BEA229 /* DateModel.m */; };
 		51797A3810964178EDCD4186 /* libPods-LoveQi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F73172D3C7F27BD14CD5B03 /* libPods-LoveQi.a */; };
 		96D78EE764673C3FB2EA232C /* libPods-LoveQi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F73172D3C7F27BD14CD5B03 /* libPods-LoveQi.a */; };
+		C28487041EF79F0600F0ED91 /* LQItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = C28487031EF79F0600F0ED91 /* LQItemView.m */; };
+		C28487071EF7A45900F0ED91 /* LQItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C28487061EF7A45900F0ED91 /* LQItem.m */; };
 		C2CE1BFC1E2E2347003AE6D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2CE1BFB1E2E2347003AE6D3 /* main.m */; };
 		C2CE1BFF1E2E2347003AE6D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2CE1BFE1E2E2347003AE6D3 /* AppDelegate.m */; };
 		C2CE1C071E2E2347003AE6D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2CE1C061E2E2347003AE6D3 /* Assets.xcassets */; };
@@ -92,6 +94,10 @@
 		0ACF68A81E40C76800BEA229 /* DateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateModel.m; sourceTree = "<group>"; };
 		4D08DA4073AEB9E969B717BA /* Pods-LoveQi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoveQi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoveQi/Pods-LoveQi.debug.xcconfig"; sourceTree = "<group>"; };
 		5F73172D3C7F27BD14CD5B03 /* libPods-LoveQi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LoveQi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C28487021EF79F0600F0ED91 /* LQItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQItemView.h; sourceTree = "<group>"; };
+		C28487031EF79F0600F0ED91 /* LQItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQItemView.m; sourceTree = "<group>"; };
+		C28487051EF7A45900F0ED91 /* LQItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQItem.h; sourceTree = "<group>"; };
+		C28487061EF7A45900F0ED91 /* LQItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQItem.m; sourceTree = "<group>"; };
 		C2CE1BF71E2E2347003AE6D3 /* LoveQi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoveQi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2CE1BFB1E2E2347003AE6D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C2CE1BFD1E2E2347003AE6D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -184,6 +190,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C28487011EF79ECC00F0ED91 /* ItemBtns */ = {
+			isa = PBXGroup;
+			children = (
+				C28487021EF79F0600F0ED91 /* LQItemView.h */,
+				C28487031EF79F0600F0ED91 /* LQItemView.m */,
+				C28487051EF7A45900F0ED91 /* LQItem.h */,
+				C28487061EF7A45900F0ED91 /* LQItem.m */,
+			);
+			name = ItemBtns;
+			sourceTree = "<group>";
+		};
 		C2CE1BEE1E2E2347003AE6D3 = {
 			isa = PBXGroup;
 			children = (
@@ -236,6 +253,7 @@
 				C2EE6B6C1E5EF8D7003CD60E /* DataBaseHander.h */,
 				C2EE6B6D1E5EF8D7003CD60E /* DataBaseHander.m */,
 				0ACF68971E3DDAA800BEA229 /* PrefixHeader.pch */,
+				C28487011EF79ECC00F0ED91 /* ItemBtns */,
 				C2CE1C061E2E2347003AE6D3 /* Assets.xcassets */,
 				C2CE1C0B1E2E2347003AE6D3 /* Info.plist */,
 				C2CE1BFA1E2E2347003AE6D3 /* Supporting Files */,
@@ -501,6 +519,8 @@
 				C2EE6B6E1E5EF8D7003CD60E /* DataBaseHander.m in Sources */,
 				C2CE1BFC1E2E2347003AE6D3 /* main.m in Sources */,
 				C2CE1C2F1E2E23B9003AE6D3 /* RootViewController.m in Sources */,
+				C28487071EF7A45900F0ED91 /* LQItem.m in Sources */,
+				C28487041EF79F0600F0ED91 /* LQItemView.m in Sources */,
 				0ACF68961E3DD70700BEA229 /* AddEventView.m in Sources */,
 				C2EE6B651E5EB91B003CD60E /* JumpDateView.m in Sources */,
 				C2EE6B6B1E5EDFE9003CD60E /* SQLViewconTroller.m in Sources */,

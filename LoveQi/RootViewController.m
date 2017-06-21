@@ -18,6 +18,7 @@
 #import "DateModel.h"
 #import "JumpDateView.h"
 #import "SQLViewconTroller.h"
+#import "LQItemView.h"
 
 @interface RootViewController ()<FSCalendarDataSource, FSCalendarDelegate, FSCalendarDelegateAppearance, JumpDateViewDelegate>
 
@@ -161,48 +162,31 @@
 
 - (void)addEvent
 {
-    //    RootViewController *VC = [[RootViewController alloc] init];
-    //    AddEvevtVC *VC = [[AddEvevtVC alloc] init];
-    //    [self.navigationController pushViewController:VC animated:YES];
     
-    [BHBPopView showToView:[[UIApplication sharedApplication].delegate window] andImages:@[@"/biaoqing/addEvevt", @"/biaoqing/smiley_002", @"/biaoqing/smiley_003", @"/biaoqing/smiley_011", @"/biaoqing/smiley_010", @"/biaoqing/smiley_015", @"/biaoqing/smiley_014", @"/biaoqing/smiley_006"] andTitles:@[ @"日记", @"不开心", @"难受", @"开心", @"喜欢", @"感动", @"伤心", @"委屈"] andSelectBlock:^(BHBItem *item) {
-        
-        if ([item.title isEqualToString:@"日记"]) {
-            AddEvevtVC *VC = [[AddEvevtVC alloc] init];
-            VC.date = self.selectDate;
-            
-            
-            
-            [self.navigationController pushViewController:VC animated:YES];
-        }else
-        {
-            [self.mindDictionary addEntriesFromDictionary:@{self.selectDate:[NSString stringWithFormat:@"biaoqing/%@", item.title]}];
-            //            if ([item.title isEqualToString:@"开心"])
-            //            {
-            //                [self.mindDictionary addEntriesFromDictionary:@{self.selectDate:@"biaoqing/smiley_011"}];
-            //            }else if ([item.title isEqualToString:@"生气"])
-            //            {
-            //                [self.mindDictionary addEntriesFromDictionary:@{self.selectDate:@"biaoqing/smiley_002"}];
-            //            }else if ([item.title isEqualToString:@"不开心"])
-            //            {
-            //                [self.mindDictionary addEntriesFromDictionary:@{self.selectDate:@"biaoqing/smiley_003"}];
-            //            }else if ([item.title isEqualToString:@"喜欢"])
-            //            {
-            //                [self.mindDictionary addEntriesFromDictionary:@{self.selectDate:@"biaoqing/smiley_010"}];
-            //            }
-            [self saveMyMind];
-        }
-        YHJLog(@"-=-=-==-=-=%@", item.title);
+    LQItemView *lqitemView = [[LQItemView alloc] init];
+    [lqitemView createItemsWithImageArray:@[@"", @"", @"", @"", @"", @"",@"", @"", @"", @"", @""] itemTitleArray:@[@"日记", @"不开心", @"开心", @"开心", @"开心", @"开心", @"不开心", @"开心", @"开心", @"开心", @"开心"] clcikBlock:^(NSString *str) {
+        YHJLog(@"点击效果是%@",str);
     }];
+//    [BHBPopView showToView:[[UIApplication sharedApplication].delegate window] andImages:@[@"/biaoqing/addEvevt", @"/biaoqing/smiley_002", @"/biaoqing/smiley_003", @"/biaoqing/smiley_011", @"/biaoqing/smiley_010", @"/biaoqing/smiley_015", @"/biaoqing/smiley_014", @"/biaoqing/smiley_006"] andTitles:@[ @"日记", @"不开心", @"难受", @"开心", @"喜欢", @"感动", @"伤心", @"委屈"] andSelectBlock:^(BHBItem *item) {
+//        
+//        if ([item.title isEqualToString:@"日记"]) {
+//            AddEvevtVC *VC = [[AddEvevtVC alloc] init];
+//            VC.date = self.selectDate;
+//            
+//            
+//            
+//            [self.navigationController pushViewController:VC animated:YES];
+//        }else
+//        {
+//            [self.mindDictionary addEntriesFromDictionary:@{self.selectDate:[NSString stringWithFormat:@"biaoqing/%@", item.title]}];
+//            [self saveMyMind];
+//        }
+//        YHJLog(@"-=-=-==-=-=%@", item.title);
+//    }];
 }
 
 - (void)saveMyMind
 {
-    //    self.mindDictionary = [NSMutableDictionary dictionaryWithDictionary:@{@"2017-02-08":[UIColor purpleColor],
-    //                                                                          @"2017-02-06":[UIColor greenColor],
-    //                                                                          @"2017-02-18":[UIColor cyanColor],
-    //                                                                          @"2017-02-22":[UIColor yellowColor],
-    //                                                                         }];
     [self.fscalendar reloadData];
     [DateModel writeDtatWithPathFile:@"mind" data:[DateModel returnDataWithDictionary:self.mindDictionary]];
 }
@@ -308,9 +292,6 @@
         _fscalendar.dataSource = self;
         _fscalendar.delegate = self;
         _fscalendar.pagingEnabled = NO; // important
-        //        _fscalendar.scrollDirection = FSCalendarScrollDirectionVertical;
-        //        _fscalendar.allowsMultipleSelection = YES;
-        //        _fscalendar.firstWeekday = 2;
         _fscalendar.scope = FSCalendarScopeMonth;
         
         _fscalendar.placeholderType = FSCalendarPlaceholderTypeNone;
