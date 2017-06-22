@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'D653A59DB64AB2BE4631D99A6C318E21'
-               BlueprintName = 'PDTSimpleCalendar'
+               BlueprintIdentifier = '09CA83C77F45193398D7C987F546D336'
+               BlueprintName = 'OC-Category'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPDTSimpleCalendar.a'>
+               BuildableName = 'libOC-Category.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

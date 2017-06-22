@@ -13,6 +13,8 @@ target :'LoveQi' do
   pod 'BHBPopView'
   
   pod 'TRMJPhotoBrowser', '~> 1.0.6'
+  
+  pod 'OC-Category', '~> 0.1.3.8'
 
 end
 
