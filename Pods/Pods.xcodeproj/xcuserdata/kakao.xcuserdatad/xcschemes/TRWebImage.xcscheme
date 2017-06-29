@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '237902B76CE5187DB7EEE8F0811B3B13'
+               BlueprintIdentifier = 'C25C850F994AECB4AD64DB87C5D5EA4F'
                BlueprintName = 'TRWebImage'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libTRWebImage.a'>

@@ -1,0 +1,1 @@
+../../../YHJQRCode/YHJQRCode/Classes/UIImage+SGHelper.h

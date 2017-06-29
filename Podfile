@@ -1,4 +1,4 @@
-platform :ios, '7.0'
+platform :ios, '8.0'
 
 target :'LoveQi' do
 
@@ -15,6 +15,8 @@ target :'LoveQi' do
   pod 'TRMJPhotoBrowser', '~> 1.0.6'
   
   pod 'OC-Category', '~> 0.1.3.8'
+  
+  pod 'YHJQRCode', '~> 0.2.0.7'
 
 end
 

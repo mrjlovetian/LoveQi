@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '2754F82F5560C60DA7F1182E174E3EAE'
+               BlueprintIdentifier = '86DC4943B4B674AA50CDADBA257FFA40'
                BlueprintName = 'TRMJPhotoBrowser'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libTRMJPhotoBrowser.a'>
