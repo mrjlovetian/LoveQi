@@ -19,6 +19,7 @@
 #import "JumpDateView.h"
 #import "SQLViewconTroller.h"
 #import "LQItemView.h"
+#import <AFNetworking.h>
 
 @interface RootViewController ()<FSCalendarDataSource, FSCalendarDelegate, FSCalendarDelegateAppearance, JumpDateViewDelegate>
 
@@ -86,6 +87,16 @@
     [self loadCalendarEvents];
     
     [self getMyMind];
+    
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    NSDictionary *parm = @{@"page":@"1", @"size":@"20", @"type":@"1"};
+    [manager POST:@"http://api.mysays.com/media/list" parameters:parm success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+        
+        YHJLog(@"responseObject = %@", responseObject);
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        YHJLog(@"error ====  %@", error.localizedDescription);
+    }];
     
 //    NSLog(@"-=-=-=-=-=-==%f", FSCalendarVersionNumber);
     
