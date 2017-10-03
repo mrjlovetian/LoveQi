@@ -47,7 +47,7 @@
 
 - (void)confirmClick
 {
-    YHJLog(@"-=-=-=-=-=-=-=%@", _picker.date);
+    MRJLog(@"-=-=-=-=-=-=-=%@", _picker.date);
     if ([self.delegate respondsToSelector:@selector(JumpDateViewSelectDate:)]) {
         [self.delegate JumpDateViewSelectDate:_picker.date];
     }

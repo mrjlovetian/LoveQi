@@ -11,26 +11,26 @@
 		0A963A0C1E42398800B4F626 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A963A0B1E42398800B4F626 /* NotificationCenter.framework */; };
 		0A963A101E42398800B4F626 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A963A0F1E42398800B4F626 /* TodayViewController.m */; };
 		0A963A171E42398800B4F626 /* LoveQiWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0A963A0A1E42398800B4F626 /* LoveQiWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		0ACF68961E3DD70700BEA229 /* AddEventView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF68951E3DD70700BEA229 /* AddEventView.m */; };
-		0ACF689A1E3DDDCB00BEA229 /* AddEvevtVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF68991E3DDDCB00BEA229 /* AddEvevtVC.m */; };
-		0ACF689F1E3F166100BEA229 /* LaunchImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF689E1E3F166100BEA229 /* LaunchImageView.m */; };
 		0ACF68A11E3F252700BEA229 /* 001.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 0ACF68A01E3F252700BEA229 /* 001.JPG */; };
 		0ACF68A61E3F7E7000BEA229 /* biaoqing in Resources */ = {isa = PBXBuildFile; fileRef = 0ACF68A51E3F7E7000BEA229 /* biaoqing */; };
-		0ACF68A91E40C76800BEA229 /* DateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF68A81E40C76800BEA229 /* DateModel.m */; };
 		51797A3810964178EDCD4186 /* libPods-LoveQi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F73172D3C7F27BD14CD5B03 /* libPods-LoveQi.a */; };
 		96D78EE764673C3FB2EA232C /* libPods-LoveQi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F73172D3C7F27BD14CD5B03 /* libPods-LoveQi.a */; };
-		C28487041EF79F0600F0ED91 /* LQItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = C28487031EF79F0600F0ED91 /* LQItemView.m */; };
-		C28487071EF7A45900F0ED91 /* LQItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C28487061EF7A45900F0ED91 /* LQItem.m */; };
+		C2589DCD1F83FA65007736C7 /* AddEvevtVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C2589DB61F83FA65007736C7 /* AddEvevtVC.m */; };
+		C2589DCE1F83FA65007736C7 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2589DB81F83FA65007736C7 /* RootViewController.m */; };
+		C2589DCF1F83FA65007736C7 /* SQLViewconTroller.m in Sources */ = {isa = PBXBuildFile; fileRef = C2589DBA1F83FA65007736C7 /* SQLViewconTroller.m */; };
+		C2589DD01F83FA65007736C7 /* DataBaseHander.m in Sources */ = {isa = PBXBuildFile; fileRef = C2589DBD1F83FA65007736C7 /* DataBaseHander.m */; };
+		C2589DD11F83FA65007736C7 /* DateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C2589DBF1F83FA65007736C7 /* DateModel.m */; };
+		C2589DD21F83FA65007736C7 /* AddEventView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2589DC21F83FA65007736C7 /* AddEventView.m */; };
+		C2589DD31F83FA65007736C7 /* BtnColumnView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2589DC41F83FA65007736C7 /* BtnColumnView.m */; };
+		C2589DD41F83FA65007736C7 /* JumpDateView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2589DC61F83FA65007736C7 /* JumpDateView.m */; };
+		C2589DD51F83FA65007736C7 /* LaunchImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2589DC81F83FA65007736C7 /* LaunchImageView.m */; };
+		C2589DD61F83FA65007736C7 /* LQItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C2589DCA1F83FA65007736C7 /* LQItem.m */; };
+		C2589DD71F83FA65007736C7 /* LQItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2589DCC1F83FA65007736C7 /* LQItemView.m */; };
+		C2589DDB1F83FA7B007736C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2589DDA1F83FA7B007736C7 /* AppDelegate.m */; };
 		C2CE1BFC1E2E2347003AE6D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2CE1BFB1E2E2347003AE6D3 /* main.m */; };
-		C2CE1BFF1E2E2347003AE6D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2CE1BFE1E2E2347003AE6D3 /* AppDelegate.m */; };
 		C2CE1C071E2E2347003AE6D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2CE1C061E2E2347003AE6D3 /* Assets.xcassets */; };
 		C2CE1C151E2E2347003AE6D3 /* LoveQiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2CE1C141E2E2347003AE6D3 /* LoveQiTests.m */; };
 		C2CE1C201E2E2347003AE6D3 /* LoveQiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2CE1C1F1E2E2347003AE6D3 /* LoveQiUITests.m */; };
-		C2CE1C2F1E2E23B9003AE6D3 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2CE1C2E1E2E23B9003AE6D3 /* RootViewController.m */; };
-		C2EE6B651E5EB91B003CD60E /* JumpDateView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EE6B641E5EB91B003CD60E /* JumpDateView.m */; };
-		C2EE6B681E5EBCA1003CD60E /* BtnColumnView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EE6B671E5EBCA1003CD60E /* BtnColumnView.m */; };
-		C2EE6B6B1E5EDFE9003CD60E /* SQLViewconTroller.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EE6B6A1E5EDFE9003CD60E /* SQLViewconTroller.m */; };
-		C2EE6B6E1E5EF8D7003CD60E /* DataBaseHander.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EE6B6D1E5EF8D7003CD60E /* DataBaseHander.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,27 +81,37 @@
 		0A963A141E42398800B4F626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A963A1C1E42465000B4F626 /* libPods-LoveQiWidget.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-LoveQiWidget.a"; path = "Pods/../build/Debug-iphoneos/libPods-LoveQiWidget.a"; sourceTree = "<group>"; };
 		0A963A1F1E4246CF00B4F626 /* libPods-LoveQiWidget.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-LoveQiWidget.a"; path = "Pods/../build/Debug-iphoneos/libPods-LoveQiWidget.a"; sourceTree = "<group>"; };
-		0ACF68941E3DD70700BEA229 /* AddEventView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEventView.h; sourceTree = "<group>"; };
-		0ACF68951E3DD70700BEA229 /* AddEventView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEventView.m; sourceTree = "<group>"; };
 		0ACF68971E3DDAA800BEA229 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		0ACF68981E3DDDCB00BEA229 /* AddEvevtVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEvevtVC.h; sourceTree = "<group>"; };
-		0ACF68991E3DDDCB00BEA229 /* AddEvevtVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEvevtVC.m; sourceTree = "<group>"; };
-		0ACF689D1E3F166100BEA229 /* LaunchImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchImageView.h; sourceTree = "<group>"; };
-		0ACF689E1E3F166100BEA229 /* LaunchImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchImageView.m; sourceTree = "<group>"; };
 		0ACF68A01E3F252700BEA229 /* 001.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 001.JPG; sourceTree = "<group>"; };
 		0ACF68A51E3F7E7000BEA229 /* biaoqing */ = {isa = PBXFileReference; lastKnownFileType = folder; path = biaoqing; sourceTree = "<group>"; };
-		0ACF68A71E40C76800BEA229 /* DateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateModel.h; sourceTree = "<group>"; };
-		0ACF68A81E40C76800BEA229 /* DateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateModel.m; sourceTree = "<group>"; };
 		4D08DA4073AEB9E969B717BA /* Pods-LoveQi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoveQi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoveQi/Pods-LoveQi.debug.xcconfig"; sourceTree = "<group>"; };
 		5F73172D3C7F27BD14CD5B03 /* libPods-LoveQi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LoveQi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C28487021EF79F0600F0ED91 /* LQItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQItemView.h; sourceTree = "<group>"; };
-		C28487031EF79F0600F0ED91 /* LQItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQItemView.m; sourceTree = "<group>"; };
-		C28487051EF7A45900F0ED91 /* LQItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQItem.h; sourceTree = "<group>"; };
-		C28487061EF7A45900F0ED91 /* LQItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQItem.m; sourceTree = "<group>"; };
+		C2589DB51F83FA65007736C7 /* AddEvevtVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEvevtVC.h; sourceTree = "<group>"; };
+		C2589DB61F83FA65007736C7 /* AddEvevtVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEvevtVC.m; sourceTree = "<group>"; };
+		C2589DB71F83FA65007736C7 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		C2589DB81F83FA65007736C7 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		C2589DB91F83FA65007736C7 /* SQLViewconTroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLViewconTroller.h; sourceTree = "<group>"; };
+		C2589DBA1F83FA65007736C7 /* SQLViewconTroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLViewconTroller.m; sourceTree = "<group>"; };
+		C2589DBC1F83FA65007736C7 /* DataBaseHander.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBaseHander.h; sourceTree = "<group>"; };
+		C2589DBD1F83FA65007736C7 /* DataBaseHander.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBaseHander.m; sourceTree = "<group>"; };
+		C2589DBE1F83FA65007736C7 /* DateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateModel.h; sourceTree = "<group>"; };
+		C2589DBF1F83FA65007736C7 /* DateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateModel.m; sourceTree = "<group>"; };
+		C2589DC11F83FA65007736C7 /* AddEventView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEventView.h; sourceTree = "<group>"; };
+		C2589DC21F83FA65007736C7 /* AddEventView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEventView.m; sourceTree = "<group>"; };
+		C2589DC31F83FA65007736C7 /* BtnColumnView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BtnColumnView.h; sourceTree = "<group>"; };
+		C2589DC41F83FA65007736C7 /* BtnColumnView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BtnColumnView.m; sourceTree = "<group>"; };
+		C2589DC51F83FA65007736C7 /* JumpDateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JumpDateView.h; sourceTree = "<group>"; };
+		C2589DC61F83FA65007736C7 /* JumpDateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JumpDateView.m; sourceTree = "<group>"; };
+		C2589DC71F83FA65007736C7 /* LaunchImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchImageView.h; sourceTree = "<group>"; };
+		C2589DC81F83FA65007736C7 /* LaunchImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchImageView.m; sourceTree = "<group>"; };
+		C2589DC91F83FA65007736C7 /* LQItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQItem.h; sourceTree = "<group>"; };
+		C2589DCA1F83FA65007736C7 /* LQItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQItem.m; sourceTree = "<group>"; };
+		C2589DCB1F83FA65007736C7 /* LQItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQItemView.h; sourceTree = "<group>"; };
+		C2589DCC1F83FA65007736C7 /* LQItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQItemView.m; sourceTree = "<group>"; };
+		C2589DD91F83FA7B007736C7 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C2589DDA1F83FA7B007736C7 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C2CE1BF71E2E2347003AE6D3 /* LoveQi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoveQi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2CE1BFB1E2E2347003AE6D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C2CE1BFD1E2E2347003AE6D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		C2CE1BFE1E2E2347003AE6D3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C2CE1C061E2E2347003AE6D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2CE1C0B1E2E2347003AE6D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2CE1C101E2E2347003AE6D3 /* LoveQiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoveQiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,16 +120,6 @@
 		C2CE1C1B1E2E2347003AE6D3 /* LoveQiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoveQiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2CE1C1F1E2E2347003AE6D3 /* LoveQiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoveQiUITests.m; sourceTree = "<group>"; };
 		C2CE1C211E2E2347003AE6D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C2CE1C2D1E2E23B9003AE6D3 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		C2CE1C2E1E2E23B9003AE6D3 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		C2EE6B631E5EB91B003CD60E /* JumpDateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JumpDateView.h; sourceTree = "<group>"; };
-		C2EE6B641E5EB91B003CD60E /* JumpDateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JumpDateView.m; sourceTree = "<group>"; };
-		C2EE6B661E5EBCA1003CD60E /* BtnColumnView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BtnColumnView.h; sourceTree = "<group>"; };
-		C2EE6B671E5EBCA1003CD60E /* BtnColumnView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BtnColumnView.m; sourceTree = "<group>"; };
-		C2EE6B691E5EDFE9003CD60E /* SQLViewconTroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLViewconTroller.h; sourceTree = "<group>"; };
-		C2EE6B6A1E5EDFE9003CD60E /* SQLViewconTroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLViewconTroller.m; sourceTree = "<group>"; };
-		C2EE6B6C1E5EF8D7003CD60E /* DataBaseHander.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBaseHander.h; sourceTree = "<group>"; };
-		C2EE6B6D1E5EF8D7003CD60E /* DataBaseHander.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBaseHander.m; sourceTree = "<group>"; };
 		C41EE10A5322E24B0FEACDD6 /* Pods-LoveQi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoveQi.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoveQi/Pods-LoveQi.release.xcconfig"; sourceTree = "<group>"; };
 		FCEB03AB92596D867E27E643 /* libPods-LoveQiWidget.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LoveQiWidget.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -190,15 +190,66 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		C28487011EF79ECC00F0ED91 /* ItemBtns */ = {
+		C2589DB31F83FA65007736C7 /* Today */ = {
 			isa = PBXGroup;
 			children = (
-				C28487021EF79F0600F0ED91 /* LQItemView.h */,
-				C28487031EF79F0600F0ED91 /* LQItemView.m */,
-				C28487051EF7A45900F0ED91 /* LQItem.h */,
-				C28487061EF7A45900F0ED91 /* LQItem.m */,
+				C2589DB41F83FA65007736C7 /* Controller */,
+				C2589DBB1F83FA65007736C7 /* Model */,
+				C2589DC01F83FA65007736C7 /* View */,
 			);
-			name = ItemBtns;
+			path = Today;
+			sourceTree = "<group>";
+		};
+		C2589DB41F83FA65007736C7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C2589DB51F83FA65007736C7 /* AddEvevtVC.h */,
+				C2589DB61F83FA65007736C7 /* AddEvevtVC.m */,
+				C2589DB71F83FA65007736C7 /* RootViewController.h */,
+				C2589DB81F83FA65007736C7 /* RootViewController.m */,
+				C2589DB91F83FA65007736C7 /* SQLViewconTroller.h */,
+				C2589DBA1F83FA65007736C7 /* SQLViewconTroller.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C2589DBB1F83FA65007736C7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C2589DBC1F83FA65007736C7 /* DataBaseHander.h */,
+				C2589DBD1F83FA65007736C7 /* DataBaseHander.m */,
+				C2589DBE1F83FA65007736C7 /* DateModel.h */,
+				C2589DBF1F83FA65007736C7 /* DateModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C2589DC01F83FA65007736C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C2589DC11F83FA65007736C7 /* AddEventView.h */,
+				C2589DC21F83FA65007736C7 /* AddEventView.m */,
+				C2589DC31F83FA65007736C7 /* BtnColumnView.h */,
+				C2589DC41F83FA65007736C7 /* BtnColumnView.m */,
+				C2589DC51F83FA65007736C7 /* JumpDateView.h */,
+				C2589DC61F83FA65007736C7 /* JumpDateView.m */,
+				C2589DC71F83FA65007736C7 /* LaunchImageView.h */,
+				C2589DC81F83FA65007736C7 /* LaunchImageView.m */,
+				C2589DC91F83FA65007736C7 /* LQItem.h */,
+				C2589DCA1F83FA65007736C7 /* LQItem.m */,
+				C2589DCB1F83FA65007736C7 /* LQItemView.h */,
+				C2589DCC1F83FA65007736C7 /* LQItemView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C2589DD81F83FA7B007736C7 /* Appdelegate */ = {
+			isa = PBXGroup;
+			children = (
+				C2589DD91F83FA7B007736C7 /* AppDelegate.h */,
+				C2589DDA1F83FA7B007736C7 /* AppDelegate.m */,
+			);
+			path = Appdelegate;
 			sourceTree = "<group>";
 		};
 		C2CE1BEE1E2E2347003AE6D3 = {
@@ -228,32 +279,13 @@
 		C2CE1BF91E2E2347003AE6D3 /* LoveQi */ = {
 			isa = PBXGroup;
 			children = (
+				C2589DD81F83FA7B007736C7 /* Appdelegate */,
+				C2589DB31F83FA65007736C7 /* Today */,
 				0A7AFF591E41DB8C0071B29B /* ico */,
 				0ACF68A51E3F7E7000BEA229 /* biaoqing */,
 				0ACF68A01E3F252700BEA229 /* 001.JPG */,
-				C2CE1BFD1E2E2347003AE6D3 /* AppDelegate.h */,
-				C2CE1BFE1E2E2347003AE6D3 /* AppDelegate.m */,
-				C2CE1C2D1E2E23B9003AE6D3 /* RootViewController.h */,
-				C2CE1C2E1E2E23B9003AE6D3 /* RootViewController.m */,
-				C2EE6B631E5EB91B003CD60E /* JumpDateView.h */,
-				C2EE6B641E5EB91B003CD60E /* JumpDateView.m */,
-				C2EE6B661E5EBCA1003CD60E /* BtnColumnView.h */,
-				C2EE6B671E5EBCA1003CD60E /* BtnColumnView.m */,
-				0ACF68941E3DD70700BEA229 /* AddEventView.h */,
-				0ACF68951E3DD70700BEA229 /* AddEventView.m */,
-				0ACF68981E3DDDCB00BEA229 /* AddEvevtVC.h */,
-				0ACF68991E3DDDCB00BEA229 /* AddEvevtVC.m */,
 				0A87B9711E3CB11D00C3CD15 /* Header.h */,
-				0ACF689D1E3F166100BEA229 /* LaunchImageView.h */,
-				0ACF689E1E3F166100BEA229 /* LaunchImageView.m */,
-				0ACF68A71E40C76800BEA229 /* DateModel.h */,
-				0ACF68A81E40C76800BEA229 /* DateModel.m */,
-				C2EE6B691E5EDFE9003CD60E /* SQLViewconTroller.h */,
-				C2EE6B6A1E5EDFE9003CD60E /* SQLViewconTroller.m */,
-				C2EE6B6C1E5EF8D7003CD60E /* DataBaseHander.h */,
-				C2EE6B6D1E5EF8D7003CD60E /* DataBaseHander.m */,
 				0ACF68971E3DDAA800BEA229 /* PrefixHeader.pch */,
-				C28487011EF79ECC00F0ED91 /* ItemBtns */,
 				C2CE1C061E2E2347003AE6D3 /* Assets.xcassets */,
 				C2CE1C0B1E2E2347003AE6D3 /* Info.plist */,
 				C2CE1BFA1E2E2347003AE6D3 /* Supporting Files */,
@@ -513,19 +545,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0ACF689A1E3DDDCB00BEA229 /* AddEvevtVC.m in Sources */,
-				C2CE1BFF1E2E2347003AE6D3 /* AppDelegate.m in Sources */,
-				0ACF68A91E40C76800BEA229 /* DateModel.m in Sources */,
-				C2EE6B6E1E5EF8D7003CD60E /* DataBaseHander.m in Sources */,
+				C2589DD21F83FA65007736C7 /* AddEventView.m in Sources */,
 				C2CE1BFC1E2E2347003AE6D3 /* main.m in Sources */,
-				C2CE1C2F1E2E23B9003AE6D3 /* RootViewController.m in Sources */,
-				C28487071EF7A45900F0ED91 /* LQItem.m in Sources */,
-				C28487041EF79F0600F0ED91 /* LQItemView.m in Sources */,
-				0ACF68961E3DD70700BEA229 /* AddEventView.m in Sources */,
-				C2EE6B651E5EB91B003CD60E /* JumpDateView.m in Sources */,
-				C2EE6B6B1E5EDFE9003CD60E /* SQLViewconTroller.m in Sources */,
-				C2EE6B681E5EBCA1003CD60E /* BtnColumnView.m in Sources */,
-				0ACF689F1E3F166100BEA229 /* LaunchImageView.m in Sources */,
+				C2589DD41F83FA65007736C7 /* JumpDateView.m in Sources */,
+				C2589DCF1F83FA65007736C7 /* SQLViewconTroller.m in Sources */,
+				C2589DD61F83FA65007736C7 /* LQItem.m in Sources */,
+				C2589DD01F83FA65007736C7 /* DataBaseHander.m in Sources */,
+				C2589DD71F83FA65007736C7 /* LQItemView.m in Sources */,
+				C2589DDB1F83FA7B007736C7 /* AppDelegate.m in Sources */,
+				C2589DCD1F83FA65007736C7 /* AddEvevtVC.m in Sources */,
+				C2589DCE1F83FA65007736C7 /* RootViewController.m in Sources */,
+				C2589DD51F83FA65007736C7 /* LaunchImageView.m in Sources */,
+				C2589DD11F83FA65007736C7 /* DateModel.m in Sources */,
+				C2589DD31F83FA65007736C7 /* BtnColumnView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,7 +607,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = MRJ.LoveQi.LoveQiWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MRJ.LoveQi.LoveQiWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				VALID_ARCHS = "arm64 armv7 armv7s armv8";
@@ -591,7 +623,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = MRJ.LoveQi.LoveQiWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MRJ.LoveQi.LoveQiWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				VALID_ARCHS = "arm64 armv7 armv7s armv8";
@@ -694,6 +726,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3S42S92Y7;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = LoveQi/Info.plist;
@@ -702,8 +736,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = MRJ.LoveQi;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MRJ.LoveQi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -713,6 +748,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3S42S92Y7;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = LoveQi/Info.plist;
@@ -721,8 +758,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = MRJ.LoveQi;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MRJ.LoveQi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

@@ -20,7 +20,7 @@
     
     NSArray *result = [DataBaseHander selectSql:@"select * from lqTable where name = 'mick'"];
     
-    YHJLog(@"-=-=-=-=-=-=-==%@", result);
+    MRJLog(@"-=-=-=-=-=-=-==%@", result);
 //    NSString *path = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
 //    NSString *filePath = [path stringByAppendingString:@"LQ.db"];
 //    

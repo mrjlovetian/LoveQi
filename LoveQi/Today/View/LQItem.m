@@ -15,8 +15,7 @@
 
 @implementation LQItem
 
-- (id)initWithFrame:(CGRect)frame
-{
+- (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
         [self initUI];
@@ -26,8 +25,7 @@
 
 #pragma mark UI
 
-- (void)initUI
-{
+- (void)initUI {
     [self addSubview:self.itemImageView];
     [self addSubview:self.itemLab];
     [self addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithActionBlock:^(id  _Nonnull sender) {
@@ -37,34 +35,31 @@
     }]];
 }
 
-- (UIImageView *)itemImageView
-{
+- (UIImageView *)itemImageView {
     if (!_itemImageView) {
         _itemImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 10, self.width, self.height - 35)];
-        _itemImageView.backgroundColor = [UIColor orangeColor];
+        _itemImageView.contentMode = UIViewContentModeCenter;
     }
     return _itemImageView;
 }
 
-- (UILabel *)itemLab
-{
+- (UILabel *)itemLab {
     if (!_itemLab) {
         _itemLab = [[UILabel alloc] initWithFrame:CGRectMake(0, _itemImageView.bottom + 5, self.width, 15)];
         _itemLab.textAlignment = NSTextAlignmentCenter;
         _itemLab.font = [UIFont systemFontOfSize:15];
+        _itemLab.textColor = [UIColor whiteColor];
     }
     return _itemLab;
 }
 
 #pragma mark SET
-- (void)setItemIm:(UIImage *)itemIm
-{
+- (void)setItemIm:(UIImage *)itemIm {
     _itemIm = itemIm;
     _itemImageView.image = itemIm;
 }
 
-- (void)setItemStr:(NSString *)itemStr
-{
+- (void)setItemStr:(NSString *)itemStr {
     _itemStr = itemStr;
     _itemLab.text = itemStr;
 }

@@ -9,27 +9,22 @@
 #import "DateModel.h"
 
 @implementation DateModel
-+ (NSData *)getDataWithPathFile:(NSString *)dateName
-{
++ (NSData *)getDataWithPathFile:(NSString *)dateName {
     NSString *path = [(NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)) objectAtIndex:0];  //获得沙箱的 Document 的地址
     NSString *pathFile = [path stringByAppendingPathComponent:dateName];  //要保存的文件名
     NSData *data = [NSData dataWithContentsOfFile:pathFile];
     return data;
 }
 
-+ (BOOL)writeDtatWithPathFile:(NSString *)dateName data:(NSData *)data
-{
++ (BOOL)writeDtatWithPathFile:(NSString *)dateName data:(NSData *)data {
     NSString *path = [(NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)) objectAtIndex:0];  //获得沙箱的 Document 的地址
     NSString *pathFile = [path stringByAppendingPathComponent:dateName];  //要保存的文件名
-    
-    
     [data writeToFile:pathFile atomically:YES];  //写入文件
     return YES;
 }
 
 //字典转data
-+(NSData *)returnDataWithDictionary:(NSDictionary *)dict
-{
++(NSData *)returnDataWithDictionary:(NSDictionary *)dict {
     NSMutableData * data = [[NSMutableData alloc] init];
     NSKeyedArchiver * archiver = [[NSKeyedArchiver alloc] initForWritingWithMutableData:data];
     [archiver encodeObject:dict forKey:@"myMind"];
@@ -38,8 +33,7 @@
 }
 
 //路径文件转dictonary
-+(NSDictionary *)returnDictionaryWithData:(NSData *)data
-{
++(NSDictionary *)returnDictionaryWithData:(NSData *)data {
     NSKeyedUnarchiver * unarchiver = [[NSKeyedUnarchiver alloc] initForReadingWithData:data];
     NSDictionary * myDictionary = [unarchiver decodeObjectForKey:@"myMind"];
     [unarchiver finishDecoding];
@@ -47,45 +41,34 @@
     return myDictionary;
 }
 
-+ (NSData *)getDataFormImage:(NSString *)imageName
-{
++ (NSData *)getDataFormImage:(NSString *)imageName {
     UIImage *image = [UIImage imageNamed:imageName];
     NSData *data = UIImagePNGRepresentation(image);
     return data;
 }
 
 ///设置图片透明度
-+ (UIImage *)imageByApplyingAlpha:(CGFloat)alpha  image:(UIImage*)image
-{
++ (UIImage *)imageByApplyingAlpha:(CGFloat)alpha  image:(UIImage*)image {
     UIGraphicsBeginImageContextWithOptions(image.size, NO, 0.0f);
     CGContextRef ctx = UIGraphicsGetCurrentContext();
     CGRect area = CGRectMake(0, 0, image.size.width, image.size.height);
-    
     CGContextScaleCTM(ctx, 1, -1);
     CGContextTranslateCTM(ctx, 0, -area.size.height);
-    
     CGContextSetBlendMode(ctx, kCGBlendModeMultiply);
-    
     CGContextSetAlpha(ctx, alpha);
-    
     CGContextDrawImage(ctx, area, image.CGImage);
-    
     UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
-    
     UIGraphicsEndImageContext();
-    
     return newImage;
 }
 
-+ (UIImage *)image:(UIImage *)image rotation:(UIImageOrientation)orientation
-{
++ (UIImage *)image:(UIImage *)image rotation:(UIImageOrientation)orientation {
     long double rotate = 0.0;
     CGRect rect;
     float translateX = 0;
     float translateY = 0;
     float scaleX = 1.0;
     float scaleY = 1.0;
-    
     switch (orientation) {
         case UIImageOrientationLeft:
             rotate = M_PI_2;
@@ -129,9 +112,7 @@
     CGContextScaleCTM(context, scaleX, scaleY);
     //绘制图片
     CGContextDrawImage(context, CGRectMake(0, 0, rect.size.width, rect.size.height), image.CGImage);
-    
     UIImage *newPic = UIGraphicsGetImageFromCurrentImageContext();
-    
     return newPic;
 }
 

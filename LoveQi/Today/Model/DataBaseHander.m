@@ -16,9 +16,8 @@ static DataBaseHander *dataBaseHander = nil;
 @end
 
 @implementation DataBaseHander
-+ (instancetype)shareDataBase
-{
-    
+
++ (instancetype)shareDataBase {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         dataBaseHander = [[DataBaseHander alloc] init];
@@ -26,18 +25,15 @@ static DataBaseHander *dataBaseHander = nil;
     return dataBaseHander;
 }
 
-+ (BOOL)creatableSql:(NSString *)sql
-{
++ (BOOL)creatableSql:(NSString *)sql {
     return [[[self shareDataBase] dataBase] executeQuery:sql];
 }
 
-+ (BOOL)insertToSql:(NSString *)sql
-{
++ (BOOL)insertToSql:(NSString *)sql {
     return [[[self shareDataBase] dataBase] executeQuery:sql];
 }
 
-+ (NSArray *)selectSql:(NSString *)sql
-{
++ (NSArray *)selectSql:(NSString *)sql {
     NSMutableArray *arr = [NSMutableArray arrayWithCapacity:1];
     FMResultSet *result = [[[self shareDataBase] dataBase] executeQuery:sql];
     while (result.next) {
@@ -47,27 +43,23 @@ static DataBaseHander *dataBaseHander = nil;
     return arr;
 }
 
-+ (BOOL)deleteSql:(NSString *)sql
-{
++ (BOOL)deleteSql:(NSString *)sql {
     return [[[self shareDataBase] dataBase] executeQuery:sql];
 }
 
-+ (BOOL)dropSql:(NSString *)sql
-{
++ (BOOL)dropSql:(NSString *)sql {
     return [[[self shareDataBase] dataBase] executeQuery:sql];
 }
 
-- (FMDatabase *)dataBase
-{
+- (FMDatabase *)dataBase {
     if (!_dataBase) {
         NSString *path = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
         NSString *filePath = [path stringByAppendingString:@"LQ.db"];
         _dataBase = [[FMDatabase alloc] initWithPath:filePath];
         if (_dataBase.open) {
-            YHJLog(@"数据库打开成功");
-        }else
-        {
-            YHJLog(@"数据库打开失败");
+            MRJLog(@"数据库打开成功");
+        } else {
+            MRJLog(@"数据库打开失败");
         }
     }
     return _dataBase;

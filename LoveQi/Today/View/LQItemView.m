@@ -13,14 +13,7 @@ BOOL isNextPage;
 
 @implementation LQItemView
 
-- (id)init
-{
-//    static LQItemView *lqitemView;
-//    static dispatch_once_t onceToken;
-//    dispatch_once(&onceToken, ^{
-//        lqitemView = [[LQItemView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREENH_HEIGHT)];
-//    });
-    
+- (id)init {
     self = [super init];
     if (self) {
         self = [[LQItemView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREENH_HEIGHT)];
@@ -31,42 +24,36 @@ BOOL isNextPage;
         self.delegate = self;
         isNextPage = NO;
     }
-    
     return self;
 }
 
 #pragma mark UIScrollViewDelegate
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView
-{
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     if (scrollView.contentOffset.x >= SCREEN_WIDTH) {
         isNextPage = YES;
-    }else
-    {
+    } else {
         isNextPage = NO;
     }
 }
 
 #pragma mark Method
-- (void)showItem
-{
+
+- (void)showItem {
     self.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.7];
     [[UIApplication sharedApplication].keyWindow addSubview:self];
 }
 
-- (void)createItemsWithImageArray:(NSArray *)itemImageArray itemTitleArray:(NSArray *)itemTitleArray clcikBlock:(LQItemViewBlcok)lqitemBlock
-{
+- (void)createItemsWithImageArray:(NSArray *)itemImageArray itemTitleArray:(NSArray *)itemTitleArray clcikBlock:(LQItemViewBlcok)lqitemBlock {
     [self showItem];
-    
     CGFloat itemWidth = SCREEN_WIDTH/3.0, itemHeight = SCREEN_WIDTH/3.0;
     for (int i = 0; i < itemImageArray.count; i++) {
-        
         LQItem *item = [[LQItem alloc] initWithFrame:CGRectMake(SCREEN_WIDTH/2.0 - itemWidth/2.0 , SCREENH_HEIGHT, itemWidth, itemHeight)];
-        
-        item.itemIm = [UIImage imageNamed:itemImageArray[i]];
+//        item.itemIm = [UIImage imageNamed:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@/%@", @"biaoqing", itemImageArray[i]] ofType:@"png"]];
+        item.itemIm = [UIImage imageNamed:[NSString stringWithFormat:@"%@/%@", @"biaoqing", itemImageArray[i]]];
         item.itemStr = itemTitleArray[i];
-
         [self addSubview:item];
-        [UIView animateWithDuration:0.5 animations:^{
+        [UIView animateWithDuration:0.3 animations:^{
             item.frame = CGRectMake(0 + itemWidth*(i%3), SCREENH_HEIGHT/2.0 + Navight + itemHeight*(i/3), itemWidth, itemHeight);
             if (i >= 6) {
                 self.contentSize = CGSizeMake(SCREEN_WIDTH*2, SCREENH_HEIGHT);
@@ -74,7 +61,6 @@ BOOL isNextPage;
                 self.pagingEnabled = YES;
             }
         }];
-        
         item.lqitemBlock = ^(NSString *str) {
             lqitemBlock(str);
             [self hiddleItemView];
@@ -82,26 +68,20 @@ BOOL isNextPage;
     }
 }
 
-
-- (void)hiddleItemView
-{
+- (void)hiddleItemView {
         for (UIView *view in self.subviews) {
-            [UIView animateWithDuration:0.3 animations:^{
+            [UIView animateWithDuration:0.2 animations:^{
                 if (isNextPage) {
                     view.frame = CGRectMake(SCREEN_WIDTH + SCREEN_WIDTH/3.0, SCREENH_HEIGHT, 0, 0);
-                }else
-                {
+                } else {
                     view.frame = CGRectMake(SCREEN_WIDTH/3.0, SCREENH_HEIGHT, 0, 0);
                 }
-                
             } completion:^(BOOL finished) {
                 if (finished) {
                     [self removeFromSuperview];
                 }
             }];
         }
-    
-    
 }
 
 

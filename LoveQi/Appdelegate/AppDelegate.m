@@ -19,14 +19,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    
     RootViewController *RootVC = [[RootViewController alloc] init];
     UINavigationController *Nav = [[UINavigationController alloc] initWithRootViewController:RootVC];
     self.window.rootViewController = Nav;
     [self.window makeKeyAndVisible];
-    
     [LaunchImageView loadLaunchImage];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [LaunchImageView removeLaunch];

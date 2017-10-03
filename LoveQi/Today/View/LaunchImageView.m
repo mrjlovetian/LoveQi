@@ -15,15 +15,13 @@
 
 @implementation LaunchImageView
 
-+ (void)loadLaunchImage
-{
++ (void)loadLaunchImage {
     LaunchImageView *launchImage = [[LaunchImageView alloc] initWithFrame:[UIScreen mainScreen].bounds];
     launchImage.tag = 9527;
     [[[UIApplication sharedApplication].delegate window] addSubview:launchImage];
 }
 
-+ (void)removeLaunch
-{
++ (void)removeLaunch {
     LaunchImageView *launchImage = [[[UIApplication sharedApplication].delegate window] viewWithTag:9527];
     [launchImage removeFromSuperview];
     launchImage = nil;
@@ -39,14 +37,11 @@
     return self;
 }
 
-
-- (void)initUI
-{
+- (void)initUI {
     [self addSubview:self.imageView];
 }
 
-- (UIImageView *)imageView
-{
+- (UIImageView *)imageView {
     if (!_imageView) {
         _imageView = [[UIImageView alloc] initWithFrame:[UIScreen mainScreen].bounds];
         _imageView.image = [LaunchImage getImage];
@@ -67,24 +62,19 @@
 @end
 
 @implementation LaunchImage
-+ (UIImage *)getImage
-{
++ (UIImage *)getImage {
     __block NSData *data = [[NSUserDefaults standardUserDefaults] objectForKey:@"launchImage"];
     NSString *imageUrl = [NSString stringWithFormat:@"https://raw.githubusercontent.com/mrjlovetian/image/master/launchImage/00%d.JPG", (arc4random() % 4) + 1];
-    YHJLog(@"wode image is %@", imageUrl);
+    MRJLog(@"wode image is %@", imageUrl);
     UIImage *image = [UIImage imageNamed:@"001.JPG"];
     if (data) {
         image = [UIImage imageWithData:data];
     }
-    
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         data = [NSData dataWithContentsOfURL:[NSURL URLWithString:imageUrl]];
         
         [[NSUserDefaults standardUserDefaults] setObject:data forKey:@"launchImage"];
     });
-    
-    
-   
     return image;
 }
 
