@@ -27,6 +27,12 @@
 		C2589DD61F83FA65007736C7 /* LQItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C2589DCA1F83FA65007736C7 /* LQItem.m */; };
 		C2589DD71F83FA65007736C7 /* LQItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2589DCC1F83FA65007736C7 /* LQItemView.m */; };
 		C2589DDB1F83FA7B007736C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2589DDA1F83FA7B007736C7 /* AppDelegate.m */; };
+		C2589DDE1F849E3D007736C7 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2589DDD1F849E3D007736C7 /* PhotoViewController.m */; };
+		C2589DE11F851EF9007736C7 /* PhotoManger.m in Sources */ = {isa = PBXBuildFile; fileRef = C2589DE01F851EF9007736C7 /* PhotoManger.m */; };
+		C2589DE41F8521BE007736C7 /* AddImageBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2589DE31F8521BE007736C7 /* AddImageBottomView.m */; };
+		C2589DE71F853A4E007736C7 /* PhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2589DE61F853A4E007736C7 /* PhotoCell.m */; };
+		C2589DEA1F8626E8007736C7 /* IMManger.m in Sources */ = {isa = PBXBuildFile; fileRef = C2589DE91F8626E8007736C7 /* IMManger.m */; };
+		C25CB10E1F87B43C00B70558 /* LQChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C25CB10D1F87B43C00B70558 /* LQChatViewController.m */; };
 		C2CE1BFC1E2E2347003AE6D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2CE1BFB1E2E2347003AE6D3 /* main.m */; };
 		C2CE1C071E2E2347003AE6D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2CE1C061E2E2347003AE6D3 /* Assets.xcassets */; };
 		C2CE1C151E2E2347003AE6D3 /* LoveQiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2CE1C141E2E2347003AE6D3 /* LoveQiTests.m */; };
@@ -110,6 +116,18 @@
 		C2589DCC1F83FA65007736C7 /* LQItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQItemView.m; sourceTree = "<group>"; };
 		C2589DD91F83FA7B007736C7 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C2589DDA1F83FA7B007736C7 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C2589DDC1F849E3D007736C7 /* PhotoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
+		C2589DDD1F849E3D007736C7 /* PhotoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
+		C2589DDF1F851EF9007736C7 /* PhotoManger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoManger.h; sourceTree = "<group>"; };
+		C2589DE01F851EF9007736C7 /* PhotoManger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoManger.m; sourceTree = "<group>"; };
+		C2589DE21F8521BE007736C7 /* AddImageBottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddImageBottomView.h; sourceTree = "<group>"; };
+		C2589DE31F8521BE007736C7 /* AddImageBottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddImageBottomView.m; sourceTree = "<group>"; };
+		C2589DE51F853A4E007736C7 /* PhotoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoCell.h; sourceTree = "<group>"; };
+		C2589DE61F853A4E007736C7 /* PhotoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoCell.m; sourceTree = "<group>"; };
+		C2589DE81F8626E8007736C7 /* IMManger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMManger.h; sourceTree = "<group>"; };
+		C2589DE91F8626E8007736C7 /* IMManger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMManger.m; sourceTree = "<group>"; };
+		C25CB10C1F87B43C00B70558 /* LQChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQChatViewController.h; sourceTree = "<group>"; };
+		C25CB10D1F87B43C00B70558 /* LQChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQChatViewController.m; sourceTree = "<group>"; };
 		C2CE1BF71E2E2347003AE6D3 /* LoveQi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoveQi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2CE1BFB1E2E2347003AE6D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C2CE1C061E2E2347003AE6D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -209,6 +227,10 @@
 				C2589DB81F83FA65007736C7 /* RootViewController.m */,
 				C2589DB91F83FA65007736C7 /* SQLViewconTroller.h */,
 				C2589DBA1F83FA65007736C7 /* SQLViewconTroller.m */,
+				C2589DDC1F849E3D007736C7 /* PhotoViewController.h */,
+				C2589DDD1F849E3D007736C7 /* PhotoViewController.m */,
+				C25CB10C1F87B43C00B70558 /* LQChatViewController.h */,
+				C25CB10D1F87B43C00B70558 /* LQChatViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -220,6 +242,12 @@
 				C2589DBD1F83FA65007736C7 /* DataBaseHander.m */,
 				C2589DBE1F83FA65007736C7 /* DateModel.h */,
 				C2589DBF1F83FA65007736C7 /* DateModel.m */,
+				C2589DDF1F851EF9007736C7 /* PhotoManger.h */,
+				C2589DE01F851EF9007736C7 /* PhotoManger.m */,
+				C2589DE51F853A4E007736C7 /* PhotoCell.h */,
+				C2589DE61F853A4E007736C7 /* PhotoCell.m */,
+				C2589DE81F8626E8007736C7 /* IMManger.h */,
+				C2589DE91F8626E8007736C7 /* IMManger.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -239,6 +267,8 @@
 				C2589DCA1F83FA65007736C7 /* LQItem.m */,
 				C2589DCB1F83FA65007736C7 /* LQItemView.h */,
 				C2589DCC1F83FA65007736C7 /* LQItemView.m */,
+				C2589DE21F8521BE007736C7 /* AddImageBottomView.h */,
+				C2589DE31F8521BE007736C7 /* AddImageBottomView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -506,9 +536,25 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LoveQi/Pods-LoveQi-resources.sh",
+				$PODS_CONFIGURATION_BUILD_DIR/MWPhotoBrowser/MWPhotoBrowser.bundle,
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RongCloud.bundle",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/en.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/zh-Hans.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/Emoji.plist",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RCConfig.plist",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/JResource.bundle",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/en.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/zh-Hans.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/jrmf.cer",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/AlipaySDK/AlipaySDK.bundle",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/BQMM.bundle",
+				"${PODS_ROOT}/SKFCamera/SKFCamera/SKFCamera.bundle",
+				"${PODS_ROOT}/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -521,13 +567,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoveQi-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -546,18 +595,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2589DD21F83FA65007736C7 /* AddEventView.m in Sources */,
+				C2589DE11F851EF9007736C7 /* PhotoManger.m in Sources */,
 				C2CE1BFC1E2E2347003AE6D3 /* main.m in Sources */,
 				C2589DD41F83FA65007736C7 /* JumpDateView.m in Sources */,
+				C25CB10E1F87B43C00B70558 /* LQChatViewController.m in Sources */,
 				C2589DCF1F83FA65007736C7 /* SQLViewconTroller.m in Sources */,
 				C2589DD61F83FA65007736C7 /* LQItem.m in Sources */,
 				C2589DD01F83FA65007736C7 /* DataBaseHander.m in Sources */,
 				C2589DD71F83FA65007736C7 /* LQItemView.m in Sources */,
 				C2589DDB1F83FA7B007736C7 /* AppDelegate.m in Sources */,
+				C2589DE71F853A4E007736C7 /* PhotoCell.m in Sources */,
 				C2589DCD1F83FA65007736C7 /* AddEvevtVC.m in Sources */,
 				C2589DCE1F83FA65007736C7 /* RootViewController.m in Sources */,
+				C2589DE41F8521BE007736C7 /* AddImageBottomView.m in Sources */,
 				C2589DD51F83FA65007736C7 /* LaunchImageView.m in Sources */,
 				C2589DD11F83FA65007736C7 /* DateModel.m in Sources */,
 				C2589DD31F83FA65007736C7 /* BtnColumnView.m in Sources */,
+				C2589DDE1F849E3D007736C7 /* PhotoViewController.m in Sources */,
+				C2589DEA1F8626E8007736C7 /* IMManger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -729,6 +784,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3S42S92Y7;
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = LoveQi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -751,6 +807,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3S42S92Y7;
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = LoveQi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

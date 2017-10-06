@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void(^TapPhoto)(NSString *photoName);
 @interface AddEventView : UIView
+
 @property (nonatomic, strong)UIButton *addEventBtn;
+@property (nonatomic, copy)TapPhoto tapPhotoBlcok;
 @end

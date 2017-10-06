@@ -10,8 +10,13 @@
 #import "RootViewController.h"
 #import "LaunchImageView.h"
 #import "AddEvevtVC.h"
+//#import <NIMSDK/NIMSDK.h>
+#import <RongIMKit/RongIMKit.h>
+#import "IMManger.h"
 
-@interface AppDelegate ()
+#define RONGYUN_KEY @"lmxuhwagxsc9d"
+
+@interface AppDelegate ()<RCIMUserInfoDataSource, RCIMConnectionStatusDelegate, RCIMReceiveMessageDelegate>
 
 @end
 
@@ -29,7 +34,30 @@
         [LaunchImageView removeLaunch];
     });
     
+    /// 
+//    NIMSDKOption *option = [NIMSDKOption optionWithAppKey:IMSECRET];
+//    [[NIMSDK sharedSDK] registerWithOption:option];
+//
+//    [IMManger getIMaccid:@"yuhongjiang"];
     // Override point for customization after application launch.
+    
+//    yuhongjiang
+//    e44Ko1cpVJNYdknbCZot73QwxeF68ZWLZaUbo//LltLgMEzFz908u7K/LYULK/MG/JTcoXXkZg6tW0SvGFfFp0Q6e/XqNXUV
+    
+//    liqi
+//    KyWLOe69gcPHyZck51wkkQFkGZgRnLYtCesYOs6LJc6V8i7xt9Q7wdde1lJccv0py4wEtTpd73XfZ9IrGVy44Q==
+    [[RCIM sharedRCIM] initWithAppKey:RONGYUN_KEY];
+    [[RCIM sharedRCIM] setUserInfoDataSource:self];
+    [[RCIM sharedRCIM] setConnectionStatusDelegate:self];
+    [[RCIM sharedRCIM] setReceiveMessageDelegate:self];
+    [[RCIM sharedRCIM] connectWithToken:@"KyWLOe69gcPHyZck51wkkQFkGZgRnLYtCesYOs6LJc6V8i7xt9Q7wdde1lJccv0py4wEtTpd73XfZ9IrGVy44Q==" success:^(NSString *userId) {
+        MRJLog(@"登录成功%@", userId);
+    } error:^(RCConnectErrorCode status) {
+        MRJLog(@"登录失败%d", status);
+    } tokenIncorrect:^{
+        
+    }];
+    
     return YES;
 }
 
@@ -58,6 +86,52 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark RCIMConnectionStatusDelegate
+/**
+ *  网络状态变化。
+ *
+ *  @param status 网络状态。
+ */
+- (void)onRCIMConnectionStatusChanged:(RCConnectionStatus)status {
+    if (status == ConnectionStatus_KICKED_OFFLINE_BY_OTHER_CLIENT) {
+        UIAlertView *alert = [[UIAlertView alloc]
+                              initWithTitle:@"提示"
+                              message:@"您"
+                              @"的帐号在别的设备上登录，您被迫下线！"
+                              delegate:nil
+                              cancelButtonTitle:@"知道了"
+                              otherButtonTitles:nil, nil];
+        [alert show];
+    }
+}
+
+#pragma mark RCIMReceiveMessageDelegate
+
+- (void)onRCIMReceiveMessage:(RCMessage *)message
+                        left:(int)left {
+    MRJLog(@"-=-=-=-=-=-=%@", message);
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"receiveMessage" object:nil];
+}
+
+#pragma mark RCIMUserInfoDataSource
+
+- (void)getUserInfoWithUserId:(NSString *)userId
+                   completion:(void (^)(RCUserInfo *userInfo))completion {
+    if ([userId isEqualToString:@"liqi"]) {
+        RCUserInfo *user = [[RCUserInfo alloc]init];
+        user.userId = @"liqi";
+        user.name = @"李琦";
+        user.portraitUri = @"https://ss0.baidu.com/73t1bjeh1BF3odCf/it/u=1756054607,4047938258&fm=96&s=94D712D20AA1875519EB37BE0300C008";
+        return completion(user);
+    } else {
+        RCUserInfo *user = [[RCUserInfo alloc]init];
+        user.userId = @"yuhongjiang";
+        user.name = @"余洪江";
+        return completion(user);
+    }
+    
 }
 
 #pragma mark 3d touch

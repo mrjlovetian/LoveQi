@@ -1,1 +1,0 @@
-../../../YHJQRCode/YHJQRCode/Classes/YHJQRCodeScanningView.h

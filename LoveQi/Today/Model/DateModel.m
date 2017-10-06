@@ -19,8 +19,7 @@
 + (BOOL)writeDtatWithPathFile:(NSString *)dateName data:(NSData *)data {
     NSString *path = [(NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)) objectAtIndex:0];  //获得沙箱的 Document 的地址
     NSString *pathFile = [path stringByAppendingPathComponent:dateName];  //要保存的文件名
-    [data writeToFile:pathFile atomically:YES];  //写入文件
-    return YES;
+    return [data writeToFile:pathFile atomically:YES];  //写入文件
 }
 
 //字典转data

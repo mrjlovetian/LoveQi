@@ -14,39 +14,27 @@
 #import "AddEventView.h"
 #import <UIImageView+YYWebImage.h>
 #import <YYAnimatedImageView.h>
-#import <BHBPopView.h>
 #import "DateModel.h"
 #import "JumpDateView.h"
 #import "SQLViewconTroller.h"
 #import "LQItemView.h"
-#import <AFNetworking.h>
+#import "PhotoViewController.h"
+#import "LQChatViewController.h"
 
 @interface RootViewController ()<FSCalendarDataSource, FSCalendarDelegate, FSCalendarDelegateAppearance, JumpDateViewDelegate>
 
 @property (nonatomic, strong)YYAnimatedImageView *backImageView;
-
 @property (nonatomic, strong)FSCalendar *fscalendar;
-
 @property (nonatomic, strong)NSDateFormatter *dateFormatter;
-
 @property (nonatomic, strong)NSDate *minimumDate;
-
 @property (nonatomic, strong)NSDate *maximumDate;
-
 @property (nonatomic, strong)NSCalendar *lunarCalendar;
-
 @property (strong, nonatomic)NSArray<NSString *> *lunarChars;
-
 @property (strong, nonatomic)NSArray<EKEvent *> *events;
-
 @property (strong, nonatomic)NSCache *cache;
-
 @property (nonatomic, strong)AddEventView *bottomView;
-
 @property (nonatomic, strong)JumpDateView *jumpDateView;
-
 @property (nonatomic, copy)NSString *selectDate;
-
 @property (nonatomic, strong)NSMutableDictionary *mindDictionary;
 
 @end
@@ -58,6 +46,13 @@
     
     [self initViews];
     [self getStartDateAndEndDate];
+    
+    __weak typeof(self) weakSelf = self;
+    self.bottomView.tapPhotoBlcok = ^(NSString *photoName) {
+        PhotoViewController *vc = [[PhotoViewController alloc] init];
+        vc.photoName = photoName;
+        [weakSelf.navigationController pushViewController:vc animated:YES];
+    };
 }
 
 #pragma mark - Private methods
@@ -81,10 +76,14 @@
 - (void)getStartDateAndEndDate {
     self.dateFormatter = [[NSDateFormatter alloc] init];
     self.dateFormatter.dateFormat = @"yyyy-MM-dd";
-    self.selectDate = [self.dateFormatter stringFromDate:[NSDate date]];
+    [self getToday];
     self.minimumDate = [self.dateFormatter dateFromString:@"1994-10-03"];
     self.maximumDate = [self.dateFormatter dateFromString:@"2093-10-03"];
     self.lunarChars = @[@"初一",@"初二",@"初三",@"初四",@"初五",@"初六",@"初七",@"初八",@"初九",@"初十",@"十一",@"十二",@"十三",@"十四",@"十五",@"十六",@"十七",@"十八",@"十九",@"二十",@"二一",@"二二",@"二三",@"二四",@"二五",@"二六",@"二七",@"二八",@"二九",@"三十"];
+}
+
+- (void)getToday {
+    self.selectDate = [self.dateFormatter stringFromDate:[NSDate date]];
 }
 
 - (void)loadCalendarEvents {
@@ -135,8 +134,12 @@
 }
 
 - (void)today {
-   SQLViewconTroller *vc = [[SQLViewconTroller alloc] init];
+    //liqi
+    LQChatViewController *vc = [[LQChatViewController alloc] initWithConversationType:ConversationType_PRIVATE targetId:@"yuhongjiang"];
+    
     [self.navigationController pushViewController:vc animated:YES];
+//    [self.fscalendar selectDate:[NSDate date] scrollToDate:YES];
+//    [self getToday];;
 }
 
 - (void)selectDateFromWheel {
@@ -170,6 +173,7 @@
 
 - (void)JumpDateViewSelectDate:(NSDate *)date {
     [self.fscalendar selectDate:date scrollToDate:YES];
+    self.selectDate = [self.dateFormatter stringFromDate:date];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -1,1 +1,0 @@
-../../../BHBPopView/BHBPopViewDemo/BHBPopViewDemo/BHBPopView/UIImage+BHBEffects.h

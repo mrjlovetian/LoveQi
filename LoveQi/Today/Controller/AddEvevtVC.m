@@ -16,6 +16,7 @@
 @property (nonatomic, strong)YYAnimatedImageView *backImageView;
 @property (nonatomic, strong)UIScrollView *scrollView;
 @property (nonatomic, strong)YYTextView *textView;
+@property (nonatomic, strong)UIToolbar *mrjToolBar;
 @end
 
 @implementation AddEvevtVC
@@ -48,6 +49,7 @@
             CGRect textFrame = self.view.bounds;
             textFrame.size.height -= rect.size.height;
             _textView.frame = textFrame;
+            _textView.inputAccessoryView = self.mrjToolBar;
             clipped = YES;
         }
     }
@@ -78,6 +80,7 @@
     if (!_textView) {
         _textView = [[YYTextView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREENH_HEIGHT-Navight)];
         _textView.font = [UIFont systemFontOfSize:16];
+        _textView.inputAccessoryView = self.mrjToolBar;
     }
     return _textView;
 }
@@ -87,7 +90,24 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (UIToolbar *)mrjToolBar {
+    if (_mrjToolBar == nil) {
+        _mrjToolBar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 40)];
+        _mrjToolBar.tintColor = [UIColor blueColor];
+        _mrjToolBar.backgroundColor = [UIColor whiteColor];
+        UIBarButtonItem *barBut = [[UIBarButtonItem alloc] initWithTitle:@"完成" style:UIBarButtonItemStylePlain target:self action:@selector(hideKeyBoard)];
+        barBut.tintColor = [UIColor grayColor];
+        UIBarButtonItem * spaceItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil];
+        _mrjToolBar.items = @[spaceItem,barBut];
+    }
+    return _mrjToolBar;
+}
+
 #pragma mark 私有方法
+
+- (void)hideKeyBoard {
+    [self.view endEditing:YES];
+}
 
 - (void)wirteDta {
     NSMutableAttributedString *content = [[NSMutableAttributedString alloc] initWithString:self.textView.text];

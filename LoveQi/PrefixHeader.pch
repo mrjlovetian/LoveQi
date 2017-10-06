@@ -11,6 +11,8 @@
 
 #import "Header.h"
 
+#define IMSECRET  @"92290c9d8affec63cb2d02971cc6c5b4"
+
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
