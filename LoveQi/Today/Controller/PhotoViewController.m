@@ -136,7 +136,7 @@
 - (UICollectionView *)collectionView {
     if (_collectionView == nil) {
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREENH_HEIGHT - 49) collectionViewLayout:layout];
+        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT - 49) collectionViewLayout:layout];
         _collectionView.delegate = self;
         _collectionView.dataSource = self;
         _collectionView.emptyDataSetSource = self;
@@ -151,7 +151,7 @@
 
 - (AddImageBottomView *)bottomView {
     if (!_bottomView) {
-        _bottomView = [[AddImageBottomView alloc] initWithFrame:CGRectMake(0, SCREENH_HEIGHT - 49, SCREEN_WIDTH, 40)];
+        _bottomView = [[AddImageBottomView alloc] initWithFrame:CGRectMake(0, SCREEN_HEIGHT - 49, SCREEN_WIDTH, 40)];
     }
     return _bottomView;
 }

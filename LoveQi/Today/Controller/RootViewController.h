@@ -6,8 +6,8 @@
 //  Copyright © 2017年 李琦. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "MRJViewController.h"
 
-@interface RootViewController : UIViewController
+@interface RootViewController : MRJViewController
 
 @end

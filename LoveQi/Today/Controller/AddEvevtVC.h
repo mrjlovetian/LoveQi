@@ -6,8 +6,20 @@
 //  Copyright © 2017年 李琦. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "MRJViewController.h"
 
-@interface AddEvevtVC : UIViewController
+@interface AddEvevtVC : MRJViewController
 @property (nonatomic, copy)NSString *date;
+@end
+
+@interface AddEvevtVC (other)
+@end
+
+@interface AddEvevtVC (other1)
+@end
+
+@interface AddEvevtVC (other2)
+@end
+
+@interface AddEvevtVC (other3)
 @end

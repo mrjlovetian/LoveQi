@@ -13,6 +13,7 @@
 //#import <NIMSDK/NIMSDK.h>
 #import <RongIMKit/RongIMKit.h>
 #import "IMManger.h"
+#import <vfrReader/ReaderViewController.h>
 
 #define RONGYUN_KEY @"lmxuhwagxsc9d"
 
@@ -87,6 +88,33 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+#if __IPHONE_OS_VERSION_MAX_ALLOWED < __IPHONE_9_0
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(nullable NSString *)sourceApplication annotation:(id)annotation {
+    UINavigationController *navigation = (UINavigationController *)application.keyWindow.rootViewController;
+    ViewController *displayController = (ViewController *)navigation.topViewController;
+    
+    [displayController.imageView setImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:url]]];
+    [displayController.label setText:sourceApplication];
+    
+    return YES;
+}
+
+#else
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url options:(nonnull NSDictionary<NSString *,id> *)options
+{
+    UINavigationController *navigation = (UINavigationController *)application.keyWindow.rootViewController;
+    ReaderViewController *displayController = (ReaderViewController *)navigation.topViewController;
+    // 1. 实例化控制器
+    NSString *path = [[NSBundle mainBundle] pathForResource:url ofType:@"PDF"];
+    ReaderDocument *doc = [[ReaderDocument alloc] initWithFilePath:path password:nil];
+    
+    ReaderDocument *pdf = [[ReaderDocument alloc] initWithFilePath:path password:nil];
+    ReaderViewController *vc = [[ReaderViewController alloc] initWithReaderDocument:pdf];
+    [navigation pushViewController:vc animated:YES];
+    return YES;
+}
+#endif
 
 #pragma mark RCIMConnectionStatusDelegate
 /**

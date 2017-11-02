@@ -54,7 +54,7 @@
         }
     }
     if (!clipped) {
-        _textView.height = SCREENH_HEIGHT - Navight;
+        _textView.height = SCREEN_HEIGHT - Navight;
     }
 }
 
@@ -62,7 +62,7 @@
 
 - (YYAnimatedImageView *)backImageView {
     if (!_backImageView) {
-        _backImageView = [[YYAnimatedImageView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREENH_HEIGHT)];
+        _backImageView = [[YYAnimatedImageView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
         [_backImageView setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://raw.githubusercontent.com/mrjlovetian/image/master/eventBackGround/background00%d.jpg", arc4random()%10]] options:YYWebImageOptionShowNetworkActivity];
     }
     return _backImageView;
@@ -70,7 +70,7 @@
 
 - (UIScrollView *)scrollView {
     if (!_scrollView) {
-        _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, Navight, SCREEN_WIDTH, SCREENH_HEIGHT - Navight)];
+        _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, Navight, SCREEN_WIDTH, SCREEN_HEIGHT - Navight)];
         _scrollView.backgroundColor = [UIColor clearColor];
     }
     return _scrollView;
@@ -78,7 +78,7 @@
 
 - (YYTextView *)textView {
     if (!_textView) {
-        _textView = [[YYTextView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREENH_HEIGHT-Navight)];
+        _textView = [[YYTextView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-Navight)];
         _textView.font = [UIFont systemFontOfSize:16];
         _textView.inputAccessoryView = self.mrjToolBar;
     }

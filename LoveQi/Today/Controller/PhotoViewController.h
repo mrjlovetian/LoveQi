@@ -6,8 +6,10 @@
 //  Copyright © 2017年 李琦. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "MRJViewController.h"
 
-@interface PhotoViewController : UIViewController
+@interface PhotoViewController : MRJViewController
+
 @property (nonatomic, copy)NSString *photoName;
+
 @end

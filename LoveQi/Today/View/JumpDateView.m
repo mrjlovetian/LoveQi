@@ -82,7 +82,7 @@
 - (UIButton *)hiddenBtn {
     if (!_hiddenBtn) {
         _hiddenBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        _hiddenBtn.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREENH_HEIGHT-PICK_HEIGHT-45);
+        _hiddenBtn.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT - PICK_HEIGHT - 45);
         [_hiddenBtn addTarget:self action:@selector(cancelClick) forControlEvents:UIControlEventTouchUpInside];
     }
     return _hiddenBtn;

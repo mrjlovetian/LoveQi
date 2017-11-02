@@ -20,6 +20,8 @@
 #import "LQItemView.h"
 #import "PhotoViewController.h"
 #import "LQChatViewController.h"
+#import <MRJ_QRCode/QRCodeScanningVC.h>
+#import "QRCResultViewController.h"
 
 @interface RootViewController ()<FSCalendarDataSource, FSCalendarDelegate, FSCalendarDelegateAppearance, JumpDateViewDelegate>
 
@@ -36,6 +38,9 @@
 @property (nonatomic, strong)JumpDateView *jumpDateView;
 @property (nonatomic, copy)NSString *selectDate;
 @property (nonatomic, strong)NSMutableDictionary *mindDictionary;
+
+@property (nonatomic, strong)UIButton *selectDayBtn;
+@property (nonatomic, strong)UIButton *todayBtn;
 
 @end
 
@@ -58,12 +63,13 @@
 #pragma mark - Private methods
 
 - (void)initViews {
-    self.title = @"小⑦";
+    self.titleStr = @"小⑦";
     self.mindDictionary = [NSMutableDictionary dictionaryWithCapacity:1];
-    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithTitle:@"今天" style:UIBarButtonItemStylePlain target:self action:@selector(today)];
-    self.navigationItem.rightBarButtonItem = rightItem;
-    UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithTitle:@"选择" style:UIBarButtonItemStylePlain target:self action:@selector(selectDateFromWheel)];
-    self.navigationItem.leftBarButtonItem = leftItem;
+    [self setHideBackView:YES];
+    
+    [self.headView addSubview:self.selectDayBtn];
+    [self.headView addSubview:self.todayBtn];
+
     self.view.backgroundColor = [UIColor whiteColor];
     
     [self.view addSubview:self.backImageView];
@@ -71,6 +77,12 @@
     [self.view addSubview:self.bottomView];
     [self loadCalendarEvents];
     [self getMyMind];
+    
+    UIView *longPressView = [[UIView alloc] initWithFrame:CGRectMake(SCREEN_WIDTH - 104, 20, 44, 44)];
+    longPressView.userInteractionEnabled = true;
+    [self.headView addSubview:longPressView];
+    UILongPressGestureRecognizer *longPressRecognizer = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longpressAction:)];
+    [longPressView addGestureRecognizer:longPressRecognizer];
 }
 
 - (void)getStartDateAndEndDate {
@@ -80,6 +92,28 @@
     self.minimumDate = [self.dateFormatter dateFromString:@"1994-10-03"];
     self.maximumDate = [self.dateFormatter dateFromString:@"2093-10-03"];
     self.lunarChars = @[@"初一",@"初二",@"初三",@"初四",@"初五",@"初六",@"初七",@"初八",@"初九",@"初十",@"十一",@"十二",@"十三",@"十四",@"十五",@"十六",@"十七",@"十八",@"十九",@"二十",@"二一",@"二二",@"二三",@"二四",@"二五",@"二六",@"二七",@"二八",@"二九",@"三十"];
+}
+
+- (void)longpressAction:(UILongPressGestureRecognizer *)longPressRecognizer {
+    
+    if (longPressRecognizer.state == UIGestureRecognizerStateBegan) {
+        MRJLog(@"长按手势");
+        QRCodeScanningVC *vc = [[QRCodeScanningVC alloc] initRuleDecodeType:EncryptTypeNone State:^(AuthorizationState state) {
+            
+        }];
+        vc.resultBlcok = ^(id result, NSError *err, UIViewController *vc) {
+            MRJLog(@"-=-=-=-==-error=%@****************result=%@", err.localizedDescription, result);
+            [vc.navigationController popViewControllerAnimated:YES];
+            if ([result hasPrefix:@"http"]) {
+                
+                QRCResultViewController *qrcVc = [[QRCResultViewController alloc] init];
+                qrcVc.qrcResult = result;
+                [vc.navigationController pushViewController:qrcVc animated:YES];
+            }
+        };
+        [self.navigationController pushViewController:vc animated:YES];
+        [self.navigationController setNavigationBarHidden:NO];
+    }
 }
 
 - (void)getToday {
@@ -138,6 +172,7 @@
     LQChatViewController *vc = [[LQChatViewController alloc] initWithConversationType:ConversationType_PRIVATE targetId:@"yuhongjiang"];
     
     [self.navigationController pushViewController:vc animated:YES];
+    [self.navigationController setNavigationBarHidden:NO];
 //    [self.fscalendar selectDate:[NSDate date] scrollToDate:YES];
 //    [self getToday];;
 }
@@ -247,7 +282,7 @@
 
 - (FSCalendar *)fscalendar {
     if (!_fscalendar) {
-        _fscalendar = [[FSCalendar alloc] initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREENH_HEIGHT - 64 - 44)];
+        _fscalendar = [[FSCalendar alloc] initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT - 64 - 44)];
         _fscalendar.dataSource = self;
         _fscalendar.delegate = self;
         _fscalendar.pagingEnabled = NO; // important
@@ -268,7 +303,7 @@
 
 - (AddEventView *)bottomView {
     if (!_bottomView) {
-        _bottomView = [[AddEventView alloc] initWithFrame:CGRectMake(0, SCREENH_HEIGHT - 44, SCREEN_WIDTH, 44)];
+        _bottomView = [[AddEventView alloc] initWithFrame:CGRectMake(0, SCREEN_HEIGHT - 44, SCREEN_WIDTH, 44)];
         [_bottomView.addEventBtn addTarget:self action:@selector(addEvent) forControlEvents:UIControlEventTouchUpInside];
     }
     return _bottomView;
@@ -276,10 +311,32 @@
 
 - (YYAnimatedImageView *)backImageView {
     if (!_backImageView) {
-        _backImageView = [[YYAnimatedImageView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREENH_HEIGHT)];
+        _backImageView = [[YYAnimatedImageView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
         [_backImageView setImageWithURL:[NSURL URLWithString:@"https://raw.githubusercontent.com/mrjlovetian/image/master/002.JPG"] options:YYWebImageOptionShowNetworkActivity];
     }
     return _backImageView;
+}
+
+- (UIButton *)selectDayBtn {
+    if (!_selectDayBtn) {
+        _selectDayBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        _selectDayBtn.frame = CGRectMake(15, 20, 50, 44);
+        [_selectDayBtn setTitle:@"选择" forState:UIControlStateNormal];
+        [_selectDayBtn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+        [_selectDayBtn addTarget:self action:@selector(selectDateFromWheel) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _selectDayBtn;
+}
+
+- (UIButton *)todayBtn {
+    if (!_todayBtn) {
+        _todayBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        _todayBtn.frame = CGRectMake(SCREEN_WIDTH - 65, 20, 50, 44);
+        [_todayBtn setTitle:@"今天" forState:UIControlStateNormal];
+        [_todayBtn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+        [_todayBtn addTarget:self action:@selector(today) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _todayBtn;
 }
 
 @end

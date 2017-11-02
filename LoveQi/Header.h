@@ -14,7 +14,7 @@
 
 
 #define SCREEN_WIDTH   [UIScreen mainScreen].bounds.size.width
-#define SCREENH_HEIGHT [UIScreen mainScreen].bounds.size.height
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 #define Navight 64
 
 #define LRRandomColor [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0]
