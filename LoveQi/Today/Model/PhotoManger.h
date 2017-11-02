@@ -27,4 +27,5 @@
 
 /// 保存图片
 + (BOOL)writeImageFoeKey:(NSString *)key imageData:(NSArray *)imageArray;
+
 @end

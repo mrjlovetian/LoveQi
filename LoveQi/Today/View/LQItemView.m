@@ -49,39 +49,55 @@ BOOL isNextPage;
     CGFloat itemWidth = SCREEN_WIDTH/3.0, itemHeight = SCREEN_WIDTH/3.0;
     for (int i = 0; i < itemImageArray.count; i++) {
         LQItem *item = [[LQItem alloc] initWithFrame:CGRectMake(SCREEN_WIDTH/2.0 - itemWidth/2.0 , SCREEN_HEIGHT, itemWidth, itemHeight)];
-//        item.itemIm = [UIImage imageNamed:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@/%@", @"biaoqing", itemImageArray[i]] ofType:@"png"]];
         item.itemIm = [UIImage imageNamed:[NSString stringWithFormat:@"%@/%@", @"biaoqing", itemImageArray[i]]];
         item.itemStr = itemTitleArray[i];
         [self addSubview:item];
-        [UIView animateWithDuration:0.3 animations:^{
-            item.frame = CGRectMake(0 + itemWidth*(i%3), SCREEN_HEIGHT/2.0 + Navight + itemHeight*(i/3), itemWidth, itemHeight);
-            if (i >= 6) {
-                self.contentSize = CGSizeMake(SCREEN_WIDTH*2, SCREEN_HEIGHT);
-                item.frame = CGRectMake(SCREEN_WIDTH + itemWidth*(i%3), SCREEN_HEIGHT/2.0 + Navight + itemHeight*((i-6)/3), itemWidth, itemHeight);
-                self.pagingEnabled = YES;
-            }
-        }];
+        
+        item.frame = CGRectMake(0 + itemWidth*(i%3), SCREEN_HEIGHT/2.0 + Navight + itemHeight*(i/3), itemWidth, itemHeight);
+        if (i >= 6) {
+            self.contentSize = CGSizeMake(SCREEN_WIDTH*2, SCREEN_HEIGHT);
+            item.frame = CGRectMake(SCREEN_WIDTH + itemWidth*(i%3), SCREEN_HEIGHT/2.0 + Navight + itemHeight*((i-6)/3), itemWidth, itemHeight);
+            self.pagingEnabled = YES;
+        }
+        
+//        [UIView animateWithDuration:0.3 animations:^{
+//            item.frame = CGRectMake(0 + itemWidth*(i%3), SCREEN_HEIGHT/2.0 + Navight + itemHeight*(i/3), itemWidth, itemHeight);
+//            if (i >= 6) {
+//                self.contentSize = CGSizeMake(SCREEN_WIDTH*2, SCREEN_HEIGHT);
+//                item.frame = CGRectMake(SCREEN_WIDTH + itemWidth*(i%3), SCREEN_HEIGHT/2.0 + Navight + itemHeight*((i-6)/3), itemWidth, itemHeight);
+//                self.pagingEnabled = YES;
+//            }
+//        }];
         item.lqitemBlock = ^(NSString *str) {
-            lqitemBlock(str);
+            lqitemBlock(str, i);
             [self hiddleItemView];
         };
     }
 }
 
 - (void)hiddleItemView {
-        for (UIView *view in self.subviews) {
-            [UIView animateWithDuration:0.2 animations:^{
-                if (isNextPage) {
-                    view.frame = CGRectMake(SCREEN_WIDTH + SCREEN_WIDTH/3.0, SCREEN_HEIGHT, 0, 0);
-                } else {
-                    view.frame = CGRectMake(SCREEN_WIDTH/3.0, SCREEN_HEIGHT, 0, 0);
-                }
-            } completion:^(BOOL finished) {
-                if (finished) {
-                    [self removeFromSuperview];
-                }
-            }];
-        }
+
+    for (UIView *view in self.subviews) {
+            if (isNextPage) {
+                view.frame = CGRectMake(SCREEN_WIDTH + SCREEN_WIDTH/3.0, SCREEN_HEIGHT, 0, 0);
+            } else {
+                view.frame = CGRectMake(SCREEN_WIDTH/3.0, SCREEN_HEIGHT, 0, 0);
+            }
+    }
+    [self removeFromSuperview];
+//        for (UIView *view in self.subviews) {
+//            [UIView animateWithDuration:0.2 animations:^{
+//                if (isNextPage) {
+//                    view.frame = CGRectMake(SCREEN_WIDTH + SCREEN_WIDTH/3.0, SCREEN_HEIGHT, 0, 0);
+//                } else {
+//                    view.frame = CGRectMake(SCREEN_WIDTH/3.0, SCREEN_HEIGHT, 0, 0);
+//                }
+//            } completion:^(BOOL finished) {
+//                if (finished) {
+//                    [self removeFromSuperview];
+//                }
+//            }];
+//        }
 }
 
 

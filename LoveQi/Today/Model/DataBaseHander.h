@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface DataBaseHander : NSObject
+
 + (instancetype)shareDataBase;
 
 + (BOOL)creatableSql:(NSString *)sql;
@@ -20,4 +21,5 @@
 + (BOOL)deleteSql:(NSString *)sql;
 
 + (BOOL)dropSql:(NSString *)sql;
+
 @end

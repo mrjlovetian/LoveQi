@@ -20,6 +20,7 @@
     
     [self.view addSubview:self.headView];
     
+    self.view.backgroundColor = [UIColor whiteColor];
     
     __weak typeof(self) weakSelf = self;
     self.headView.handleBlock = ^{

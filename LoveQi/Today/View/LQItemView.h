@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void(^LQItemViewBlcok)(NSString *str);
+typedef void(^LQItemViewBlcok)(NSString *str, NSInteger index);
 
 @interface LQItemView : UIScrollView<UIScrollViewDelegate>
 

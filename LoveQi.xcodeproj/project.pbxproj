@@ -33,6 +33,8 @@
 		C2589DE71F853A4E007736C7 /* PhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2589DE61F853A4E007736C7 /* PhotoCell.m */; };
 		C2589DEA1F8626E8007736C7 /* IMManger.m in Sources */ = {isa = PBXBuildFile; fileRef = C2589DE91F8626E8007736C7 /* IMManger.m */; };
 		C25CB10E1F87B43C00B70558 /* LQChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C25CB10D1F87B43C00B70558 /* LQChatViewController.m */; };
+		C297182D1FAAB28700D2D599 /* JumpVCHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C297182C1FAAB28700D2D599 /* JumpVCHandler.m */; };
+		C29718301FAAB47F00D2D599 /* PDFListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C297182F1FAAB47F00D2D599 /* PDFListViewController.m */; };
 		C2A9BC1A1F8B685900571564 /* MRJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A9BC191F8B685900571564 /* MRJViewController.m */; };
 		C2A9BC1D1F8B692600571564 /* HeardView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A9BC1C1F8B692600571564 /* HeardView.m */; };
 		C2BCFC121F8C7664005180AA /* QRCResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BCFC111F8C7664005180AA /* QRCResultViewController.m */; };
@@ -131,6 +133,10 @@
 		C2589DE91F8626E8007736C7 /* IMManger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMManger.m; sourceTree = "<group>"; };
 		C25CB10C1F87B43C00B70558 /* LQChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQChatViewController.h; sourceTree = "<group>"; };
 		C25CB10D1F87B43C00B70558 /* LQChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQChatViewController.m; sourceTree = "<group>"; };
+		C297182B1FAAB28700D2D599 /* JumpVCHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JumpVCHandler.h; sourceTree = "<group>"; };
+		C297182C1FAAB28700D2D599 /* JumpVCHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JumpVCHandler.m; sourceTree = "<group>"; };
+		C297182E1FAAB47F00D2D599 /* PDFListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDFListViewController.h; sourceTree = "<group>"; };
+		C297182F1FAAB47F00D2D599 /* PDFListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDFListViewController.m; sourceTree = "<group>"; };
 		C2A9BC181F8B685900571564 /* MRJViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRJViewController.h; sourceTree = "<group>"; };
 		C2A9BC191F8B685900571564 /* MRJViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRJViewController.m; sourceTree = "<group>"; };
 		C2A9BC1B1F8B692600571564 /* HeardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeardView.h; sourceTree = "<group>"; };
@@ -244,6 +250,8 @@
 				C2A9BC191F8B685900571564 /* MRJViewController.m */,
 				C2BCFC101F8C7664005180AA /* QRCResultViewController.h */,
 				C2BCFC111F8C7664005180AA /* QRCResultViewController.m */,
+				C297182E1FAAB47F00D2D599 /* PDFListViewController.h */,
+				C297182F1FAAB47F00D2D599 /* PDFListViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -261,6 +269,8 @@
 				C2589DE61F853A4E007736C7 /* PhotoCell.m */,
 				C2589DE81F8626E8007736C7 /* IMManger.h */,
 				C2589DE91F8626E8007736C7 /* IMManger.m */,
+				C297182B1FAAB28700D2D599 /* JumpVCHandler.h */,
+				C297182C1FAAB28700D2D599 /* JumpVCHandler.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -637,9 +647,11 @@
 				C2589DD01F83FA65007736C7 /* DataBaseHander.m in Sources */,
 				C2589DD71F83FA65007736C7 /* LQItemView.m in Sources */,
 				C2589DDB1F83FA7B007736C7 /* AppDelegate.m in Sources */,
+				C297182D1FAAB28700D2D599 /* JumpVCHandler.m in Sources */,
 				C2589DE71F853A4E007736C7 /* PhotoCell.m in Sources */,
 				C2589DCD1F83FA65007736C7 /* AddEvevtVC.m in Sources */,
 				C2589DCE1F83FA65007736C7 /* RootViewController.m in Sources */,
+				C29718301FAAB47F00D2D599 /* PDFListViewController.m in Sources */,
 				C2589DE41F8521BE007736C7 /* AddImageBottomView.m in Sources */,
 				C2BCFC121F8C7664005180AA /* QRCResultViewController.m in Sources */,
 				C2589DD51F83FA65007736C7 /* LaunchImageView.m in Sources */,

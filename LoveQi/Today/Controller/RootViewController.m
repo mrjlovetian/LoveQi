@@ -19,9 +19,10 @@
 #import "SQLViewconTroller.h"
 #import "LQItemView.h"
 #import "PhotoViewController.h"
-#import "LQChatViewController.h"
+//#import "LQChatViewController.h"
 #import <MRJ_QRCode/QRCodeScanningVC.h>
 #import "QRCResultViewController.h"
+#import "JumpVCHandler.h"
 
 @interface RootViewController ()<FSCalendarDataSource, FSCalendarDelegate, FSCalendarDelegateAppearance, JumpDateViewDelegate>
 
@@ -168,13 +169,8 @@
 }
 
 - (void)today {
-    //liqi
-    LQChatViewController *vc = [[LQChatViewController alloc] initWithConversationType:ConversationType_PRIVATE targetId:@"yuhongjiang"];
-    
-    [self.navigationController pushViewController:vc animated:YES];
-    [self.navigationController setNavigationBarHidden:NO];
-//    [self.fscalendar selectDate:[NSDate date] scrollToDate:YES];
-//    [self getToday];;
+    [self.fscalendar selectDate:[NSDate date] scrollToDate:YES];
+    [self getToday];;
 }
 
 - (void)selectDateFromWheel {
@@ -183,11 +179,16 @@
 
 - (void)addEvent {
     LQItemView *lqitemView = [[LQItemView alloc] init];
-    [lqitemView createItemsWithImageArray:@[@"感动", @"不开心", @"开心", @"难受", @"伤心", @"委屈",@"喜欢", @"smiley_025", @"smiley_020", @"smiley_019", @"smiley_018"] itemTitleArray:@[@"日记", @"不开心", @"开心", @"开心", @"开心", @"开心", @"不开心", @"开心", @"开心", @"开心", @"开心"] clcikBlock:^(NSString *str) {
+    [lqitemView createItemsWithImageArray:@[@"感动", @"不开心", @"开心", @"难受", @"伤心", @"委屈",@"喜欢", @"smiley_025", @"smiley_020", @"smiley_019", @"smiley_018"] itemTitleArray:@[@"日记", @"不开心", @"开心", @"开心", @"开心", @"开心", @"不开心", @"开心", @"开心", @"开心", @"开心"] clcikBlock:^(NSString *str, NSInteger index) {
         MRJLog(@"点击效果是%@",str);
-        AddEvevtVC *vc = [[AddEvevtVC alloc] init];
-        vc.date = self.selectDate;
-        [self.navigationController pushViewController:vc animated:YES];
+    
+        [JumpVCHandler jumpRootVC:self toIndex:index];
+        
+        if (index > 6) {
+            AddEvevtVC *vc = [[AddEvevtVC alloc] init];
+            vc.date = self.selectDate;
+            [self.navigationController pushViewController:vc animated:YES];
+        }
     }];
 }
 

@@ -17,7 +17,7 @@
 
 #define RONGYUN_KEY @"lmxuhwagxsc9d"
 
-@interface AppDelegate ()<RCIMUserInfoDataSource, RCIMConnectionStatusDelegate, RCIMReceiveMessageDelegate>
+@interface AppDelegate ()<RCIMUserInfoDataSource, RCIMConnectionStatusDelegate, RCIMReceiveMessageDelegate, ReaderViewControllerDelegate>
 
 @end
 
@@ -58,6 +58,8 @@
     } tokenIncorrect:^{
         
     }];
+    
+    
     
     return YES;
 }
@@ -104,17 +106,23 @@
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url options:(nonnull NSDictionary<NSString *,id> *)options
 {
     UINavigationController *navigation = (UINavigationController *)application.keyWindow.rootViewController;
-    ReaderViewController *displayController = (ReaderViewController *)navigation.topViewController;
+//    ReaderViewController *displayController = (ReaderViewController *)navigation.topViewController;
     // 1. 实例化控制器
-    NSString *path = [[NSBundle mainBundle] pathForResource:url ofType:@"PDF"];
-    ReaderDocument *doc = [[ReaderDocument alloc] initWithFilePath:path password:nil];
-    
-    ReaderDocument *pdf = [[ReaderDocument alloc] initWithFilePath:path password:nil];
+//    NSString *path = [[NSBundle mainBundle] pathForResource:url.path ofType:@"pdf"];
+//    ReaderDocument *doc = [[ReaderDocument alloc] initWithFilePath:path password:nil];
+//    [PDFManger savePDFName:url];
+    ReaderDocument *pdf = [[ReaderDocument alloc] initWithFilePath:url.path password:nil];
     ReaderViewController *vc = [[ReaderViewController alloc] initWithReaderDocument:pdf];
+    vc.delegate = self;
     [navigation pushViewController:vc animated:YES];
     return YES;
 }
 #endif
+
+- (void)dismissReaderViewController:(ReaderViewController *)viewController {
+//    NSString *path = [(NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)) objectAtIndex:0];
+    [viewController.navigationController popViewControllerAnimated:YES];
+}
 
 #pragma mark RCIMConnectionStatusDelegate
 /**

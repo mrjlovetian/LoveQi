@@ -26,4 +26,5 @@
 
 ///图片旋转
 + (UIImage *)image:(UIImage *)image rotation:(UIImageOrientation)orientation;
+
 @end
