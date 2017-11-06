@@ -10,6 +10,7 @@
 #import "LQChatViewController.h"
 #import "PDFListViewController.h"
 #import <vfrReader/ReaderViewController.h>
+#import "AddressBookViewController.h"
 
 @implementation JumpVCHandler
 
@@ -32,6 +33,8 @@
         [rootVC.navigationController pushViewController:vc animated:YES];
     } else if (index == 2) {
         
+        AddressBookViewController *vc = [[AddressBookViewController alloc] init];
+        [rootVC.navigationController pushViewController:vc animated:YES];
     }
 }
 
