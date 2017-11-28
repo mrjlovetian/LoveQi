@@ -33,6 +33,7 @@
 		C2589DE71F853A4E007736C7 /* PhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2589DE61F853A4E007736C7 /* PhotoCell.m */; };
 		C2589DEA1F8626E8007736C7 /* IMManger.m in Sources */ = {isa = PBXBuildFile; fileRef = C2589DE91F8626E8007736C7 /* IMManger.m */; };
 		C25CB10E1F87B43C00B70558 /* LQChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C25CB10D1F87B43C00B70558 /* LQChatViewController.m */; };
+		C268D74B1FCD524100872615 /* CrashHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = C268D74A1FCD524100872615 /* CrashHandle.m */; };
 		C297182D1FAAB28700D2D599 /* JumpVCHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C297182C1FAAB28700D2D599 /* JumpVCHandler.m */; };
 		C29718301FAAB47F00D2D599 /* PDFListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C297182F1FAAB47F00D2D599 /* PDFListViewController.m */; };
 		C2A9BC1A1F8B685900571564 /* MRJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A9BC191F8B685900571564 /* MRJViewController.m */; };
@@ -134,6 +135,8 @@
 		C2589DE91F8626E8007736C7 /* IMManger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMManger.m; sourceTree = "<group>"; };
 		C25CB10C1F87B43C00B70558 /* LQChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQChatViewController.h; sourceTree = "<group>"; };
 		C25CB10D1F87B43C00B70558 /* LQChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQChatViewController.m; sourceTree = "<group>"; };
+		C268D7491FCD524100872615 /* CrashHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrashHandle.h; sourceTree = "<group>"; };
+		C268D74A1FCD524100872615 /* CrashHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrashHandle.m; sourceTree = "<group>"; };
 		C297182B1FAAB28700D2D599 /* JumpVCHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JumpVCHandler.h; sourceTree = "<group>"; };
 		C297182C1FAAB28700D2D599 /* JumpVCHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JumpVCHandler.m; sourceTree = "<group>"; };
 		C297182E1FAAB47F00D2D599 /* PDFListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDFListViewController.h; sourceTree = "<group>"; };
@@ -276,6 +279,8 @@
 				C2589DE91F8626E8007736C7 /* IMManger.m */,
 				C297182B1FAAB28700D2D599 /* JumpVCHandler.h */,
 				C297182C1FAAB28700D2D599 /* JumpVCHandler.m */,
+				C268D7491FCD524100872615 /* CrashHandle.h */,
+				C268D74A1FCD524100872615 /* CrashHandle.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -656,6 +661,7 @@
 				C297182D1FAAB28700D2D599 /* JumpVCHandler.m in Sources */,
 				C2589DE71F853A4E007736C7 /* PhotoCell.m in Sources */,
 				C2589DCD1F83FA65007736C7 /* AddEvevtVC.m in Sources */,
+				C268D74B1FCD524100872615 /* CrashHandle.m in Sources */,
 				C2589DCE1F83FA65007736C7 /* RootViewController.m in Sources */,
 				C29718301FAAB47F00D2D599 /* PDFListViewController.m in Sources */,
 				C2589DE41F8521BE007736C7 /* AddImageBottomView.m in Sources */,

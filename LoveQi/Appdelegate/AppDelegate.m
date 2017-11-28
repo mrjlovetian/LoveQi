@@ -14,6 +14,7 @@
 #import <RongIMKit/RongIMKit.h>
 #import "IMManger.h"
 #import <vfrReader/ReaderViewController.h>
+#import "CrashHandle.h"
 
 #define RONGYUN_KEY @"lmxuhwagxsc9d"
 
@@ -34,6 +35,8 @@
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [LaunchImageView removeLaunch];
     });
+    
+    InstallCracshExceptionHandle();
     
     /// 
 //    NIMSDKOption *option = [NIMSDKOption optionWithAppKey:IMSECRET];
