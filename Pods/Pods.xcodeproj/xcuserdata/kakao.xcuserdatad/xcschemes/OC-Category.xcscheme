@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '09CA83C77F45193398D7C987F546D336'
+               BlueprintIdentifier = 'EE4E5183B4314FFDF7C6F76FE377181B'
                BlueprintName = 'OC-Category'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libOC-Category.a'>

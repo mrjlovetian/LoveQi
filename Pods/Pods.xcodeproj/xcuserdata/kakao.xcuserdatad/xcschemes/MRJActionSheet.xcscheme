@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '721259DBB1D0BD73D03A01458DFC1824'
+               BlueprintIdentifier = '2F5625583DBCA9EC84092F58FB6124A4'
                BlueprintName = 'MRJActionSheet'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libMRJActionSheet.a'>

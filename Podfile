@@ -18,6 +18,7 @@ target :'LoveQi' do
   pod 'MRJ_QRCode', '~> 0.3.1'
 #  pod 'MRJActionSheet', '~> 0.2.0'
   pod 'vfrReader', '~> 2.8.6'
+   pod 'MJRefresh', '~> 3.1.15.1'
 
 end
 

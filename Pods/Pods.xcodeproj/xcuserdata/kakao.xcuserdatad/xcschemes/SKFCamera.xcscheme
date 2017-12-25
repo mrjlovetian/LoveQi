@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'BF73BC7E32A2BB138C0802CCFBA66A89'
+               BlueprintIdentifier = 'A4C269D8A17E0A00E3DD4AF501D0BE1A'
                BlueprintName = 'SKFCamera'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libSKFCamera.a'>

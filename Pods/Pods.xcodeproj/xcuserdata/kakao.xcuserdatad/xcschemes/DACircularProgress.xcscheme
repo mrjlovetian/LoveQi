@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'C791F0A928C1A8FE97074DFC9ACF4E75'
+               BlueprintIdentifier = 'C82F33AB94F66F19C29649DE0FE51706'
                BlueprintName = 'DACircularProgress'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libDACircularProgress.a'>

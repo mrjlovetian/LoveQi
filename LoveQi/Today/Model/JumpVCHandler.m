@@ -36,14 +36,21 @@
         AddressBookViewController *vc = [[AddressBookViewController alloc] init];
         [rootVC.navigationController pushViewController:vc animated:YES];
     } else if (index == 3) {
-        NSString *url = @"https://zmopenapi.zmxy.com.cn/openapi.do?charset=UTF-8&method=zhima.customer.certification.certify&channel=apppc&sign=XaYJQWRQ6cbmMcK6G7Hrb6XHtB8cVEOyepsZ0uI94C5qZgyLfb6TJCtUz%2FQJa7OgSCQyMwD1fJNL4Bkw%2FM6JKHoUpLvaeAqXO3cMFHHUVr%2FJydbAit04MP15jB8BD0eikQRrff75bUdHUJy45x6Ncv0HZzP6pMkD8J9R%2FmpXdmk%3D&version=1.0&app_id=300001102&sign_type=RSA&platform=zmop&params=VtJourwPr6k46WTld25mBE5Sr9qJlTg%2B8h5zVKA4ifnHucUd0%2Fuko5irBkiQJzFLgFUOOYPBt7FgAUUwfDCsed7ncAeWpGognFXP4fjCGbHytVOR3UVH1UVBfcssTm5IDXL1sAuq50EHMTpNMeoyLp5k8r%2BHvPY0e5BQmaKob%2F0%3D";
-        NSString *alipayUrl = [NSString stringWithFormat:@"alipays://platformapi/startapp?appId=20000067&url=%@", [self URLEncodedStringWithUrl:url]];
-        if ([self canOpenAlipay]) {
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:alipayUrl] options:@{} completionHandler:nil];
-        } else {
-            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"" message:@"是否下载并安装支付宝完成认证?" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"好的", nil];
-            [alertView show];
-        }
+        
+        NSString *url = @"topbroker://com.kakao.topbroker?params=D3AmOSptQzENWwhCO1JArQoDbW2m17K7RMIW6zHCsXnsBKvQvpaDEB0%2FFxKJGI5xJNM%2Bob6%2FAJvilwOpaIKoyZ6wedh1TecUNgpLFOAB8EatYwTTvZxb2iiT5slOi1lqU297URaPCgcS8fRV0NIch2ZvdpVTcpJI8w25o18jw1Q%3D&sign=AhHHxIM1ZmvsOe8shpl%2FDVAWzsTruE78twQgASxbSOR8NsRlu0fIgrgnoZLU2MfZQpBSt5ERfYlZRn515N237s0w%2B2XNw3%2FfLYYeyLarBw%2Bd%2BOmoqMZTwzy30ZipiLfYnQkI2yz53Y6rDWpt%2BwdBZCrH0KwHr%2BpU59INS85W8Ko%3D";
+//        http://gateway.dev.apitops.com/broker-center-api/v1/broker/credit/realName/zhiMaCustomerCertificationCertifyResult?params=D3AmOSptQzENWwhCO1JArQoDbW2m17K7RMIW6zHCsXnsBKvQvpaDEB0%2FFxKJGI5xJNM%2Bob6%2FAJvilwOpaIKoyZ6wedh1TecUNgpLFOAB8EatYwTTvZxb2iiT5slOi1lqU297URaPCgcS8fRV0NIch2ZvdpVTcpJI8w25o18jw1Q%3D&sign=AhHHxIM1ZmvsOe8shpl%2FDVAWzsTruE78twQgASxbSOR8NsRlu0fIgrgnoZLU2MfZQpBSt5ERfYlZRn515N237s0w%2B2XNw3%2FfLYYeyLarBw%2Bd%2BOmoqMZTwzy30ZipiLfYnQkI2yz53Y6rDWpt%2BwdBZCrH0KwHr%2BpU59INS85W8Ko%3D
+        
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url] options:@{} completionHandler:nil];
+
+        
+//        NSString *url = @"http://broker-center.dev.apitops.com/broker-center-web/api/v1/broker/credit/realName/zhiMaCustomerCertificationCertifyResult";
+//        NSString *alipayUrl = [NSString stringWithFormat:@"alipays://platformapi/startapp?appId=20000067&url=%@", [self URLEncodedStringWithUrl:url]];
+//        if ([self canOpenAlipay]) {
+//            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:alipayUrl] options:@{} completionHandler:nil];
+//        } else {
+//            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"" message:@"是否下载并安装支付宝完成认证?" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"好的", nil];
+//            [alertView show];
+//        }
     } else if (index == 4) {
         NSArray *arr = @[@""];
         MRJLog(@"-=-=-=-=-=%@", arr[1]);

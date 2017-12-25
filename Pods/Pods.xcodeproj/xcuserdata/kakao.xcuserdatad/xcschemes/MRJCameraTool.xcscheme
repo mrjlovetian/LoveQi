@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '884E2C5289C48234BBFB846B550A53CE'
+               BlueprintIdentifier = '901FDA5F0F4EB228BB0AAAFE62651ECA'
                BlueprintName = 'MRJCameraTool'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libMRJCameraTool.a'>

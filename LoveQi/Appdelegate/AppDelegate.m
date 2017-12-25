@@ -62,6 +62,15 @@
         
     }];
     
+#ifdef Dev
+    MRJLog(@"***************************dev");
+#elif DEBUG
+    MRJLog(@"===========================DEBUG");
+#elif Test
+    MRJLog(@"===========================TEST");
+# else
+    MRJLog(@"-=-=-=-=-=");
+#endif
     
     
     return YES;
