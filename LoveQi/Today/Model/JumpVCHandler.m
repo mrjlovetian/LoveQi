@@ -11,6 +11,8 @@
 #import "PDFListViewController.h"
 #import <vfrReader/ReaderViewController.h>
 #import "AddressBookViewController.h"
+#import "RefreshViewController.h"
+#import "WebViewController.h"
 
 @implementation JumpVCHandler
 
@@ -52,8 +54,13 @@
 //            [alertView show];
 //        }
     } else if (index == 4) {
-        NSArray *arr = @[@""];
-        MRJLog(@"-=-=-=-=-=%@", arr[1]);
+        RefreshViewController *vc = [[RefreshViewController alloc] init];
+        [rootVC.navigationController pushViewController:vc animated:YES];
+//        NSArray *arr = @[@""];
+//        MRJLog(@"-=-=-=-=-=%@", arr[1]);
+    } else if (index == 5) {
+        WebViewController *vc = [[WebViewController alloc] init];
+         [rootVC.navigationController pushViewController:vc animated:YES];
     }
 }
 

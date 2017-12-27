@@ -15,6 +15,7 @@
 #import "IMManger.h"
 #import <vfrReader/ReaderViewController.h>
 #import "CrashHandle.h"
+#import <AlipaySDK/AlipaySDK.h>
 
 #define RONGYUN_KEY @"lmxuhwagxsc9d"
 
@@ -117,6 +118,14 @@
 #else
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url options:(nonnull NSDictionary<NSString *,id> *)options
 {
+    if ([url.host isEqualToString:@"safepay"] ) {
+        [[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
+            
+            MRJLog(@"result = %@",resultDic);
+            
+        }];
+        return YES;
+    }
     UINavigationController *navigation = (UINavigationController *)application.keyWindow.rootViewController;
 //    ReaderViewController *displayController = (ReaderViewController *)navigation.topViewController;
     // 1. 实例化控制器

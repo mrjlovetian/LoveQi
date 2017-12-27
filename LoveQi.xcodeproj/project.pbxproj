@@ -34,8 +34,12 @@
 		C2589DEA1F8626E8007736C7 /* IMManger.m in Sources */ = {isa = PBXBuildFile; fileRef = C2589DE91F8626E8007736C7 /* IMManger.m */; };
 		C25CB10E1F87B43C00B70558 /* LQChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C25CB10D1F87B43C00B70558 /* LQChatViewController.m */; };
 		C268D74B1FCD524100872615 /* CrashHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = C268D74A1FCD524100872615 /* CrashHandle.m */; };
+		C289F18D1FF11D16009F6D3D /* RefreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C289F18C1FF11D16009F6D3D /* RefreshViewController.m */; };
 		C297182D1FAAB28700D2D599 /* JumpVCHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C297182C1FAAB28700D2D599 /* JumpVCHandler.m */; };
 		C29718301FAAB47F00D2D599 /* PDFListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C297182F1FAAB47F00D2D599 /* PDFListViewController.m */; };
+		C29867FC1FF1FA6D00155F52 /* MRJFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = C29867FB1FF1FA6D00155F52 /* MRJFooter.m */; };
+		C29867FF1FF1FB0600155F52 /* MRJHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = C29867FE1FF1FB0600155F52 /* MRJHeader.m */; };
+		C29868061FF233F800155F52 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C29868051FF233F800155F52 /* WebViewController.m */; };
 		C2A9BC1A1F8B685900571564 /* MRJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A9BC191F8B685900571564 /* MRJViewController.m */; };
 		C2A9BC1D1F8B692600571564 /* HeardView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A9BC1C1F8B692600571564 /* HeardView.m */; };
 		C2BCFC121F8C7664005180AA /* QRCResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BCFC111F8C7664005180AA /* QRCResultViewController.m */; };
@@ -123,10 +127,18 @@
 		C25CB10D1F87B43C00B70558 /* LQChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQChatViewController.m; sourceTree = "<group>"; };
 		C268D7491FCD524100872615 /* CrashHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrashHandle.h; sourceTree = "<group>"; };
 		C268D74A1FCD524100872615 /* CrashHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrashHandle.m; sourceTree = "<group>"; };
+		C289F18B1FF11D16009F6D3D /* RefreshViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RefreshViewController.h; sourceTree = "<group>"; };
+		C289F18C1FF11D16009F6D3D /* RefreshViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RefreshViewController.m; sourceTree = "<group>"; };
 		C297182B1FAAB28700D2D599 /* JumpVCHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JumpVCHandler.h; sourceTree = "<group>"; };
 		C297182C1FAAB28700D2D599 /* JumpVCHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JumpVCHandler.m; sourceTree = "<group>"; };
 		C297182E1FAAB47F00D2D599 /* PDFListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDFListViewController.h; sourceTree = "<group>"; };
 		C297182F1FAAB47F00D2D599 /* PDFListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDFListViewController.m; sourceTree = "<group>"; };
+		C29867FA1FF1FA6D00155F52 /* MRJFooter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRJFooter.h; sourceTree = "<group>"; };
+		C29867FB1FF1FA6D00155F52 /* MRJFooter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRJFooter.m; sourceTree = "<group>"; };
+		C29867FD1FF1FB0600155F52 /* MRJHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRJHeader.h; sourceTree = "<group>"; };
+		C29867FE1FF1FB0600155F52 /* MRJHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRJHeader.m; sourceTree = "<group>"; };
+		C29868041FF233F800155F52 /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		C29868051FF233F800155F52 /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		C2A9BC181F8B685900571564 /* MRJViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRJViewController.h; sourceTree = "<group>"; };
 		C2A9BC191F8B685900571564 /* MRJViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRJViewController.m; sourceTree = "<group>"; };
 		C2A9BC1B1F8B692600571564 /* HeardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeardView.h; sourceTree = "<group>"; };
@@ -232,6 +244,10 @@
 				C297182F1FAAB47F00D2D599 /* PDFListViewController.m */,
 				C2EB63621FB05500008B0A57 /* AddressBookViewController.h */,
 				C2EB63631FB05500008B0A57 /* AddressBookViewController.m */,
+				C289F18B1FF11D16009F6D3D /* RefreshViewController.h */,
+				C289F18C1FF11D16009F6D3D /* RefreshViewController.m */,
+				C29868041FF233F800155F52 /* WebViewController.h */,
+				C29868051FF233F800155F52 /* WebViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -276,6 +292,10 @@
 				C2589DE31F8521BE007736C7 /* AddImageBottomView.m */,
 				C2A9BC1B1F8B692600571564 /* HeardView.h */,
 				C2A9BC1C1F8B692600571564 /* HeardView.m */,
+				C29867FA1FF1FA6D00155F52 /* MRJFooter.h */,
+				C29867FB1FF1FA6D00155F52 /* MRJFooter.m */,
+				C29867FD1FF1FB0600155F52 /* MRJHeader.h */,
+				C29867FE1FF1FB0600155F52 /* MRJHeader.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -556,7 +576,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2589DD21F83FA65007736C7 /* AddEventView.m in Sources */,
+				C29868061FF233F800155F52 /* WebViewController.m in Sources */,
 				C2589DE11F851EF9007736C7 /* PhotoManger.m in Sources */,
+				C289F18D1FF11D16009F6D3D /* RefreshViewController.m in Sources */,
 				C2CE1BFC1E2E2347003AE6D3 /* main.m in Sources */,
 				C2589DD41F83FA65007736C7 /* JumpDateView.m in Sources */,
 				C25CB10E1F87B43C00B70558 /* LQChatViewController.m in Sources */,
@@ -564,6 +586,7 @@
 				C2A9BC1A1F8B685900571564 /* MRJViewController.m in Sources */,
 				C2589DD61F83FA65007736C7 /* LQItem.m in Sources */,
 				C2EB63641FB05500008B0A57 /* AddressBookViewController.m in Sources */,
+				C29867FF1FF1FB0600155F52 /* MRJHeader.m in Sources */,
 				C2589DD01F83FA65007736C7 /* DataBaseHander.m in Sources */,
 				C2589DD71F83FA65007736C7 /* LQItemView.m in Sources */,
 				C2589DDB1F83FA7B007736C7 /* AppDelegate.m in Sources */,
@@ -576,6 +599,7 @@
 				C2589DE41F8521BE007736C7 /* AddImageBottomView.m in Sources */,
 				C2BCFC121F8C7664005180AA /* QRCResultViewController.m in Sources */,
 				C2589DD51F83FA65007736C7 /* LaunchImageView.m in Sources */,
+				C29867FC1FF1FA6D00155F52 /* MRJFooter.m in Sources */,
 				C2589DD11F83FA65007736C7 /* DateModel.m in Sources */,
 				C2589DD31F83FA65007736C7 /* BtnColumnView.m in Sources */,
 				C2A9BC1D1F8B692600571564 /* HeardView.m in Sources */,
@@ -694,6 +718,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3S42S92Y7;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LoveQi",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = LoveQi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -787,6 +815,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3S42S92Y7;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LoveQi",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = LoveQi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -921,6 +953,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3S42S92Y7;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LoveQi",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = LoveQi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -945,6 +981,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3S42S92Y7;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LoveQi",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = LoveQi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
