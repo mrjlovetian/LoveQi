@@ -296,10 +296,6 @@ OTHER DEALINGS IN THE SOFTWARE.
 For more information, please refer to <http://unlicense.org>
 
 
-## RongCloudIM
-
-Copyright 2014 Rong Cloud
-
 ## SDWebImage
 
 Copyright (c) 2016 Olivier Poitrey rs@dailymotion.com

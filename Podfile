@@ -12,7 +12,7 @@ target :'LoveQi' do
 #  pod 'YHJQRCode', '~> 0.2.0.7'
   pod 'MWPhotoBrowser', '~> 2.1.2'
   pod 'MRJCameraTool', '~> 0.1.6'
-  pod 'RongCloudIM', '~> 2.8.18'
+#  pod 'RongCloudIM', '~> 2.8.18'
 #  pod 'DZNEmptyDataSet', '~> 1.8.1'
   pod 'MRJ_Network', '~> 0.2.0'
   pod 'MRJ_QRCode', '~> 0.3.1'

@@ -48,25 +48,6 @@ PODS:
   - OC-Category/MapKit (0.1.3.8)
   - OC-Category/QuartzCore (0.1.3.8)
   - OC-Category/UIKit (0.1.3.8)
-  - RongCloudIM (2.8.18):
-    - RongCloudIM/CallKit (= 2.8.18)
-    - RongCloudIM/CallLib (= 2.8.18)
-    - RongCloudIM/IMKit (= 2.8.18)
-    - RongCloudIM/IMLib (= 2.8.18)
-    - RongCloudIM/RedPacket (= 2.8.18)
-    - RongCloudIM/Sticker (= 2.8.18)
-  - RongCloudIM/CallKit (2.8.18):
-    - RongCloudIM/CallLib
-    - RongCloudIM/IMKit
-  - RongCloudIM/CallLib (2.8.18):
-    - RongCloudIM/IMLib
-  - RongCloudIM/IMKit (2.8.18):
-    - RongCloudIM/IMLib
-  - RongCloudIM/IMLib (2.8.18)
-  - RongCloudIM/RedPacket (2.8.18):
-    - RongCloudIM/IMKit
-  - RongCloudIM/Sticker (2.8.18):
-    - RongCloudIM/IMKit
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
@@ -86,7 +67,6 @@ DEPENDENCIES:
   - MRJCameraTool (~> 0.1.6)
   - MWPhotoBrowser (~> 2.1.2)
   - OC-Category (~> 0.1.3.8)
-  - RongCloudIM (~> 2.8.18)
   - vfrReader (~> 2.8.6)
   - YYKit
 
@@ -103,13 +83,12 @@ SPEC CHECKSUMS:
   MRJCameraTool: 5fcbcb271912deb62d1a4415bffec9cef71853ce
   MWPhotoBrowser: 5836d7aa041dc05a13de380c246826578adc5ea5
   OC-Category: e1f2f10ff52e0be897deac0c06719fa371afa7aa
-  RongCloudIM: 9a934460ec2115d2240c565acc15390b43fb715d
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   SKFCamera: d63fa8ca23eb5ec51ade911fcbe736ffc5b37b4d
   TZImagePickerController: 079ab986018c22793462e531045a75e366b18252
   vfrReader: 94ea739a545e39093c93802ca1c5b203a5df46b1
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 83ceb2c3f32772d3bc595bed0353752a5f8f88ae
+PODFILE CHECKSUM: c0da53d6205e7f37ddce004c1c1fbbebd8424efa
 
 COCOAPODS: 1.4.0.beta.2

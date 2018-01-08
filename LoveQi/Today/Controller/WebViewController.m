@@ -38,7 +38,7 @@
     __weak WebViewController* wself = self;
     BOOL isIntercepted = [[AlipaySDK defaultService] payInterceptorWithUrl:[request.URL absoluteString] fromScheme:@"topbroker" callback:^(NSDictionary *result) {
         // 处理支付结果
-        if ([resultDic[@"isProcessUrlPay"] boolValue]) {
+        if ([result[@"isProcessUrlPay"] boolValue]) {
 //             returnUrl 代表 第三方App需要跳转的成功页URL
             NSString* urlStr = result[@"returnUrl"];
             [wself loadWithUrlStr:urlStr];

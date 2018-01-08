@@ -35,6 +35,8 @@
 		C25CB10E1F87B43C00B70558 /* LQChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C25CB10D1F87B43C00B70558 /* LQChatViewController.m */; };
 		C268D74B1FCD524100872615 /* CrashHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = C268D74A1FCD524100872615 /* CrashHandle.m */; };
 		C289F18D1FF11D16009F6D3D /* RefreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C289F18C1FF11D16009F6D3D /* RefreshViewController.m */; };
+		C294BCAF1FF3A20B0041C90A /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C294BCAD1FF3A2050041C90A /* AlipaySDK.bundle */; };
+		C294BCB01FF3A20B0041C90A /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C294BCAE1FF3A20B0041C90A /* AlipaySDK.framework */; };
 		C297182D1FAAB28700D2D599 /* JumpVCHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C297182C1FAAB28700D2D599 /* JumpVCHandler.m */; };
 		C29718301FAAB47F00D2D599 /* PDFListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C297182F1FAAB47F00D2D599 /* PDFListViewController.m */; };
 		C29867FC1FF1FA6D00155F52 /* MRJFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = C29867FB1FF1FA6D00155F52 /* MRJFooter.m */; };
@@ -129,6 +131,8 @@
 		C268D74A1FCD524100872615 /* CrashHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrashHandle.m; sourceTree = "<group>"; };
 		C289F18B1FF11D16009F6D3D /* RefreshViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RefreshViewController.h; sourceTree = "<group>"; };
 		C289F18C1FF11D16009F6D3D /* RefreshViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RefreshViewController.m; sourceTree = "<group>"; };
+		C294BCAD1FF3A2050041C90A /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
+		C294BCAE1FF3A20B0041C90A /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
 		C297182B1FAAB28700D2D599 /* JumpVCHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JumpVCHandler.h; sourceTree = "<group>"; };
 		C297182C1FAAB28700D2D599 /* JumpVCHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JumpVCHandler.m; sourceTree = "<group>"; };
 		C297182E1FAAB47F00D2D599 /* PDFListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDFListViewController.h; sourceTree = "<group>"; };
@@ -174,6 +178,7 @@
 			files = (
 				51797A3810964178EDCD4186 /* libPods-LoveQi.a in Frameworks */,
 				96D78EE764673C3FB2EA232C /* libPods-LoveQi.a in Frameworks */,
+				C294BCB01FF3A20B0041C90A /* AlipaySDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +317,8 @@
 		C2CE1BEE1E2E2347003AE6D3 = {
 			isa = PBXGroup;
 			children = (
+				C294BCAD1FF3A2050041C90A /* AlipaySDK.bundle */,
+				C294BCAE1FF3A20B0041C90A /* AlipaySDK.framework */,
 				C2CE1BF91E2E2347003AE6D3 /* LoveQi */,
 				C2CE1C131E2E2347003AE6D3 /* LoveQiTests */,
 				C2CE1C1E1E2E2347003AE6D3 /* LoveQiUITests */,
@@ -468,6 +475,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C294BCAF1FF3A20B0041C90A /* AlipaySDK.bundle in Resources */,
 				C2CE1C071E2E2347003AE6D3 /* Assets.xcassets in Resources */,
 				0ACF68A61E3F7E7000BEA229 /* biaoqing in Resources */,
 				0A7AFF5A1E41DB8C0071B29B /* ico in Resources */,
@@ -503,17 +511,6 @@
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 				"${PODS_ROOT}/MRJ_QRCode/MRJ_QRCode.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/MWPhotoBrowser/MWPhotoBrowser.bundle",
-				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RongCloud.bundle",
-				"${PODS_ROOT}/RongCloudIM/RongCloudIM/en.lproj",
-				"${PODS_ROOT}/RongCloudIM/RongCloudIM/zh-Hans.lproj",
-				"${PODS_ROOT}/RongCloudIM/RongCloudIM/Emoji.plist",
-				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RCConfig.plist",
-				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/JResource.bundle",
-				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/en.lproj",
-				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/zh-Hans.lproj",
-				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/jrmf.cer",
-				"${PODS_ROOT}/RongCloudIM/RongCloudIM/AlipaySDK/AlipaySDK.bundle",
-				"${PODS_ROOT}/RongCloudIM/RongCloudIM/BQMM.bundle",
 				"${PODS_ROOT}/SKFCamera/SKFCamera/SKFCamera.bundle",
 				"${PODS_ROOT}/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle",
 				"${PODS_ROOT}/vfrReader/Graphics/Reader-Button-H.png",
@@ -721,6 +718,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LoveQi",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = LoveQi/Info.plist;
@@ -818,6 +816,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LoveQi",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = LoveQi/Info.plist;
@@ -956,6 +955,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LoveQi",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = LoveQi/Info.plist;
@@ -984,6 +984,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LoveQi",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = LoveQi/Info.plist;
