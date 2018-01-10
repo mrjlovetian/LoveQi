@@ -1,33 +1,37 @@
 //
-//  LQChatViewController.m
-//  LoveQi
+//  AipNavigationController.m
+//  BaiduOCR
 //
-//  Created by Mr on 2017/10/6.
-//  Copyright © 2017年 李琦. All rights reserved.
+//  Created by 闫祥达 on 2017/2/16.
+//  Copyright © 2017年 Baidu. All rights reserved.
 //
 
-#import "LQChatViewController.h"
+#import "AipNavigationController.h"
 
-@interface LQChatViewController ()
+@interface AipNavigationController ()
 
 @end
 
-@implementation LQChatViewController
+@implementation AipNavigationController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [[NSNotificationCenter defaultCenter] addObserverForName:@"receiveMessage" object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification * _Nonnull note) {
-        MRJLog(@"接收到消息通知");
-        
-    }];
     // Do any additional setup after loading the view.
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(BOOL)shouldAutorotate{
+    return NO;
+}
+
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations
+{
+    
+    return UIInterfaceOrientationMaskPortrait;
 }
 
 /*

@@ -7,12 +7,14 @@
 //
 
 #import "JumpVCHandler.h"
-#import "LQChatViewController.h"
+//#import "LQChatViewController.h"
 #import "PDFListViewController.h"
 #import <vfrReader/ReaderViewController.h>
 #import "AddressBookViewController.h"
 #import "RefreshViewController.h"
 #import "WebViewController.h"
+#import "RealNameViewController.h"
+#import "AddImageViewController.h"
 
 @implementation JumpVCHandler
 
@@ -27,9 +29,9 @@
 + (void)jumpRootVC:(UIViewController *)rootVC toIndex:(NSInteger)index {
     if (index == 0) {
         //liqi
-        LQChatViewController *vc = [[LQChatViewController alloc] initWithConversationType:ConversationType_PRIVATE targetId:@"yuhongjiang"];
-        [rootVC.navigationController pushViewController:vc animated:YES];
-        [rootVC.navigationController setNavigationBarHidden:NO];
+//        LQChatViewController *vc = [[LQChatViewController alloc] initWithConversationType:ConversationType_PRIVATE targetId:@"yuhongjiang"];
+//        [rootVC.navigationController pushViewController:vc animated:YES];
+//        [rootVC.navigationController setNavigationBarHidden:NO];
     } else if (index == 1) {
         PDFListViewController *vc = [[PDFListViewController alloc] init];
         [rootVC.navigationController pushViewController:vc animated:YES];
@@ -54,12 +56,15 @@
 //            [alertView show];
 //        }
     } else if (index == 4) {
-        RefreshViewController *vc = [[RefreshViewController alloc] init];
+//        RefreshViewController *vc = [[RefreshViewController alloc] init];
+        AddImageViewController *vc = [[AddImageViewController alloc] init];
         [rootVC.navigationController pushViewController:vc animated:YES];
 //        NSArray *arr = @[@""];
 //        MRJLog(@"-=-=-=-=-=%@", arr[1]);
     } else if (index == 5) {
-        WebViewController *vc = [[WebViewController alloc] init];
+        RealNameViewController *vc = [[RealNameViewController alloc] init];
+        vc.index = 0;
+//        WebViewController *vc = [[WebViewController alloc] init];
          [rootVC.navigationController pushViewController:vc animated:YES];
     }
 }

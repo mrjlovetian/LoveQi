@@ -14,5 +14,5 @@ typedef void(^PhotoHandle)();
 
 @property (nonatomic, strong)UIImage *image;
 @property (nonatomic, assign)BOOL canDelete;
-@property (nonatomic, copy)PhotoHandle photoBlcok;
+@property (nonatomic, copy) PhotoHandle photoBlcok;
 @end
