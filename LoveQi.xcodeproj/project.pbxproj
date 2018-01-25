@@ -295,6 +295,12 @@
 		C2EB63621FB05500008B0A57 /* AddressBookViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddressBookViewController.h; sourceTree = "<group>"; };
 		C2EB63631FB05500008B0A57 /* AddressBookViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddressBookViewController.m; sourceTree = "<group>"; };
 		C41EE10A5322E24B0FEACDD6 /* Pods-LoveQi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoveQi.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoveQi/Pods-LoveQi.release.xcconfig"; sourceTree = "<group>"; };
+		E7E67BF82019A9A800920C7C /* Macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
+		E7E67BF92019AA1500920C7C /* ClassMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassMacro.h; sourceTree = "<group>"; };
+		E7E67BFA2019AA2C00920C7C /* StringMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringMacro.h; sourceTree = "<group>"; };
+		E7E67BFB2019AA4100920C7C /* ScreenMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenMacro.h; sourceTree = "<group>"; };
+		E7E67BFC2019AA5C00920C7C /* IosVerionMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IosVerionMacro.h; sourceTree = "<group>"; };
+		E7E67BFD2019AA7500920C7C /* ColorMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorMacro.h; sourceTree = "<group>"; };
 		FCEB03AB92596D867E27E643 /* libPods-LoveQiWidget.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LoveQiWidget.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -508,6 +514,11 @@
 		C2CE1BF91E2E2347003AE6D3 /* LoveQi */ = {
 			isa = PBXGroup;
 			children = (
+				E7E67BF72019A97000920C7C /* Database */,
+				E7E67BF62019A97000920C7C /* Log */,
+				E7E67BF52019A97000920C7C /* Macro */,
+				E7E67BF42019A97000920C7C /* Network */,
+				E7E67BF32019A8DD00920C7C /* Util */,
 				C2589DD81F83FA7B007736C7 /* Appdelegate */,
 				C2589DB31F83FA65007736C7 /* Today */,
 				0A7AFF591E41DB8C0071B29B /* ico */,
@@ -666,6 +677,47 @@
 				C2DDFAFB200319FE00454A0A /* AipNavigationController.m */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E7E67BF32019A8DD00920C7C /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		E7E67BF42019A97000920C7C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E7E67BF52019A97000920C7C /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				E7E67BF82019A9A800920C7C /* Macro.h */,
+				E7E67BF92019AA1500920C7C /* ClassMacro.h */,
+				E7E67BFA2019AA2C00920C7C /* StringMacro.h */,
+				E7E67BFB2019AA4100920C7C /* ScreenMacro.h */,
+				E7E67BFC2019AA5C00920C7C /* IosVerionMacro.h */,
+				E7E67BFD2019AA7500920C7C /* ColorMacro.h */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		E7E67BF62019A97000920C7C /* Log */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		E7E67BF72019A97000920C7C /* Database */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Database;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
