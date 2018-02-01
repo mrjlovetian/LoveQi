@@ -74,7 +74,7 @@
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
         layout.itemSize = CGSizeMake(80, 80);
         layout.minimumLineSpacing = 10;
-        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, Navight, SCREEN_WIDTH, SCREEN_WIDTH - Navight) collectionViewLayout:layout];
+        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, NavBAR_HEIGHT, SCREEN_WIDTH, SCREEN_WIDTH - NavBAR_HEIGHT) collectionViewLayout:layout];
         _collectionView.delegate = self;
         _collectionView.dataSource = self;
         [_collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"pdf"];

@@ -68,7 +68,7 @@
 
 - (UIWebView *)webView {
     if (!_webView) {
-        _webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, Navight, SCREEN_WIDTH, SCREEN_HEIGHT - Navight)];
+        _webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, NavBAR_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT - NavBAR_HEIGHT)];
     }
     return _webView;
 }

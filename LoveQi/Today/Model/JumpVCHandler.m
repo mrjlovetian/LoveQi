@@ -15,6 +15,9 @@
 #import "WebViewController.h"
 #import "RealNameViewController.h"
 #import "AddImageViewController.h"
+#import "MeiTuanDeatilViewController.h"
+#import "RunloopViewController.h"
+#import "DynamicMenuViewController.h"
 
 @implementation JumpVCHandler
 
@@ -28,6 +31,10 @@
 
 + (void)jumpRootVC:(UIViewController *)rootVC toIndex:(NSInteger)index {
     if (index == 0) {
+        DynamicMenuViewController *vc = [[DynamicMenuViewController alloc] init];
+//        RunloopViewController *vc = [[RunloopViewController alloc] init];
+//        MeiTuanDeatilViewController *vc = [[MeiTuanDeatilViewController alloc] init];
+        [rootVC.navigationController pushViewController:vc animated:YES];
         //liqi
 //        LQChatViewController *vc = [[LQChatViewController alloc] initWithConversationType:ConversationType_PRIVATE targetId:@"yuhongjiang"];
 //        [rootVC.navigationController pushViewController:vc animated:YES];

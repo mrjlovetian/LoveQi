@@ -98,7 +98,7 @@ static NSString *indetif = @"image";
 - (UICollectionView *)collectionView {
     if (!_collectionView) {
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, Navight, SCREEN_WIDTH, SCREEN_HEIGHT - Navight - self.bottomBtnView.height) collectionViewLayout:layout];
+        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, NavBAR_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT - NavBAR_HEIGHT - self.bottomBtnView.height) collectionViewLayout:layout];
         _collectionView.delegate = self;
         _collectionView.dataSource = self;
         [_collectionView registerClass:[ImageCell class] forCellWithReuseIdentifier:indetif];

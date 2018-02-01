@@ -53,18 +53,18 @@ BOOL isNextPage;
         item.itemStr = itemTitleArray[i];
         [self addSubview:item];
         
-        item.frame = CGRectMake(0 + itemWidth*(i%3), SCREEN_HEIGHT/2.0 + Navight + itemHeight*(i/3), itemWidth, itemHeight);
+        item.frame = CGRectMake(0 + itemWidth*(i%3), SCREEN_HEIGHT/2.0 + NavBAR_HEIGHT + itemHeight*(i/3), itemWidth, itemHeight);
         if (i >= 6) {
             self.contentSize = CGSizeMake(SCREEN_WIDTH*2, SCREEN_HEIGHT);
-            item.frame = CGRectMake(SCREEN_WIDTH + itemWidth*(i%3), SCREEN_HEIGHT/2.0 + Navight + itemHeight*((i-6)/3), itemWidth, itemHeight);
+            item.frame = CGRectMake(SCREEN_WIDTH + itemWidth*(i%3), SCREEN_HEIGHT/2.0 + NavBAR_HEIGHT + itemHeight*((i-6)/3), itemWidth, itemHeight);
             self.pagingEnabled = YES;
         }
         
 //        [UIView animateWithDuration:0.3 animations:^{
-//            item.frame = CGRectMake(0 + itemWidth*(i%3), SCREEN_HEIGHT/2.0 + Navight + itemHeight*(i/3), itemWidth, itemHeight);
+//            item.frame = CGRectMake(0 + itemWidth*(i%3), SCREEN_HEIGHT/2.0 + NavBAR_HEIGHT + itemHeight*(i/3), itemWidth, itemHeight);
 //            if (i >= 6) {
 //                self.contentSize = CGSizeMake(SCREEN_WIDTH*2, SCREEN_HEIGHT);
-//                item.frame = CGRectMake(SCREEN_WIDTH + itemWidth*(i%3), SCREEN_HEIGHT/2.0 + Navight + itemHeight*((i-6)/3), itemWidth, itemHeight);
+//                item.frame = CGRectMake(SCREEN_WIDTH + itemWidth*(i%3), SCREEN_HEIGHT/2.0 + NavBAR_HEIGHT + itemHeight*((i-6)/3), itemWidth, itemHeight);
 //                self.pagingEnabled = YES;
 //            }
 //        }];

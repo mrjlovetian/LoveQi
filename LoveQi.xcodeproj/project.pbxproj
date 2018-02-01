@@ -90,7 +90,6 @@
 		C2DDFB2020031B7800454A0A /* AipBase.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C2DDFAC3200319FE00454A0A /* AipBase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C2DDFB2320031F4600454A0A /* RealNameProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DDFB2120031F4600454A0A /* RealNameProgressView.m */; };
 		C2DDFB2920031F7800454A0A /* CreditScoreCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DDFB2720031F7700454A0A /* CreditScoreCardView.m */; };
-		C2DDFB2C20031FAA00454A0A /* AddIDCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DDFB2B20031FAA00454A0A /* AddIDCardView.m */; };
 		C2DDFB32200320F600454A0A /* RealNameAddImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DDFB31200320F600454A0A /* RealNameAddImageView.m */; };
 		C2DDFB35200322B900454A0A /* UIImage+KaKao.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DDFB34200322B800454A0A /* UIImage+KaKao.m */; };
 		C2DDFB38200323AD00454A0A /* RealNameProgressItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DDFB37200323AC00454A0A /* RealNameProgressItemView.m */; };
@@ -99,6 +98,14 @@
 		C2DDFB3F2003506000454A0A /* AddImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DDFB3E2003506000454A0A /* AddImageViewController.m */; };
 		C2DDFB422003579700454A0A /* ImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DDFB412003579700454A0A /* ImageCell.m */; };
 		C2EB63641FB05500008B0A57 /* AddressBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EB63631FB05500008B0A57 /* AddressBookViewController.m */; };
+		E70B79792021989000A4F344 /* AddIDCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = E70B79782021989000A4F344 /* AddIDCardView.m */; };
+		E7145D9A2021AF82004F4792 /* MeiTuanDeatilViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7145D992021AF82004F4792 /* MeiTuanDeatilViewController.m */; };
+		E7196CF32022B4480068B4BF /* RunloopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7196CF22022B4480068B4BF /* RunloopViewController.m */; };
+		E7B610462022F0D5000E4188 /* DynamicMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B610452022F0D5000E4188 /* DynamicMenuViewController.m */; };
+		E7B610492022F0F7000E4188 /* MenuItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B610482022F0F7000E4188 /* MenuItemView.m */; };
+		E7B6104C2022F457000E4188 /* MenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B6104B2022F457000E4188 /* MenuModel.m */; };
+		E7B610502022F663000E4188 /* MenuRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B6104F2022F663000E4188 /* MenuRequest.m */; };
+		E7B6105320230789000E4188 /* MenuViewManger.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B6105220230789000E4188 /* MenuViewManger.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -212,10 +219,6 @@
 		C2CE1BFB1E2E2347003AE6D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C2CE1C061E2E2347003AE6D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2CE1C0B1E2E2347003AE6D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C2CE1C141E2E2347003AE6D3 /* LoveQiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoveQiTests.m; sourceTree = "<group>"; };
-		C2CE1C161E2E2347003AE6D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C2CE1C1F1E2E2347003AE6D3 /* LoveQiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoveQiUITests.m; sourceTree = "<group>"; };
-		C2CE1C211E2E2347003AE6D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2DDFA4F2002FF8600454A0A /* RealNameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RealNameViewController.h; sourceTree = "<group>"; };
 		C2DDFA502002FF8600454A0A /* RealNameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RealNameViewController.m; sourceTree = "<group>"; };
 		C2DDFA52200307B100454A0A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
@@ -279,7 +282,6 @@
 		C2DDFB2720031F7700454A0A /* CreditScoreCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditScoreCardView.m; sourceTree = "<group>"; };
 		C2DDFB2820031F7800454A0A /* CreditScoreCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditScoreCardView.h; sourceTree = "<group>"; };
 		C2DDFB2A20031FAA00454A0A /* BottomBtnView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BottomBtnView.h; sourceTree = "<group>"; };
-		C2DDFB2B20031FAA00454A0A /* AddIDCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddIDCardView.m; path = ../../../../../imagerESIZE/AddIDCardView.m; sourceTree = "<group>"; };
 		C2DDFB30200320F600454A0A /* RealNameAddImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealNameAddImageView.h; sourceTree = "<group>"; };
 		C2DDFB31200320F600454A0A /* RealNameAddImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealNameAddImageView.m; sourceTree = "<group>"; };
 		C2DDFB33200322B800454A0A /* UIImage+KaKao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+KaKao.h"; sourceTree = "<group>"; };
@@ -295,6 +297,21 @@
 		C2EB63621FB05500008B0A57 /* AddressBookViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddressBookViewController.h; sourceTree = "<group>"; };
 		C2EB63631FB05500008B0A57 /* AddressBookViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddressBookViewController.m; sourceTree = "<group>"; };
 		C41EE10A5322E24B0FEACDD6 /* Pods-LoveQi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoveQi.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoveQi/Pods-LoveQi.release.xcconfig"; sourceTree = "<group>"; };
+		E70B79782021989000A4F344 /* AddIDCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddIDCardView.m; sourceTree = "<group>"; };
+		E7145D982021AF82004F4792 /* MeiTuanDeatilViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeiTuanDeatilViewController.h; sourceTree = "<group>"; };
+		E7145D992021AF82004F4792 /* MeiTuanDeatilViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeiTuanDeatilViewController.m; sourceTree = "<group>"; };
+		E7196CF12022B4480068B4BF /* RunloopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunloopViewController.h; sourceTree = "<group>"; };
+		E7196CF22022B4480068B4BF /* RunloopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunloopViewController.m; sourceTree = "<group>"; };
+		E7B610442022F0D5000E4188 /* DynamicMenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicMenuViewController.h; sourceTree = "<group>"; };
+		E7B610452022F0D5000E4188 /* DynamicMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicMenuViewController.m; sourceTree = "<group>"; };
+		E7B610472022F0F7000E4188 /* MenuItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuItemView.h; sourceTree = "<group>"; };
+		E7B610482022F0F7000E4188 /* MenuItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuItemView.m; sourceTree = "<group>"; };
+		E7B6104A2022F457000E4188 /* MenuModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuModel.h; sourceTree = "<group>"; };
+		E7B6104B2022F457000E4188 /* MenuModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuModel.m; sourceTree = "<group>"; };
+		E7B6104E2022F663000E4188 /* MenuRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuRequest.h; sourceTree = "<group>"; };
+		E7B6104F2022F663000E4188 /* MenuRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuRequest.m; sourceTree = "<group>"; };
+		E7B6105120230789000E4188 /* MenuViewManger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuViewManger.h; sourceTree = "<group>"; };
+		E7B6105220230789000E4188 /* MenuViewManger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuViewManger.m; sourceTree = "<group>"; };
 		E7E67BF82019A9A800920C7C /* Macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
 		E7E67BF92019AA1500920C7C /* ClassMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassMacro.h; sourceTree = "<group>"; };
 		E7E67BFA2019AA2C00920C7C /* StringMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringMacro.h; sourceTree = "<group>"; };
@@ -374,6 +391,7 @@
 		C2589DB31F83FA65007736C7 /* Today */ = {
 			isa = PBXGroup;
 			children = (
+				E7B6104D2022F63C000E4188 /* Net */,
 				C2589DB41F83FA65007736C7 /* Controller */,
 				C2589DBB1F83FA65007736C7 /* Model */,
 				C2589DC01F83FA65007736C7 /* View */,
@@ -408,6 +426,12 @@
 				C2DDFA502002FF8600454A0A /* RealNameViewController.m */,
 				C2DDFB3D2003506000454A0A /* AddImageViewController.h */,
 				C2DDFB3E2003506000454A0A /* AddImageViewController.m */,
+				E7145D982021AF82004F4792 /* MeiTuanDeatilViewController.h */,
+				E7145D992021AF82004F4792 /* MeiTuanDeatilViewController.m */,
+				E7196CF12022B4480068B4BF /* RunloopViewController.h */,
+				E7196CF22022B4480068B4BF /* RunloopViewController.m */,
+				E7B610442022F0D5000E4188 /* DynamicMenuViewController.h */,
+				E7B610452022F0D5000E4188 /* DynamicMenuViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -429,6 +453,8 @@
 				C297182C1FAAB28700D2D599 /* JumpVCHandler.m */,
 				C268D7491FCD524100872615 /* CrashHandle.h */,
 				C268D74A1FCD524100872615 /* CrashHandle.m */,
+				E7B6104A2022F457000E4188 /* MenuModel.h */,
+				E7B6104B2022F457000E4188 /* MenuModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -440,12 +466,12 @@
 				C2DDFB37200323AC00454A0A /* RealNameProgressItemView.m */,
 				C2DDFB30200320F600454A0A /* RealNameAddImageView.h */,
 				C2DDFB31200320F600454A0A /* RealNameAddImageView.m */,
-				C2DDFB2B20031FAA00454A0A /* AddIDCardView.m */,
 				C2DDFB2A20031FAA00454A0A /* BottomBtnView.h */,
 				C2DDFB392003264F00454A0A /* BottomBtnView.m */,
 				C2DDFB2820031F7800454A0A /* CreditScoreCardView.h */,
 				C2DDFB2720031F7700454A0A /* CreditScoreCardView.m */,
 				C2DDFB2520031F5A00454A0A /* AddIDCardView.h */,
+				E70B79782021989000A4F344 /* AddIDCardView.m */,
 				C2DDFB2220031F4600454A0A /* RealNameProgressView.h */,
 				C2DDFB2120031F4600454A0A /* RealNameProgressView.m */,
 				C2589DC11F83FA65007736C7 /* AddEventView.h */,
@@ -472,6 +498,10 @@
 				C2DDFB34200322B800454A0A /* UIImage+KaKao.m */,
 				C2DDFB402003579700454A0A /* ImageCell.h */,
 				C2DDFB412003579700454A0A /* ImageCell.m */,
+				E7B6105120230789000E4188 /* MenuViewManger.h */,
+				E7B6105220230789000E4188 /* MenuViewManger.m */,
+				E7B610472022F0F7000E4188 /* MenuItemView.h */,
+				E7B610482022F0F7000E4188 /* MenuItemView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -493,8 +523,6 @@
 				C294BCAD1FF3A2050041C90A /* AlipaySDK.bundle */,
 				C294BCAE1FF3A20B0041C90A /* AlipaySDK.framework */,
 				C2CE1BF91E2E2347003AE6D3 /* LoveQi */,
-				C2CE1C131E2E2347003AE6D3 /* LoveQiTests */,
-				C2CE1C1E1E2E2347003AE6D3 /* LoveQiUITests */,
 				0A963A0D1E42398800B4F626 /* LoveQiWidget */,
 				C2CE1BF81E2E2347003AE6D3 /* Products */,
 				89DA11229FF76934AD079537 /* Pods */,
@@ -539,24 +567,6 @@
 				C2CE1BFB1E2E2347003AE6D3 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		C2CE1C131E2E2347003AE6D3 /* LoveQiTests */ = {
-			isa = PBXGroup;
-			children = (
-				C2CE1C141E2E2347003AE6D3 /* LoveQiTests.m */,
-				C2CE1C161E2E2347003AE6D3 /* Info.plist */,
-			);
-			path = LoveQiTests;
-			sourceTree = "<group>";
-		};
-		C2CE1C1E1E2E2347003AE6D3 /* LoveQiUITests */ = {
-			isa = PBXGroup;
-			children = (
-				C2CE1C1F1E2E2347003AE6D3 /* LoveQiUITests.m */,
-				C2CE1C211E2E2347003AE6D3 /* Info.plist */,
-			);
-			path = LoveQiUITests;
 			sourceTree = "<group>";
 		};
 		C2DDFAC2200319FE00454A0A /* BaiduAip */ = {
@@ -677,6 +687,15 @@
 				C2DDFAFB200319FE00454A0A /* AipNavigationController.m */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E7B6104D2022F63C000E4188 /* Net */ = {
+			isa = PBXGroup;
+			children = (
+				E7B6104E2022F663000E4188 /* MenuRequest.h */,
+				E7B6104F2022F663000E4188 /* MenuRequest.m */,
+			);
+			path = Net;
 			sourceTree = "<group>";
 		};
 		E7E67BF32019A8DD00920C7C /* Util */ = {
@@ -937,10 +956,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2589DD21F83FA65007736C7 /* AddEventView.m in Sources */,
+				E7B610462022F0D5000E4188 /* DynamicMenuViewController.m in Sources */,
 				C29868061FF233F800155F52 /* WebViewController.m in Sources */,
 				C2589DE11F851EF9007736C7 /* PhotoManger.m in Sources */,
 				C2DDFB3F2003506000454A0A /* AddImageViewController.m in Sources */,
+				E7196CF32022B4480068B4BF /* RunloopViewController.m in Sources */,
+				E7B610502022F663000E4188 /* MenuRequest.m in Sources */,
 				C289F18D1FF11D16009F6D3D /* RefreshViewController.m in Sources */,
+				E70B79792021989000A4F344 /* AddIDCardView.m in Sources */,
+				E7B610492022F0F7000E4188 /* MenuItemView.m in Sources */,
 				C2DDFB1E200319FE00454A0A /* AipNavigationController.m in Sources */,
 				C2CE1BFC1E2E2347003AE6D3 /* main.m in Sources */,
 				C2589DD41F83FA65007736C7 /* JumpDateView.m in Sources */,
@@ -950,11 +974,11 @@
 				C2DDFB1A200319FE00454A0A /* AipImageView.m in Sources */,
 				C2589DD61F83FA65007736C7 /* LQItem.m in Sources */,
 				C2EB63641FB05500008B0A57 /* AddressBookViewController.m in Sources */,
-				C2DDFB2C20031FAA00454A0A /* AddIDCardView.m in Sources */,
 				C29867FF1FF1FB0600155F52 /* MRJHeader.m in Sources */,
 				C2DDFB19200319FE00454A0A /* AipCutImageView.m in Sources */,
 				C2589DD01F83FA65007736C7 /* DataBaseHander.m in Sources */,
 				C2589DD71F83FA65007736C7 /* LQItemView.m in Sources */,
+				E7145D9A2021AF82004F4792 /* MeiTuanDeatilViewController.m in Sources */,
 				C2DDFB17200319FE00454A0A /* IOSpeScaleLayoutLabel.m in Sources */,
 				C2589DDB1F83FA7B007736C7 /* AppDelegate.m in Sources */,
 				C2DDFB18200319FE00454A0A /* AipCameraPreviewView.m in Sources */,
@@ -974,6 +998,7 @@
 				C268D74B1FCD524100872615 /* CrashHandle.m in Sources */,
 				C2589DCE1F83FA65007736C7 /* RootViewController.m in Sources */,
 				C2DDFB2920031F7800454A0A /* CreditScoreCardView.m in Sources */,
+				E7B6104C2022F457000E4188 /* MenuModel.m in Sources */,
 				C2DDFB15200319FE00454A0A /* IOSpeScaleLayoutButton.m in Sources */,
 				C29718301FAAB47F00D2D599 /* PDFListViewController.m in Sources */,
 				C2589DE41F8521BE007736C7 /* AddImageBottomView.m in Sources */,
@@ -986,6 +1011,7 @@
 				C2A9BC1D1F8B692600571564 /* HeardView.m in Sources */,
 				C2589DDE1F849E3D007736C7 /* PhotoViewController.m in Sources */,
 				C2589DEA1F8626E8007736C7 /* IMManger.m in Sources */,
+				E7B6105320230789000E4188 /* MenuViewManger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1099,6 +1125,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3S42S92Y7;
 				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LoveQi",
@@ -1199,6 +1226,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3S42S92Y7;
 				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LoveQi",
@@ -1340,6 +1368,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3S42S92Y7;
 				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LoveQi",
@@ -1372,6 +1401,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3S42S92Y7;
 				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LoveQi",

@@ -14,7 +14,6 @@
 
 #define SCREEN_WIDTH   [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
-#define Navight 64
 #define NavBAR_HEIGHT (iPhoneX ? 88 : 64)//bar的高度
 
 #define iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
@@ -34,6 +33,6 @@
 
 
 #import <YYKit.h>
-#import <MBProgressHUD.H>
+#import <MBProgressHUD.h>
 #import <FSCalendar.h>
 #import "UIImage+KaKao.h"

@@ -78,6 +78,7 @@
     [self.view addSubview:self.bottomView];
     [self loadCalendarEvents];
     [self getMyMind];
+    [self.view bringSubviewToFront:self.headView];
     
     UIView *longPressView = [[UIView alloc] initWithFrame:CGRectMake(SCREEN_WIDTH - 104, 20, 44, 44)];
     longPressView.userInteractionEnabled = true;
@@ -283,7 +284,7 @@
 
 - (FSCalendar *)fscalendar {
     if (!_fscalendar) {
-        _fscalendar = [[FSCalendar alloc] initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT - 64 - 44)];
+        _fscalendar = [[FSCalendar alloc] initWithFrame:CGRectMake(0, NavBAR_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT - NavBAR_HEIGHT - 44)];
         _fscalendar.dataSource = self;
         _fscalendar.delegate = self;
         _fscalendar.pagingEnabled = NO; // important

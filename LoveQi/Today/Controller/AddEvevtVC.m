@@ -54,7 +54,7 @@
         }
     }
     if (!clipped) {
-        _textView.height = SCREEN_HEIGHT - Navight;
+        _textView.height = SCREEN_HEIGHT - NavBAR_HEIGHT;
     }
 }
 
@@ -70,7 +70,7 @@
 
 - (UIScrollView *)scrollView {
     if (!_scrollView) {
-        _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, Navight, SCREEN_WIDTH, SCREEN_HEIGHT - Navight)];
+        _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, NavBAR_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT - NavBAR_HEIGHT)];
         _scrollView.backgroundColor = [UIColor clearColor];
     }
     return _scrollView;
@@ -78,7 +78,7 @@
 
 - (YYTextView *)textView {
     if (!_textView) {
-        _textView = [[YYTextView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-Navight)];
+        _textView = [[YYTextView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-NavBAR_HEIGHT)];
         _textView.font = [UIFont systemFontOfSize:16];
         _textView.inputAccessoryView = self.mrjToolBar;
     }
