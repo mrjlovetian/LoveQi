@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '470E93D893EF9A99408A33AD6AE103C3'
-               BlueprintName = 'TRCache'
+               BlueprintIdentifier = '71D135B4A42692A26254D8087A751479'
+               BlueprintName = 'MRJ_QRCode'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libTRCache.a'>
+               BuildableName = 'libMRJ_QRCode.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

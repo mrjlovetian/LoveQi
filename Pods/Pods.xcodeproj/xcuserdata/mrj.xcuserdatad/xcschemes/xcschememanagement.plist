@@ -8,170 +8,99 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
 		</dict>
-		<key>BHBPopView.xcscheme</key>
+		<key>DACircularProgress.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>3</integer>
 		</dict>
 		<key>FMDB.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>4</integer>
 		</dict>
 		<key>FSCalendar.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>5</integer>
 		</dict>
 		<key>MBProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>6</integer>
+		</dict>
+		<key>MJRefresh.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MRJActionSheet.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MRJCameraTool.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MRJ_Network.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MRJ_QRCode.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MWPhotoBrowser-MWPhotoBrowser.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MWPhotoBrowser.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>OC-Category.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>12</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-LoveQi.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>7</integer>
 		</dict>
-		<key>TRCache.xcscheme</key>
+		<key>SDWebImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>8</integer>
 		</dict>
-		<key>TRMJPhotoBrowser.xcscheme</key>
+		<key>SKFCamera.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>9</integer>
 		</dict>
-		<key>TRWebImage.xcscheme</key>
+		<key>TZImagePickerController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>10</integer>
-		</dict>
-		<key>YHJQRCode.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>13</integer>
 		</dict>
 		<key>YYKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>11</integer>
+		</dict>
+		<key>vfrReader.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>09CA83C77F45193398D7C987F546D336</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>175B076ED45EB1A3E40F58BA14036467</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>210B06BD3A6EB5978859A74B0DA7A2FE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>470E93D893EF9A99408A33AD6AE103C3</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>6BA8B26B18BC0EB09C8DBF1F5C23DAF5</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>85D738E98A67F6C7B32CF7FA506E8D4C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8642CC820CE8C5B88C113D7F47AF4BC3</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>86DC4943B4B674AA50CDADBA257FFA40</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>88C8B91A23B5A9ECA6BCCD62CF4F7B78</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8FD52297904FCF5F6E7DC793B7A3B373</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9178BF055478C34AF5356CA9BB3CFA14</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>AFAFB55453D161D2BB5CFB30C68A54D5</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B717320742649014F4A93D46B7CFFABD</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C25C850F994AECB4AD64DB87C5D5EA4F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C75337162F2E4AD6A1D4AA52C64830BC</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C9A61D38D5EAD38A544BA02F990BFEB9</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E20174AECB075A96C8FB9F168543A205</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
 </dict>
 </plist>

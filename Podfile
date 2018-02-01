@@ -14,7 +14,7 @@ target :'LoveQi' do
   pod 'MRJCameraTool', '~> 0.1.6'
 #  pod 'RongCloudIM', '~> 2.8.18'
 #  pod 'DZNEmptyDataSet', '~> 1.8.1'
-  pod 'MRJ_Network', '~> 0.2.0'
+  pod 'MRJ_Network', '~> 0.2.0.4'
   pod 'MRJ_QRCode', '~> 0.3.1'
 #  pod 'MRJActionSheet', '~> 0.2.0'
   pod 'vfrReader', '~> 2.8.6'

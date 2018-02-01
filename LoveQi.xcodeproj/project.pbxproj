@@ -893,7 +893,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-LoveQi/Pods-LoveQi-resources.sh",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 				"${PODS_ROOT}/MRJ_QRCode/MRJ_QRCode.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/MWPhotoBrowser/MWPhotoBrowser.bundle",
+				"$PODS_CONFIGURATION_BUILD_DIR/MWPhotoBrowser/MWPhotoBrowser.bundle",
 				"${PODS_ROOT}/SKFCamera/SKFCamera/SKFCamera.bundle",
 				"${PODS_ROOT}/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle",
 				"${PODS_ROOT}/vfrReader/Graphics/Reader-Button-H.png",

@@ -1,18 +1,18 @@
 PODS:
-  - AFNetworking (3.1.0):
-    - AFNetworking/NSURLSession (= 3.1.0)
-    - AFNetworking/Reachability (= 3.1.0)
-    - AFNetworking/Security (= 3.1.0)
-    - AFNetworking/Serialization (= 3.1.0)
-    - AFNetworking/UIKit (= 3.1.0)
-  - AFNetworking/NSURLSession (3.1.0):
+  - AFNetworking (3.2.0):
+    - AFNetworking/NSURLSession (= 3.2.0)
+    - AFNetworking/Reachability (= 3.2.0)
+    - AFNetworking/Security (= 3.2.0)
+    - AFNetworking/Serialization (= 3.2.0)
+    - AFNetworking/UIKit (= 3.2.0)
+  - AFNetworking/NSURLSession (3.2.0):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (3.1.0)
-  - AFNetworking/Security (3.1.0)
-  - AFNetworking/Serialization (3.1.0)
-  - AFNetworking/UIKit (3.1.0):
+  - AFNetworking/Reachability (3.2.0)
+  - AFNetworking/Security (3.2.0)
+  - AFNetworking/Serialization (3.2.0)
+  - AFNetworking/UIKit (3.2.0):
     - AFNetworking/NSURLSession
   - DACircularProgress (2.3.1)
   - FMDB (2.7.2):
@@ -21,7 +21,7 @@ PODS:
   - FSCalendar (2.3.0)
   - MBProgressHUD (0.9.2)
   - MJRefresh (3.1.15.1)
-  - MRJ_Network (0.2.0):
+  - MRJ_Network (0.2.0.9):
     - AFNetworking (~> 3.1)
   - MRJ_QRCode (0.3.1):
     - MRJ_QRCode/Code (= 0.3.1)
@@ -62,7 +62,7 @@ DEPENDENCIES:
   - FMDB
   - FSCalendar (= 2.3)
   - MJRefresh (~> 3.1.15.1)
-  - MRJ_Network (~> 0.2.0)
+  - MRJ_Network (~> 0.2.0.4)
   - MRJ_QRCode (~> 0.3.1)
   - MRJCameraTool (~> 0.1.6)
   - MWPhotoBrowser (~> 2.1.2)
@@ -71,13 +71,13 @@ DEPENDENCIES:
   - YYKit
 
 SPEC CHECKSUMS:
-  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   FMDB: 6198a90e7b6900cfc046e6bc0ef6ebb7be9236aa
   FSCalendar: cbcca5ee332cf8d348db77ccda6b029ced42f84a
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
   MJRefresh: 5f8552bc25ca8751c010f621c1098dbdaacbccd6
-  MRJ_Network: 3e118e149e2f99c7866e30806c384569735caee2
+  MRJ_Network: 189f75493e6d83c64e043c7e0e97e7372539ef6b
   MRJ_QRCode: 5288d56196edec5a9f00370a2efc0941e9b0eb1c
   MRJActionSheet: 1418026cbd04b43a263044fa2d0c8f3938b069c7
   MRJCameraTool: 5fcbcb271912deb62d1a4415bffec9cef71853ce
@@ -89,6 +89,6 @@ SPEC CHECKSUMS:
   vfrReader: 94ea739a545e39093c93802ca1c5b203a5df46b1
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: c0da53d6205e7f37ddce004c1c1fbbebd8424efa
+PODFILE CHECKSUM: 9ae6d28d561fc768b5e547052299a505ae6c5408
 
-COCOAPODS: 1.4.0.beta.2
+COCOAPODS: 1.3.1

@@ -29,7 +29,6 @@ NS_ASSUME_NONNULL_BEGIN
 ///  Tell the delegate that the batch request had percent.
 - (void)batchRequestPercentFinished:(float)percent;
 
-
 ///  Tell the delegate that the batch request has failed.
 ///
 ///  @param batchRequest The corresponding batch request.
@@ -38,7 +37,6 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 @interface MRJ_BatchRequest : NSObject
-
 
 ///  All the requests are stored in this array.
 @property (nonatomic, strong, readonly) NSArray<MRJ_Request *> *requestArray;
@@ -95,7 +93,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 ///  Whether all response data is from local cache.
 - (BOOL)isDataFromCache;
-
 
 @end
 

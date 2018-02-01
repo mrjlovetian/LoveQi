@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '9178BF055478C34AF5356CA9BB3CFA14'
-               BlueprintName = 'TRMJPhotoBrowser'
+               BlueprintIdentifier = 'C82F33AB94F66F19C29649DE0FE51706'
+               BlueprintName = 'DACircularProgress'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libTRMJPhotoBrowser.a'>
+               BuildableName = 'libDACircularProgress.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

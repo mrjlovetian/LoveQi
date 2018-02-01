@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '6BA8B26B18BC0EB09C8DBF1F5C23DAF5'
-               BlueprintName = 'BHBPopView'
+               BlueprintIdentifier = '2F5625583DBCA9EC84092F58FB6124A4'
+               BlueprintName = 'MRJActionSheet'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libBHBPopView.a'>
+               BuildableName = 'libMRJActionSheet.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

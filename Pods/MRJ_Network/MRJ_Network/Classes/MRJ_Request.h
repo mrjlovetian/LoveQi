@@ -19,7 +19,6 @@ NS_ENUM(NSInteger) {
     MRJ_RequestCacheErrorInvalidCacheData = -7,
 };
 
-
 @interface MRJ_Request : MRJ_BaseRequest
 
 ///  Whether to use cache as response or not.
@@ -65,7 +64,6 @@ NS_ENUM(NSInteger) {
 
 ///  Whether cache is asynchronously written to storage. Default is YES.
 - (BOOL)writeCacheAsynchronously;
-
 
 @end
     

@@ -80,17 +80,13 @@ void MRJ_Log(NSString *format, ...) {
 
 + (NSString *)md5StringFromString:(NSString *)string {
     NSParameterAssert(string != nil && [string length] > 0);
-    
     const char *value = [string UTF8String];
-    
     unsigned char outputBuffer[CC_MD5_DIGEST_LENGTH];
     CC_MD5(value, (CC_LONG)strlen(value), outputBuffer);
-    
     NSMutableString *outputString = [[NSMutableString alloc] initWithCapacity:CC_MD5_DIGEST_LENGTH * 2];
     for(NSInteger count = 0; count < CC_MD5_DIGEST_LENGTH; count++){
         [outputString appendFormat:@"%02x",outputBuffer[count]];
     }
-    
     return outputString;
 }
 
@@ -111,13 +107,10 @@ void MRJ_Log(NSString *format, ...) {
 }
 
 + (BOOL)validateResumeData:(NSData *)data {
-
     if (!data || [data length] < 1) return NO;
-    
     NSError *error;
     NSDictionary *resumeDictionary = [NSPropertyListSerialization propertyListWithData:data options:NSPropertyListImmutable format:NULL error:&error];
     if (!resumeDictionary || error) return NO;
-    
     // Before iOS 9 & Mac OS X 10.11
 #if (defined(__IPHONE_OS_VERSION_MAX_ALLOWED) && __IPHONE_OS_VERSION_MAX_ALLOWED < 90000)\
 || (defined(__MAC_OS_X_VERSION_MAX_ALLOWED) && __MAC_OS_X_VERSION_MAX_ALLOWED < 101100)

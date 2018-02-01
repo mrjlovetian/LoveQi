@@ -86,24 +86,24 @@ typedef void(^MRJ_RequestFinishBlock)();
 ///  accessory methods will be called on the main queue.
 @protocol MRJ_RequestAccessory <NSObject>
     
-    @optional
+@optional
     
-    ///  Inform the accessory that the request is about to start.
-    ///
-    ///  @param request The corresponding request.
-    - (void)requestWillStart:(id)request;
+///  Inform the accessory that the request is about to start.
+///
+///  @param request The corresponding request.
+- (void)requestWillStart:(id)request;
     
-    ///  Inform the accessory that the request is about to stop. This method is called
-    ///  before executing `requestFinished` and `successCompletionBlock`.
-    ///
-    ///  @param request The corresponding request.
-    - (void)requestWillStop:(id)request;
+///  Inform the accessory that the request is about to stop. This method is called
+///  before executing `requestFinished` and `successCompletionBlock`.
+///
+///  @param request The corresponding request.
+- (void)requestWillStop:(id)request;
     
-    ///  Inform the accessory that the request has already stoped. This method is called
-    ///  after executing `requestFinished` and `successCompletionBlock`.
-    ///
-    ///  @param request The corresponding request.
-    - (void)requestDidStop:(id)request;
+///  Inform the accessory that the request has already stoped. This method is called
+///  after executing `requestFinished` and `successCompletionBlock`.
+///
+///  @param request The corresponding request.
+- (void)requestDidStop:(id)request;
     
 @end
 
@@ -162,11 +162,12 @@ typedef void(^MRJ_RequestFinishBlock)();
 ///  Executing state of request task.
 @property (nonatomic, readonly, getter=isExecuting) BOOL executing;
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////请求参数
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// 请求参数
 @property(nonatomic,strong) id requestArgument;
 
-///用于封装restful地址的参数集合
+/// 用于封装restful地址的参数集合
 @property(nonatomic,copy) NSArray<NSString *> *resetfulArguments;
 
 ///  Additional HTTP request header field.
@@ -295,8 +296,6 @@ typedef void(^MRJ_RequestFinishBlock)();
 ///  Override this method to filter requests with certain arguments when caching.
 - (id)cacheFileNameFilterForRequestArgument:(id)argument;
 
-
-
 ///  HTTP request method.
 - (MRJ_RequestMethod)requestMethod;
 
@@ -318,7 +317,6 @@ typedef void(^MRJ_RequestFinishBlock)();
 
 ///  Should use CDN when sending request.
 - (BOOL)useCDN;
-
 
 ///  The validator will be used to test if `responseJSONObject` is correctly formed.
 - (nullable id)jsonValidator;

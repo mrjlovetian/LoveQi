@@ -60,7 +60,7 @@
 - (void)startWithCompletionBlockWithSuccess:(nullable void (^)(MRJ_BatchRequest *batchRequest))success
                                    progress:(void(^)(float percent))progress
                                     failure:(nullable void (^)(MRJ_BatchRequest *batchRequest))failure{
-    [self  setCompletionBlockWithSuccess:success progress:progress failure:failure];
+    [self setCompletionBlockWithSuccess:success progress:progress failure:failure];
     [self start];
 }
 
@@ -89,7 +89,6 @@
     return result;
 }
 
-
 - (void)dealloc {
     [self clearRequest];
 }
@@ -97,21 +96,18 @@
 #pragma mark - Network Request Delegate
 
 - (void)requestFinished:(MRJ_Request *)request {
-    _finishedCount++;
+    _finishedCount ++;
     if (_finishedCount == _requestArray.count) {
         //回调完成
         if ([_delegate respondsToSelector:@selector(batchRequestPercentFinished:)]) {
             [_delegate batchRequestPercentFinished:1.0];
         }
-        if(_percentCompletionBlock)
-        {
+        if(_percentCompletionBlock) {
             float percent = floorf(1.0);
             _percentCompletionBlock(percent);
         }
-        
         //告诉调用者网络请求完成
         [self toggleAccessoriesWillStopCallBack];
-        
         //回调完成
         if ([_delegate respondsToSelector:@selector(batchRequestFinished:)]) {
             [_delegate batchRequestFinished:self];
@@ -122,17 +118,13 @@
         [self clearCompletionBlock];
         [self toggleAccessoriesDidStopCallBack];
         [[MRJ_BatchRequestAgent sharedAgent] removeBatchRequest:self];
-    }else{
-        
+    } else {
         float percent = [[NSString stringWithFormat:@"%.2f", floorf(_finishedCount) / floorf(_requestArray.count)] floatValue];
         //回调完成百分比
         if ([_delegate respondsToSelector:@selector(batchRequestPercentFinished:)]) {
             [_delegate batchRequestPercentFinished:percent];
         }
-        
-        if(_percentCompletionBlock)
-        {
-            
+        if (_percentCompletionBlock) {
             _percentCompletionBlock(percent);
         }
     }
@@ -154,7 +146,6 @@
     }
     // Clear
     [self clearCompletionBlock];
-    
     [self toggleAccessoriesDidStopCallBack];
     [[MRJ_BatchRequestAgent sharedAgent] removeBatchRequest:self];
 }

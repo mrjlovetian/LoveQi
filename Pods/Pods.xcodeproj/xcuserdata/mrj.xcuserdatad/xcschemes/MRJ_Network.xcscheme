@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '95AD2927CF523205818900570607771F'
-               BlueprintName = 'YYKit'
+               BlueprintIdentifier = 'DF4CCF2D7BF555F09AB28CE918EB3720'
+               BlueprintName = 'MRJ_Network'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libYYKit.a'>
+               BuildableName = 'libMRJ_Network.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

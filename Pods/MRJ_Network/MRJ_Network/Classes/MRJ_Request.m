@@ -60,13 +60,11 @@ static dispatch_queue_t MRJ_Request_cache_writing_queue() {
     if (!self) {
         return nil;
     }
-    
     self.version = [[aDecoder decodeObjectOfClass:[NSNumber class] forKey:NSStringFromSelector(@selector(version))] integerValue];
     self.sensitiveDataString = [aDecoder decodeObjectOfClass:[NSString class] forKey:NSStringFromSelector(@selector(sensitiveDataString))];
     self.stringEncoding = [[aDecoder decodeObjectOfClass:[NSNumber class] forKey:NSStringFromSelector(@selector(stringEncoding))] integerValue];
     self.creationDate = [aDecoder decodeObjectOfClass:[NSDate class] forKey:NSStringFromSelector(@selector(creationDate))];
     self.appVersionString = [aDecoder decodeObjectOfClass:[NSString class] forKey:NSStringFromSelector(@selector(appVersionString))];
-    
     return self;
 }
 
@@ -79,7 +77,6 @@ static dispatch_queue_t MRJ_Request_cache_writing_queue() {
 @property (nonatomic, strong) NSString *cacheString;
 @property (nonatomic, strong) id cacheJSON;
 @property (nonatomic, strong) NSXMLParser *cacheXML;
-
 @property (nonatomic, strong) MRJ_CacheMetadata *cacheMetadata;
 @property (nonatomic, assign) BOOL dataFromCache;
 
@@ -88,7 +85,6 @@ static dispatch_queue_t MRJ_Request_cache_writing_queue() {
 @implementation MRJ_Request
 
 - (void)start {
-    
     ///忽略缓存
     if (self.ignoreCache) {
         [self startWithoutCache];
@@ -106,16 +102,12 @@ static dispatch_queue_t MRJ_Request_cache_writing_queue() {
         [self startWithoutCache];
         return;
     }
-    
+
     _dataFromCache = YES;
-    
     dispatch_async(dispatch_get_main_queue(), ^{
         [self requestCompletePreprocessor];
         [self requestCompleteFilter];
         MRJ_Request *strongSelf = self;
-        
-
-        
         [strongSelf.delegate requestFinished:strongSelf];
         if (strongSelf.successCompletionBlock) {
             strongSelf.successCompletionBlock(strongSelf);
@@ -133,7 +125,6 @@ static dispatch_queue_t MRJ_Request_cache_writing_queue() {
 
 - (void)requestCompletePreprocessor {
     [super requestCompletePreprocessor];
-    
     if (self.writeCacheAsynchronously) {
         dispatch_async(MRJ_Request_cache_writing_queue(), ^{
             [self saveResponseDataToCacheFile:[super responseData]];
@@ -160,7 +151,6 @@ static dispatch_queue_t MRJ_Request_cache_writing_queue() {
 - (BOOL)writeCacheAsynchronously {
     return YES;
 }
-
 
 #pragma mark -
 
@@ -233,7 +223,6 @@ static dispatch_queue_t MRJ_Request_cache_writing_queue() {
         }
         return NO;
     }
-    
     return YES;
 }
 
@@ -302,7 +291,6 @@ static dispatch_queue_t MRJ_Request_cache_writing_queue() {
     NSString *path = [self cacheFilePath];
     NSFileManager *fileManager = [NSFileManager defaultManager];
     NSError *error = nil;
-    
     if ([fileManager fileExistsAtPath:path isDirectory:nil]) {
         NSData *data = [NSData dataWithContentsOfFile:path];
         _cacheData = data;
@@ -328,7 +316,6 @@ static dispatch_queue_t MRJ_Request_cache_writing_queue() {
             @try {
                 // New data will always overwrite old data.
                 [data writeToFile:[self cacheFilePath] atomically:YES];
-                
                 MRJ_CacheMetadata *metadata = [[MRJ_CacheMetadata alloc] init];
                 metadata.version = [self cacheVersion];
                 metadata.sensitiveDataString = ((NSObject *)[self cacheSensitiveData]).description;
@@ -385,7 +372,6 @@ static dispatch_queue_t MRJ_Request_cache_writing_queue() {
 - (NSString *)cacheBasePath {
     NSString *pathOfLibrary = [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) objectAtIndex:0];
     NSString *path = [pathOfLibrary stringByAppendingPathComponent:@"LazyRequestCache"];
-    
     // Filter cache base path
     NSArray<id<MRJ_CacheDirPathFilterProtocol>> *filters = [[MRJ_NetworkConfig sharedConfig] cacheDirPathFilters];
     if (filters.count > 0) {
@@ -393,7 +379,6 @@ static dispatch_queue_t MRJ_Request_cache_writing_queue() {
             path = [f filterCacheDirPath:path withRequest:self];
         }
     }
-    
     [self createDirectoryIfNeeded:path];
     return path;
 }

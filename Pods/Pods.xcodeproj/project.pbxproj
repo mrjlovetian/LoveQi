@@ -1224,13 +1224,13 @@
 		078A5BD3662AE59ADA217D28154DB51B /* MRJ_Request.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MRJ_Request.m; path = MRJ_Network/Classes/MRJ_Request.m; sourceTree = "<group>"; };
 		0792EBCF204236998D90D0C1D86A7FEA /* NSDecimalNumber+CalculatingByString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDecimalNumber+CalculatingByString.m"; path = "OC-Category/Classes/Foundation/NSNumber/NSDecimalNumber+CalculatingByString.m"; sourceTree = "<group>"; };
 		07F0A09CE4B4F2491307205E3C30EA06 /* NSObject+GCD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+GCD.m"; path = "OC-Category/Classes/Foundation/NSObject/NSObject+GCD.m"; sourceTree = "<group>"; };
+		0807E81F38283761725B7EC962499DFE /* MWPhotoBrowser.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MWPhotoBrowser.bundle; path = MWPhotoBrowser.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		082333D285ADD71C406C53A21C1EAE32 /* UIView+BlockGesture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+BlockGesture.m"; path = "OC-Category/Classes/UIKit/UIView/UIView+BlockGesture.m"; sourceTree = "<group>"; };
 		08826413DE93FE48C593AD2FEA3EF43E /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
 		08AE65F774D954EC947E75EF3E37B202 /* UIScrollView+EmptyDataSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+EmptyDataSet.h"; path = "OC-Category/Classes/UIKit/UIScrollView/UIScrollView+EmptyDataSet.h"; sourceTree = "<group>"; };
 		08B48E75F508447AFF21784859876AC9 /* UIImage+MWPhotoBrowser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+MWPhotoBrowser.h"; path = "Pod/Classes/UIImage+MWPhotoBrowser.h"; sourceTree = "<group>"; };
 		08F4B9C660D29FD54A0CFF84E3179AF2 /* NSNotificationCenter+MainThread.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNotificationCenter+MainThread.h"; path = "OC-Category/Classes/Foundation/NSNotificationCenter/NSNotificationCenter+MainThread.h"; sourceTree = "<group>"; };
 		0906FA015A7C2F528F062CFFC7838655 /* NSDate+CupertinoYankee.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+CupertinoYankee.h"; path = "OC-Category/Classes/Foundation/NSDate/NSDate+CupertinoYankee.h"; sourceTree = "<group>"; };
-		096EE4C31E0FA848E8F6662D0F668AB0 /* libMRJ_Network.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMRJ_Network.a; path = libMRJ_Network.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		09A1775B319742CDF4EB2CE35A512478 /* NSString+XMLDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+XMLDictionary.m"; path = "OC-Category/Classes/Foundation/NSString/NSString+XMLDictionary.m"; sourceTree = "<group>"; };
 		09C9077AB930ED39CBEA53A4D751DCAF /* UIImage+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+YYAdd.m"; path = "YYKit/Base/UIKit/UIImage+YYAdd.m"; sourceTree = "<group>"; };
 		0A4918555953477B5F2F45D9559916E7 /* Pods-LoveQi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LoveQi.release.xcconfig"; sourceTree = "<group>"; };
@@ -1277,10 +1277,8 @@
 		139969F0CDCCB24A95BE35C54ADF5D81 /* UIWebView+Blocks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+Blocks.h"; path = "OC-Category/Classes/UIKit/UIWebView/UIWebView+Blocks.h"; sourceTree = "<group>"; };
 		1408598F704D9971E85AF4B393634950 /* NSString+Pinyin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+Pinyin.h"; path = "OC-Category/Classes/Foundation/NSString/NSString+Pinyin.h"; sourceTree = "<group>"; };
 		1440B62C16E87AF1EAC1BE5D287FDE17 /* PlayButtonOverlayLargeTap.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = PlayButtonOverlayLargeTap.png; path = Pod/Assets/PlayButtonOverlayLargeTap.png; sourceTree = "<group>"; };
-		146C1DE36AC6A057E4B7179F1C68B319 /* libMBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMBProgressHUD.a; path = libMBProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		14D272599E3145AD8796325E9CAE2855 /* NSNumber+Round.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNumber+Round.h"; path = "OC-Category/Classes/Foundation/NSNumber/NSNumber+Round.h"; sourceTree = "<group>"; };
 		15037992762C581FB6DB6DE275FC741A /* Reader-Mark-N@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Reader-Mark-N@2x.png"; path = "Graphics/Reader-Mark-N@2x.png"; sourceTree = "<group>"; };
-		1564D530E46A69721C8E7011B6C6975E /* libOC-Category.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libOC-Category.a"; path = "libOC-Category.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1597DF21FD161A75A4C950456B2FF1F3 /* UIBezierPath+Length.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIBezierPath+Length.m"; path = "OC-Category/Classes/UIKit/UIBezierPath/UIBezierPath+Length.m"; sourceTree = "<group>"; };
 		15CAE4F6FBBE77D468C346260BAEE36F /* UIBarButtonItemArrowLeft@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "UIBarButtonItemArrowLeft@3x.png"; path = "Pod/Assets/UIBarButtonItemArrowLeft@3x.png"; sourceTree = "<group>"; };
 		15CC3FDDF2FACDDFB53AFFF387B87FC9 /* UIImageView+Reflect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+Reflect.h"; path = "OC-Category/Classes/UIKit/UIImageView/UIImageView+Reflect.h"; sourceTree = "<group>"; };
@@ -1317,6 +1315,7 @@
 		1DCB983A8212906E658EC67A3B31C18F /* NSURL+Param.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURL+Param.m"; path = "OC-Category/Classes/Foundation/NSURL/NSURL+Param.m"; sourceTree = "<group>"; };
 		1DE812E303DB20B5606CAD875C46A68B /* MRJActionSheet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MRJActionSheet-dummy.m"; sourceTree = "<group>"; };
 		1E327E476193E008F93ABDC6F59F6DA4 /* UIView+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+YYAdd.m"; path = "YYKit/Base/UIKit/UIView+YYAdd.m"; sourceTree = "<group>"; };
+		1E54FAF8A8865BE2822B69FFCEFF8DA6 /* libMWPhotoBrowser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMWPhotoBrowser.a; path = libMWPhotoBrowser.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E839C8351D3504A49748CBE3C2E9C00 /* MWZoomingScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MWZoomingScrollView.m; path = Pod/Classes/MWZoomingScrollView.m; sourceTree = "<group>"; };
 		1E89C7A91E015358CD7340E815E4BF66 /* UIButton+Submitting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+Submitting.h"; path = "OC-Category/Classes/UIKit/UIButton/UIButton+Submitting.h"; sourceTree = "<group>"; };
 		1EFFA3F09BE04FDD768671112369291B /* NSManagedObjectContext+Fetching.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectContext+Fetching.m"; path = "OC-Category/Classes/CoreData/NSManagedObjectContext/NSManagedObjectContext+Fetching.m"; sourceTree = "<group>"; };
@@ -1324,6 +1323,7 @@
 		1F4BB35E86B67DE59F30273F58DBB91C /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCacheOperation.h"; path = "SDWebImage/UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		1F967C2511CE353D54D16711914089A2 /* FMDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FMDB-dummy.m"; sourceTree = "<group>"; };
 		1FF99D7D4DC53D02DCCD04296CE94170 /* MJRefreshAutoGifFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshAutoGifFooter.m; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoGifFooter.m; sourceTree = "<group>"; };
+		200E0E227419195569F6D18674486EF3 /* libMRJ_Network.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMRJ_Network.a; path = libMRJ_Network.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		20F89F9275EAEB7316115F5A67EFAA37 /* NSString+Emoji.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+Emoji.m"; path = "OC-Category/Classes/Foundation/NSString/NSString+Emoji.m"; sourceTree = "<group>"; };
 		20FCEAB771C4C042690D969B174B89C6 /* FSCalendarHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarHeader.m; path = FSCalendar/FSCalendarHeader.m; sourceTree = "<group>"; };
 		21357DC494FD51E117057D3FBA7BD963 /* UIScrollView+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+YYAdd.h"; path = "YYKit/Base/UIKit/UIScrollView+YYAdd.h"; sourceTree = "<group>"; };
@@ -1484,7 +1484,6 @@
 		45A9B0B261961879D3640A8507F63859 /* UIView+Screenshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+Screenshot.m"; path = "OC-Category/Classes/UIKit/UIView/UIView+Screenshot.m"; sourceTree = "<group>"; };
 		45F57B2B6107CB1641858DAA5548755F /* UIViewController+DDPopUpViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+DDPopUpViewController.h"; path = "OC-Category/Classes/UIKit/UIViewController/UIViewController+DDPopUpViewController.h"; sourceTree = "<group>"; };
 		460AC281896D5A3F04E0036239F2EAD1 /* NSObject+YYAddForARC.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+YYAddForARC.m"; path = "YYKit/Base/Foundation/NSObject+YYAddForARC.m"; sourceTree = "<group>"; };
-		46485733688AFAB8C0DA3F98FB4596DA /* libMWPhotoBrowser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMWPhotoBrowser.a; path = libMWPhotoBrowser.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4684B51D2099AEBFDA3F0D31C6F14B05 /* ReaderThumbFetch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderThumbFetch.h; path = Sources/ReaderThumbFetch.h; sourceTree = "<group>"; };
 		4714E8F6CA522E12D14E02F423D9C3B2 /* TZAssetModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TZAssetModel.h; path = TZImagePickerController/TZImagePickerController/TZAssetModel.h; sourceTree = "<group>"; };
 		4751428A8BB49A94075209333B662B49 /* UIViewController+StoreKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+StoreKit.m"; path = "OC-Category/Classes/UIKit/UIViewController/UIViewController+StoreKit.m"; sourceTree = "<group>"; };
@@ -1501,6 +1500,7 @@
 		496E7AC9AF2973FE51700658FFA1A238 /* YYWebImageOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYWebImageOperation.h; path = YYKit/Image/YYWebImageOperation.h; sourceTree = "<group>"; };
 		49F1735F1166100860BF5460D3884864 /* UIImageView+Addition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+Addition.h"; path = "OC-Category/Classes/UIKit/UIImageView/UIImageView+Addition.h"; sourceTree = "<group>"; };
 		49F581A486999B6F56648F40A53C874D /* UIResponder+Chain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIResponder+Chain.h"; path = "OC-Category/Classes/UIKit/UIResponder/UIResponder+Chain.h"; sourceTree = "<group>"; };
+		4A2AFEF02CCA6D07D9B543F584F4123D /* libMRJActionSheet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMRJActionSheet.a; path = libMRJActionSheet.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A398E7C3C28C6F9DBA26BCE3ACDB6B2 /* CAAnimation+EasingEquations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CAAnimation+EasingEquations.h"; path = "OC-Category/Classes/QuartzCore/CAAnimation/CAAnimation+EasingEquations.h"; sourceTree = "<group>"; };
 		4A47AB583CD47695D1F49B94F89C56B9 /* YYTimer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTimer.h; path = YYKit/Utility/YYTimer.h; sourceTree = "<group>"; };
 		4AD9828CC46320C363D038AD8B377EED /* YYWebImageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYWebImageManager.h; path = YYKit/Image/YYWebImageManager.h; sourceTree = "<group>"; };
@@ -1508,7 +1508,7 @@
 		4B7D7CFEED6032E9F1C461E74E881D58 /* VideoOverlay@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "VideoOverlay@3x.png"; path = "Pod/Assets/VideoOverlay@3x.png"; sourceTree = "<group>"; };
 		4BABC8B5B24E854D5EF53109A97A9B52 /* MRJ_Request.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MRJ_Request.h; path = MRJ_Network/Classes/MRJ_Request.h; sourceTree = "<group>"; };
 		4BC82038CD7B497E23073741324020EC /* UINavigationController+Transitions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+Transitions.m"; path = "OC-Category/Classes/UIKit/UINavigationController/UINavigationController+Transitions.m"; sourceTree = "<group>"; };
-		4D1EE547CD6854840FDC09560B94C903 /* libFMDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libFMDB.a; path = libFMDB.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C1D57428A5E3179EA8D49566715D8B8 /* libFMDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libFMDB.a; path = libFMDB.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D411F8EC3F41FE6C4E2388784E6B983 /* ReaderDocumentOutline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderDocumentOutline.h; path = Sources/ReaderDocumentOutline.h; sourceTree = "<group>"; };
 		4D8339A67099602E226227C15D8580FC /* ReaderContentPage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderContentPage.h; path = Sources/ReaderContentPage.h; sourceTree = "<group>"; };
 		4DCAA69BEE01DCD817D2F06E6F520DE9 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
@@ -1525,7 +1525,6 @@
 		5024D711E1079533BC47AD403973EF26 /* UITextView+PlaceHolder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextView+PlaceHolder.m"; path = "OC-Category/Classes/UIKit/UITextView/UITextView+PlaceHolder.m"; sourceTree = "<group>"; };
 		5085C3105D7E5067A6DFD1F268F131A5 /* Reader-Email.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Reader-Email.png"; path = "Graphics/Reader-Email.png"; sourceTree = "<group>"; };
 		50C8859C944234F1B0F7F2529383FD67 /* ThumbsMainToolbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ThumbsMainToolbar.h; path = Sources/ThumbsMainToolbar.h; sourceTree = "<group>"; };
-		50EDCE99EC2DB397BDBB76B6DD2FA988 /* MWPhotoBrowser.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MWPhotoBrowser.bundle; path = "MWPhotoBrowser-MWPhotoBrowser.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5138E47CF7138336C6563647D065F1CB /* ReaderThumbRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderThumbRequest.h; path = Sources/ReaderThumbRequest.h; sourceTree = "<group>"; };
 		5146F004103C2A00D6BCB443EDFE3ABD /* NSAttributedString+YYText.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSAttributedString+YYText.h"; path = "YYKit/Text/String/NSAttributedString+YYText.h"; sourceTree = "<group>"; };
 		515F1C9DE634CF2E2591E0FC8BEFFEC6 /* UIBarButtonItem+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIBarButtonItem+YYAdd.h"; path = "YYKit/Base/UIKit/UIBarButtonItem+YYAdd.h"; sourceTree = "<group>"; };
@@ -1556,7 +1555,6 @@
 		576E6133601B9F67D991E3B33A526548 /* TZImagePickerController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TZImagePickerController-prefix.pch"; sourceTree = "<group>"; };
 		57DF9A94488882D6534F68105153C565 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
 		57E3DE0768A35306948FECAD10748D6B /* NSURLRequest+ParamsFromDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLRequest+ParamsFromDictionary.h"; path = "OC-Category/Classes/Foundation/NSURLRequest/NSURLRequest+ParamsFromDictionary.h"; sourceTree = "<group>"; };
-		5881FD0BDF61BC63E9663DA08D42C36D /* libMJRefresh.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMJRefresh.a; path = libMJRefresh.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5897CE76DF3BDDFA2989ED9709F6E02D /* UIBezierPath+SVGString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIBezierPath+SVGString.m"; path = "OC-Category/Classes/UIKit/UIBezierPath/UIBezierPath+SVGString.m"; sourceTree = "<group>"; };
 		58B8EA8260B676CD55939991E203FBAF /* SDWebImageCompat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCompat.m; path = SDWebImage/SDWebImageCompat.m; sourceTree = "<group>"; };
 		5912AE8A3E08DFF325ED904B3F7BF19F /* TOCroppedImageAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCroppedImageAttributes.h; path = SKFCamera/TOCroppedImageAttributes.h; sourceTree = "<group>"; };
@@ -1594,7 +1592,6 @@
 		622B71A374A4F07CC758314A6693DDB5 /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
 		625E82023C03FC45C199FFB5142A25F0 /* FMDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = src/fmdb/FMDB.h; sourceTree = "<group>"; };
 		628705B488748D70D3A44B2076DABA09 /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebP.framework; path = Vendor/WebP.framework; sourceTree = "<group>"; };
-		62CDD3591872D25899CE525580A1B329 /* libMRJ_QRCode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMRJ_QRCode.a; path = libMRJ_QRCode.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6351E2945946FEA36E35EB0D3E070567 /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
 		635F378F5AE8F8B4AF7D11E38A05CE01 /* NSMutableURLRequest+Upload.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableURLRequest+Upload.m"; path = "OC-Category/Classes/Foundation/NSURLRequest/NSMutableURLRequest+Upload.m"; sourceTree = "<group>"; };
 		6364EB54C6A748181D9E3C1D159F5BF2 /* ReaderThumbRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReaderThumbRequest.m; path = Sources/ReaderThumbRequest.m; sourceTree = "<group>"; };
@@ -1603,7 +1600,6 @@
 		64C2D16E8A0A5FCFF1F22D5CCE0DEA83 /* NSDictionary+URL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+URL.m"; path = "OC-Category/Classes/Foundation/NSDictionary/NSDictionary+URL.m"; sourceTree = "<group>"; };
 		6565A8C79524593BD8272180B3F25C7C /* YYTextKeyboardManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextKeyboardManager.m; path = YYKit/Text/Component/YYTextKeyboardManager.m; sourceTree = "<group>"; };
 		66398FD5309704BA496C7DC5F5CD2410 /* CAShapeLayer+UIBezierPath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CAShapeLayer+UIBezierPath.h"; path = "OC-Category/Classes/QuartzCore/CAShapeLayer/CAShapeLayer+UIBezierPath.h"; sourceTree = "<group>"; };
-		66BA50C6FCE2A255C2B42809ADD04410 /* libMRJActionSheet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMRJActionSheet.a; path = libMRJActionSheet.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		672E8B9313AEEA5DFD53BB1AF7307BB9 /* NSBundle+MRJ_QRCode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+MRJ_QRCode.m"; path = "MRJ_QRCode/Classes/NSBundle+MRJ_QRCode.m"; sourceTree = "<group>"; };
 		674EA2021148AAC2053BB7C8C53FEE82 /* UIBarButtonItemArrowRight@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "UIBarButtonItemArrowRight@2x.png"; path = "Pod/Assets/UIBarButtonItemArrowRight@2x.png"; sourceTree = "<group>"; };
 		677DC47EFC2850B67DDE0BC0A3FF2E98 /* UIViewController+TopBarMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+TopBarMessage.m"; path = "OC-Category/Classes/UIKit/UIViewController/UIViewController+TopBarMessage.m"; sourceTree = "<group>"; };
@@ -1651,7 +1647,6 @@
 		738C597DCA05CFB205E16E3D6F034942 /* UIWebView+MetaParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+MetaParser.m"; path = "OC-Category/Classes/UIKit/UIWebView/UIWebView+MetaParser.m"; sourceTree = "<group>"; };
 		73ABC08BDED6AEBA3F2DC6CAC1A37D26 /* LLSimpleCamera.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LLSimpleCamera.h; path = SKFCamera/LLSimpleCamera.h; sourceTree = "<group>"; };
 		73E825498A57B69E922155D33DAEBC9B /* NSBundle+MJRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBundle+MJRefresh.h"; path = "MJRefresh/NSBundle+MJRefresh.h"; sourceTree = "<group>"; };
-		7490AF7CB45E73E40936F26E4B6225C6 /* libTZImagePickerController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libTZImagePickerController.a; path = libTZImagePickerController.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		74DE63AA0D476FFD50492416C94E8FF3 /* UIApplication+Permissions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+Permissions.h"; path = "OC-Category/Classes/UIKit/UIApplication/UIApplication+Permissions.h"; sourceTree = "<group>"; };
 		752B3C27499D648D2EF87B685CF77E8A /* UIColor+HEX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+HEX.m"; path = "OC-Category/Classes/UIKit/UIColor/UIColor+HEX.m"; sourceTree = "<group>"; };
 		75558531D853EE4C334B8718E43DCD27 /* MWTapDetectingImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWTapDetectingImageView.h; path = Pod/Classes/MWTapDetectingImageView.h; sourceTree = "<group>"; };
@@ -1668,12 +1663,14 @@
 		789E1CEFFB24462795342DFFEE83C921 /* MJRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefresh.h; path = MJRefresh/MJRefresh.h; sourceTree = "<group>"; };
 		78E60A499FA7D190AFA52BA0C34EFF41 /* UITextView+Select.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextView+Select.m"; path = "OC-Category/Classes/UIKit/UITextView/UITextView+Select.m"; sourceTree = "<group>"; };
 		795935FFFD2FA1F2C08BF156881EAD67 /* YYSentinel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYSentinel.m; path = YYKit/Utility/YYSentinel.m; sourceTree = "<group>"; };
+		7970D656F05A340C83F86484071D4E99 /* libPods-LoveQi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-LoveQi.a"; path = "libPods-LoveQi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79CDB0CE9706C0E5324752A1C868319F /* NSString+MIME.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+MIME.h"; path = "OC-Category/Classes/Foundation/NSString/NSString+MIME.h"; sourceTree = "<group>"; };
 		7B11F78F9078B9A4A643119355674C7C /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+RoundedCorner.h"; path = "OC-Category/Classes/UIKit/UIImage/UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
 		7B2E209DE018226BE92070BE3451F472 /* YYSentinel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYSentinel.h; path = YYKit/Utility/YYSentinel.h; sourceTree = "<group>"; };
 		7B5CCCB34EF4CF7FE34A26F27FF2078A /* Reader-Print.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Reader-Print.png"; path = "Graphics/Reader-Print.png"; sourceTree = "<group>"; };
 		7BD5042B9C928CF8B05840D9F2A9C1D8 /* UITextField+Select.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+Select.m"; path = "OC-Category/Classes/UIKit/UITextField/UITextField+Select.m"; sourceTree = "<group>"; };
 		7BFC30DC02C96DC80B06FFEEDD466CFF /* MJRefreshComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshComponent.m; path = MJRefresh/Base/MJRefreshComponent.m; sourceTree = "<group>"; };
+		7C37908B2B333E367994D3A3C537E70B /* libSKFCamera.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSKFCamera.a; path = libSKFCamera.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C449171BF34BD7654E2BD3BC713A2F6 /* Reader-Mark-Y.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Reader-Mark-Y.png"; path = "Graphics/Reader-Mark-Y.png"; sourceTree = "<group>"; };
 		7CF4922C0FD32742C5682DF6F740132A /* OC-Category-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OC-Category-dummy.m"; sourceTree = "<group>"; };
 		7D3747536F553C0CBCD03BBE7608DF9F /* ImageSelectedOn.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = ImageSelectedOn.png; path = Pod/Assets/ImageSelectedOn.png; sourceTree = "<group>"; };
@@ -1700,6 +1697,7 @@
 		8215654BFF4090013633D4590B3C9089 /* YYThreadSafeArray.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYThreadSafeArray.m; path = YYKit/Utility/YYThreadSafeArray.m; sourceTree = "<group>"; };
 		8242CCA7E15E84928E7752E18309622D /* UIViewController+ScrollingStatusBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+ScrollingStatusBar.h"; path = "OC-Category/Classes/UIKit/UIViewController/UIViewController+ScrollingStatusBar.h"; sourceTree = "<group>"; };
 		827A01244D0DC5670E1BE9DC120C7276 /* UIColor+Modify.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Modify.m"; path = "OC-Category/Classes/UIKit/UIColor/UIColor+Modify.m"; sourceTree = "<group>"; };
+		82AC92D53CD3FDEF16FC392D7B0A2FED /* libTZImagePickerController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libTZImagePickerController.a; path = libTZImagePickerController.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		82B46A0F30FDCC06EA4E0FA428F327B4 /* UIApplication+ApplicationSize.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+ApplicationSize.h"; path = "OC-Category/Classes/UIKit/UIApplication/UIApplication+ApplicationSize.h"; sourceTree = "<group>"; };
 		82E4E3FE262356A7F3EFF2826AB7962E /* NSArray+Block.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Block.m"; path = "OC-Category/Classes/Foundation/NSArray/NSArray+Block.m"; sourceTree = "<group>"; };
 		82E5C19CE978DF84536023FF22D23FBB /* FSCalendarConstance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarConstance.h; path = FSCalendar/FSCalendarConstance.h; sourceTree = "<group>"; };
@@ -1738,6 +1736,7 @@
 		8A9F3A6E3279B9594A112BCFDAC6CD8E /* NSString+Base64.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+Base64.m"; path = "OC-Category/Classes/Foundation/NSString/NSString+Base64.m"; sourceTree = "<group>"; };
 		8AE41771E6D6B8F66A184FEC42ABE658 /* MWTapDetectingView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWTapDetectingView.h; path = Pod/Classes/MWTapDetectingView.h; sourceTree = "<group>"; };
 		8B202E0F52787A8B0EB8F56BC2164D59 /* UITableViewCell+NIB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableViewCell+NIB.h"; path = "OC-Category/Classes/UIKit/UITableViewCell/UITableViewCell+NIB.h"; sourceTree = "<group>"; };
+		8B4AE5FB1C0CA95380DFF865A846A3E5 /* libOC-Category.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libOC-Category.a"; path = "libOC-Category.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B5865F559165D2A131D02B165B9AA1C /* MRJ_QRCodeTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MRJ_QRCodeTool.m; path = MRJ_QRCode/Classes/MRJ_QRCodeTool.m; sourceTree = "<group>"; };
 		8B6D8C12A1A2DF0DBBE09CDBD48AF559 /* UIScreen+Frame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScreen+Frame.m"; path = "OC-Category/Classes/UIKit/UIScreen/UIScreen+Frame.m"; sourceTree = "<group>"; };
 		8B9EC2433EEB89DEAFB940DB6F3CDC14 /* UIView+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+YYAdd.h"; path = "YYKit/Base/UIKit/UIView+YYAdd.h"; sourceTree = "<group>"; };
@@ -1760,6 +1759,7 @@
 		8F56AC6D500ED9B97F570B901247F39B /* ImageSelectedOn@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ImageSelectedOn@3x.png"; path = "Pod/Assets/ImageSelectedOn@3x.png"; sourceTree = "<group>"; };
 		8F583BB7E50B30F167EC67DA24813345 /* MRJ_BaseRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MRJ_BaseRequest.m; path = MRJ_Network/Classes/MRJ_BaseRequest.m; sourceTree = "<group>"; };
 		8F6CCB756C0BC4F56D17C0D62285FC75 /* CAMediaTimingFunction+AdditionalEquations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CAMediaTimingFunction+AdditionalEquations.h"; path = "OC-Category/Classes/QuartzCore/CAMediaTimingFunction/CAMediaTimingFunction+AdditionalEquations.h"; sourceTree = "<group>"; };
+		8F963F3187869E3D3D8B3C0FE5857994 /* libMBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMBProgressHUD.a; path = libMBProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9087A3ADC50FCAE3F230093195C13B26 /* UIView+Find.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+Find.m"; path = "OC-Category/Classes/UIKit/UIView/UIView+Find.m"; sourceTree = "<group>"; };
 		90F43BF87D87728507D8E3DFD12A4A55 /* UITextView+Select.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextView+Select.h"; path = "OC-Category/Classes/UIKit/UITextView/UITextView+Select.h"; sourceTree = "<group>"; };
 		91998149D219DD91C9BFD9E20FF02D71 /* UIButton+CountDown.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+CountDown.h"; path = "OC-Category/Classes/UIKit/UIButton/UIButton+CountDown.h"; sourceTree = "<group>"; };
@@ -1775,6 +1775,7 @@
 		934481F074B41D81AB09A209394A7365 /* YYCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYCache.h; path = YYKit/Cache/YYCache.h; sourceTree = "<group>"; };
 		935BEB141E97304478A3AFE84F682CE0 /* UIDevice+Hardware.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIDevice+Hardware.h"; path = "OC-Category/Classes/UIKit/UIDevice/UIDevice+Hardware.h"; sourceTree = "<group>"; };
 		938E3787183647B6A29D76F6EDD450FE /* NSDate+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+YYAdd.m"; path = "YYKit/Base/Foundation/NSDate+YYAdd.m"; sourceTree = "<group>"; };
+		9391DAF67526DAA85913F1D151C4B92B /* libSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSDWebImage.a; path = libSDWebImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		939E7A86ED660DCB947A86A223C430F7 /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		946ABABC05970C578092A613D18413C3 /* UITextField+Blocks.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+Blocks.m"; path = "OC-Category/Classes/UIKit/UITextField/UITextField+Blocks.m"; sourceTree = "<group>"; };
@@ -1792,12 +1793,12 @@
 		96F445FD298722AF74D95A1FDDD380DC /* UIView+Shake.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+Shake.h"; path = "OC-Category/Classes/UIKit/UIView/UIView+Shake.h"; sourceTree = "<group>"; };
 		9747C48E69BC1AED49AED90114DC9737 /* NSDate+Utilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Utilities.m"; path = "OC-Category/Classes/Foundation/NSDate/NSDate+Utilities.m"; sourceTree = "<group>"; };
 		97618C62EB4D1202F1AE594711E4540D /* YYImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYImageCache.m; path = YYKit/Image/YYImageCache.m; sourceTree = "<group>"; };
+		97715F12A77F9CDC16F2463BFF0ACE65 /* libMRJCameraTool.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMRJCameraTool.a; path = libMRJCameraTool.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		97DBED373C8FC9E8348D232E40E1D567 /* UIBarButtonItemArrowRight@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "UIBarButtonItemArrowRight@3x.png"; path = "Pod/Assets/UIBarButtonItemArrowRight@3x.png"; sourceTree = "<group>"; };
 		97E5435FC01E548BFFE7F11184AC5BA1 /* UITableViewCell+NIB.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableViewCell+NIB.m"; path = "OC-Category/Classes/UIKit/UITableViewCell/UITableViewCell+NIB.m"; sourceTree = "<group>"; };
 		97FEFA9E4B0FEE9B58899BFA42D8AA6B /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Photos.framework; sourceTree = DEVELOPER_DIR; };
 		9815224257B2771FED4F7247E903F4F9 /* UILabel+AdjustableLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+AdjustableLabel.h"; path = "OC-Category/Classes/UIKit/UILable/UILabel+AdjustableLabel.h"; sourceTree = "<group>"; };
 		98B1776A58FE303CDEB4FADBD2612494 /* UINavigationItem+Loading.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationItem+Loading.h"; path = "OC-Category/Classes/UIKit/UINavigationItem/UINavigationItem+Loading.h"; sourceTree = "<group>"; };
-		98B718733EF666893CE31676A5029063 /* libFSCalendar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libFSCalendar.a; path = libFSCalendar.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9926166CF8114598F68A5B84C00885D5 /* NSTimer+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSTimer+YYAdd.h"; path = "YYKit/Base/Foundation/NSTimer+YYAdd.h"; sourceTree = "<group>"; };
 		99294BD09ADB7C4CAFBD47211ACA0778 /* MJRefreshNormalHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshNormalHeader.m; path = MJRefresh/Custom/Header/MJRefreshNormalHeader.m; sourceTree = "<group>"; };
 		9963DE86207775A1A2AC41EBB6A1BE37 /* UIControl+ActionBlocks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIControl+ActionBlocks.h"; path = "OC-Category/Classes/UIKit/UIControl/UIControl+ActionBlocks.h"; sourceTree = "<group>"; };
@@ -1835,7 +1836,6 @@
 		A06D797BCFF0AB7834260A8DD593D2BE /* NSData+ImageContentType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+ImageContentType.m"; path = "SDWebImage/NSData+ImageContentType.m"; sourceTree = "<group>"; };
 		A09E475E67D7A5BC7F007D2EDF7B8247 /* MRJ_QRCodeScanningView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MRJ_QRCodeScanningView.h; path = MRJ_QRCode/Classes/MRJ_QRCodeScanningView.h; sourceTree = "<group>"; };
 		A1193021F515D61654BA432BA21A38EC /* MJRefreshBackGifFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackGifFooter.h; path = MJRefresh/Custom/Footer/Back/MJRefreshBackGifFooter.h; sourceTree = "<group>"; };
-		A1280DE529756DCD2BF69EE26CC6B8B5 /* libPods-LoveQi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-LoveQi.a"; path = "libPods-LoveQi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1942399F9B98E86615F4E121A100E22 /* NSString+DictionaryValue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+DictionaryValue.m"; path = "OC-Category/Classes/Foundation/NSString/NSString+DictionaryValue.m"; sourceTree = "<group>"; };
 		A1BE0C1B6694883256EF0F7C40F7F7D8 /* NSString+Matcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+Matcher.h"; path = "OC-Category/Classes/Foundation/NSString/NSString+Matcher.h"; sourceTree = "<group>"; };
 		A1C543DC34B9AE4A6BAEBFBB6197AB24 /* Reader-Print@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Reader-Print@2x.png"; path = "Graphics/Reader-Print@2x.png"; sourceTree = "<group>"; };
@@ -1949,6 +1949,7 @@
 		B75FDF8134C236025BEDB9ADCFB692D9 /* MWPhotoBrowserPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWPhotoBrowserPrivate.h; path = Pod/Classes/MWPhotoBrowserPrivate.h; sourceTree = "<group>"; };
 		B77963D1FCBF14D6936C0DE1FA2A5DDB /* UIImage+Blur.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Blur.m"; path = "OC-Category/Classes/UIKit/UIImage/UIImage+Blur.m"; sourceTree = "<group>"; };
 		B7D0417753C026BF96E0EE0FEBFDC89D /* UIButton+YYWebImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+YYWebImage.m"; path = "YYKit/Image/Categories/UIButton+YYWebImage.m"; sourceTree = "<group>"; };
+		B80A2AC8F0FE4379CBCF92F9DBB1DBB3 /* libDACircularProgress.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libDACircularProgress.a; path = libDACircularProgress.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B841B7E1AD91D8EEFC8CF63F341D8126 /* YYFileHash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYFileHash.m; path = YYKit/Utility/YYFileHash.m; sourceTree = "<group>"; };
 		B850C0965E39187B9A4DEDF4B3ADADAE /* UILabel+AutomaticWriting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+AutomaticWriting.h"; path = "OC-Category/Classes/UIKit/UILable/UILabel+AutomaticWriting.h"; sourceTree = "<group>"; };
 		B8A5D69443B853FB6EBA829A395EF7EB /* SDImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCache.h; path = SDWebImage/SDImageCache.h; sourceTree = "<group>"; };
@@ -1985,7 +1986,9 @@
 		C1C4A03855F1B909A15065B4E9138264 /* CALayer+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CALayer+YYAdd.m"; path = "YYKit/Base/Quartz/CALayer+YYAdd.m"; sourceTree = "<group>"; };
 		C1FD8255E1BEC8A9717EB4F55ADE69E2 /* YYTextInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextInput.h; path = YYKit/Text/Component/YYTextInput.h; sourceTree = "<group>"; };
 		C22DB428DDA474F515D616A7FC601865 /* MRJActionSheet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MRJActionSheet.h; path = MRJActionSheet/Classes/MRJActionSheet.h; sourceTree = "<group>"; };
+		C23276367E42B00C8E72635EC1D832B1 /* libFSCalendar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libFSCalendar.a; path = libFSCalendar.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2472E5D57D86F439B35D31BA1EAC690 /* TZImageCropManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TZImageCropManager.h; path = TZImagePickerController/TZImagePickerController/TZImageCropManager.h; sourceTree = "<group>"; };
+		C254117CCE57E9368210135767CB42F9 /* libMJRefresh.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMJRefresh.a; path = libMJRefresh.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2C8FBAB21B5B966D7CC91B035EF2E44 /* MRJ_BatchRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MRJ_BatchRequest.m; path = MRJ_Network/Classes/MRJ_BatchRequest.m; sourceTree = "<group>"; };
 		C354DE0BD2ADB202B49A263FE2C9241D /* NSThread+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSThread+YYAdd.m"; path = "YYKit/Base/Foundation/NSThread+YYAdd.m"; sourceTree = "<group>"; };
 		C367B30E5B12ABDC9BAEF932466E8345 /* UIImage+FXImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+FXImage.h"; path = "OC-Category/Classes/UIKit/UIImage/UIImage+FXImage.h"; sourceTree = "<group>"; };
@@ -2017,7 +2020,6 @@
 		C92F412F6F1387E01FD95EECCE6656DC /* MWCaptionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWCaptionView.h; path = Pod/Classes/MWCaptionView.h; sourceTree = "<group>"; };
 		C978F27A12779DB8C10D1809EF86BCA1 /* TZPhotoPickerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TZPhotoPickerController.m; path = TZImagePickerController/TZImagePickerController/TZPhotoPickerController.m; sourceTree = "<group>"; };
 		C99DBF355608DD9CFE52C57CB5FDD6BF /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+RoundedCorner.m"; path = "OC-Category/Classes/UIKit/UIImage/UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
-		C9B8023573362E69ECB36CD61ADC9A90 /* libDACircularProgress.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libDACircularProgress.a; path = libDACircularProgress.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9C305ACC1D2E0018C7C93F7C0CC066E /* NSString+Matcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+Matcher.m"; path = "OC-Category/Classes/Foundation/NSString/NSString+Matcher.m"; sourceTree = "<group>"; };
 		CA05FC914FC8C919AEC8D387A1D3FA55 /* FSCalendarFlowLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarFlowLayout.h; path = FSCalendar/FSCalendarFlowLayout.h; sourceTree = "<group>"; };
 		CA2AEE531CB2198DD2DB5102DE5CA0FC /* UIApplication+KeyboardFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+KeyboardFrame.h"; path = "OC-Category/Classes/UIKit/UIApplication/UIApplication+KeyboardFrame.h"; sourceTree = "<group>"; };
@@ -2061,14 +2063,12 @@
 		D29ECB843C3FFA91DD5085BE0EE9D8D7 /* FSCalendarFlowLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarFlowLayout.m; path = FSCalendar/FSCalendarFlowLayout.m; sourceTree = "<group>"; };
 		D2EB6426EAB5F504AF163A9ED2A8B7EE /* TZImagePickerController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TZImagePickerController.xcconfig; sourceTree = "<group>"; };
 		D343E62E7227A139162BA53BE9DEE0D3 /* TZPhotoPreviewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TZPhotoPreviewController.h; path = TZImagePickerController/TZImagePickerController/TZPhotoPreviewController.h; sourceTree = "<group>"; };
-		D359673076CBFF53CF8A2F16A2CB8F28 /* libvfrReader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libvfrReader.a; path = libvfrReader.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3754FF2E32D1067E232CE56DA2D4B2D /* UIBezierPath+Symbol.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIBezierPath+Symbol.m"; path = "OC-Category/Classes/UIKit/UIBezierPath/UIBezierPath+Symbol.m"; sourceTree = "<group>"; };
 		D3B1D009FDC88531168A9118C49191D8 /* UIControl+Sound.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIControl+Sound.m"; path = "OC-Category/Classes/UIKit/UIControl/UIControl+Sound.m"; sourceTree = "<group>"; };
 		D410903B1DD5FA425C6954999EBCBF87 /* Pods-LoveQi.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LoveQi.dev.xcconfig"; sourceTree = "<group>"; };
 		D4524F69BDDC66EA1CB06334DC96DA9A /* ReaderThumbRender.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderThumbRender.h; path = Sources/ReaderThumbRender.h; sourceTree = "<group>"; };
 		D4D8B252EC7143A54B02AB3811DD3CC7 /* NSUserDefaults+iCloudSync.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSUserDefaults+iCloudSync.m"; path = "OC-Category/Classes/Foundation/NSUserDefaults/NSUserDefaults+iCloudSync.m"; sourceTree = "<group>"; };
 		D530244AA724F58C17367EB3C3F02D9A /* UIImage+SuperCompress.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+SuperCompress.m"; path = "OC-Category/Classes/UIKit/UIImage/UIImage+SuperCompress.m"; sourceTree = "<group>"; };
-		D536CEB84FC78EB8765AA0A441C402B0 /* libSKFCamera.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSKFCamera.a; path = libSKFCamera.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D538B0F62C89A87CC58E7C520300B5B7 /* YYImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYImage.m; path = YYKit/Image/YYImage.m; sourceTree = "<group>"; };
 		D544FAA9111DF5B8783B43CA559E94C1 /* NSData+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+YYAdd.h"; path = "YYKit/Base/Foundation/NSData+YYAdd.h"; sourceTree = "<group>"; };
 		D5F0164F48CD9A205993F248AAAC6A13 /* MRJ_ChainRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MRJ_ChainRequest.h; path = MRJ_Network/Classes/MRJ_ChainRequest.h; sourceTree = "<group>"; };
@@ -2086,7 +2086,7 @@
 		D83848CCBF82ED71A85A9A1886D00A8A /* NSString+Score.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+Score.m"; path = "OC-Category/Classes/Foundation/NSString/NSString+Score.m"; sourceTree = "<group>"; };
 		D88EBEC1ABC90AB405E887D820FA0768 /* YYKitMacro.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYKitMacro.h; path = YYKit/Base/YYKitMacro.h; sourceTree = "<group>"; };
 		D88EDE8B2ED84337DE396FBFECF282FF /* NSDate+InternetDateTime.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+InternetDateTime.m"; path = "OC-Category/Classes/Foundation/NSDate/NSDate+InternetDateTime.m"; sourceTree = "<group>"; };
-		D8A9279D399943290543EBDD4924235A /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAFNetworking.a; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8C060994D0AD4E789CE99DBABD392B5 /* libYYKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libYYKit.a; path = libYYKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9FFE893FFBB2A67E2765F87B5B4A1EE /* CALayer+FSExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CALayer+FSExtension.m"; path = "FSCalendar/CALayer+FSExtension.m"; sourceTree = "<group>"; };
 		DA155FDA29C11D1B58CEB2575B385B42 /* NSMutableURLRequest+Upload.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableURLRequest+Upload.h"; path = "OC-Category/Classes/Foundation/NSURLRequest/NSMutableURLRequest+Upload.h"; sourceTree = "<group>"; };
 		DA81DCA47BCFF3C082A15FB627611CC2 /* TOCropView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropView.h; path = SKFCamera/TOCropView.h; sourceTree = "<group>"; };
@@ -2127,7 +2127,6 @@
 		E34A9F9BBA4E577A18D5023573C6D3BC /* YYTransaction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTransaction.h; path = YYKit/Utility/YYTransaction.h; sourceTree = "<group>"; };
 		E357F70ACC023F07F699ABEA164A3F79 /* NSNotificationCenter+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNotificationCenter+YYAdd.h"; path = "YYKit/Base/Foundation/NSNotificationCenter+YYAdd.h"; sourceTree = "<group>"; };
 		E381305FDEB297A02CBF169CF401BD3A /* UIView+Toast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+Toast.h"; path = "OC-Category/Classes/UIKit/UIView/UIView+Toast.h"; sourceTree = "<group>"; };
-		E3A218431E4F9DA29D6B379A4D8B0DBE /* libSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSDWebImage.a; path = libSDWebImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E40F347E7F8F39A4C88B8D27217F3CD1 /* NSURLConnection+SelfSigned.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLConnection+SelfSigned.h"; path = "OC-Category/Classes/Foundation/NSURLConnection/NSURLConnection+SelfSigned.h"; sourceTree = "<group>"; };
 		E4CA6C85A1DCBC8927B7ED8FA01DDF11 /* CAShapeLayer+UIBezierPath.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CAShapeLayer+UIBezierPath.m"; path = "OC-Category/Classes/QuartzCore/CAShapeLayer/CAShapeLayer+UIBezierPath.m"; sourceTree = "<group>"; };
 		E5E8ABE488E4DF3A70F78AC62D7AE094 /* PlayButtonOverlayLargeTap@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "PlayButtonOverlayLargeTap@3x.png"; path = "Pod/Assets/PlayButtonOverlayLargeTap@3x.png"; sourceTree = "<group>"; };
@@ -2149,7 +2148,6 @@
 		E857A73CFAD8FE82781219D7B1CFD5C2 /* ImageError.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = ImageError.png; path = Pod/Assets/ImageError.png; sourceTree = "<group>"; };
 		E8822125EB4E2421462344645CAB7502 /* MRJ_BatchRequestAgent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MRJ_BatchRequestAgent.h; path = MRJ_Network/Classes/MRJ_BatchRequestAgent.h; sourceTree = "<group>"; };
 		E8D86AFA02569A04CF53ABA6385E81B1 /* NSFileManager+Paths.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSFileManager+Paths.h"; path = "OC-Category/Classes/Foundation/NSFileManager/NSFileManager+Paths.h"; sourceTree = "<group>"; };
-		E8DE25EDBD77651903A4FDAF1B9C00D8 /* libMRJCameraTool.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMRJCameraTool.a; path = libMRJCameraTool.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8F5951791E98627B29EFF45090EEAD9 /* MWPhoto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWPhoto.h; path = Pod/Classes/MWPhoto.h; sourceTree = "<group>"; };
 		E8FE36EFCDBA38496EC66F99A894BC18 /* UIView+Recursion.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+Recursion.m"; path = "OC-Category/Classes/UIKit/UIView/UIView+Recursion.m"; sourceTree = "<group>"; };
 		E9399124741185F2C287077E17235FE7 /* MJRefreshBackStateFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshBackStateFooter.m; path = MJRefresh/Custom/Footer/Back/MJRefreshBackStateFooter.m; sourceTree = "<group>"; };
@@ -2160,6 +2158,7 @@
 		EA2A9549E5183E07A2517A4C8AA60E1E /* FSCalendarEventIndicator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarEventIndicator.h; path = FSCalendar/FSCalendarEventIndicator.h; sourceTree = "<group>"; };
 		EA30FB0E9F6424D404BB0D8FFB7187EC /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MultiFormat.m"; path = "SDWebImage/UIImage+MultiFormat.m"; sourceTree = "<group>"; };
 		EA53A32146C58492971C7891310F76A3 /* ReaderContentView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderContentView.h; path = Sources/ReaderContentView.h; sourceTree = "<group>"; };
+		EAAA2F54909407F9203F4D419E473370 /* libvfrReader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libvfrReader.a; path = libvfrReader.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAFA1980D6264DBAAED2C46B511924F8 /* NSString+Size.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+Size.m"; path = "OC-Category/Classes/Foundation/NSString/NSString+Size.m"; sourceTree = "<group>"; };
 		EB1F29E6432D261FD035E80EEBF39EFC /* MKAnnotationView+YYWebImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MKAnnotationView+YYWebImage.h"; path = "YYKit/Image/Categories/MKAnnotationView+YYWebImage.h"; sourceTree = "<group>"; };
 		EB8946D9D9CB61A281CB9C28727352CF /* NSTimer+Blocks.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSTimer+Blocks.m"; path = "OC-Category/Classes/Foundation/NSTimer/NSTimer+Blocks.m"; sourceTree = "<group>"; };
@@ -2180,6 +2179,7 @@
 		EE3816CACBCF62F11635D80AC484C7C3 /* MRJCameraTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MRJCameraTool.h; path = MRJCameraTool/Classes/MRJCameraTool.h; sourceTree = "<group>"; };
 		EE95B50CFC4A3FA529E56BA35C5A1E45 /* NSDictionary+SafeAccess.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+SafeAccess.m"; path = "OC-Category/Classes/Foundation/NSDictionary/NSDictionary+SafeAccess.m"; sourceTree = "<group>"; };
 		EEA7ECFFD81CA79DD68DD41595B2F0DE /* NSArray+SafeAccess.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+SafeAccess.m"; path = "OC-Category/Classes/Foundation/NSArray/NSArray+SafeAccess.m"; sourceTree = "<group>"; };
+		EECB3514761ACEE5DEAC9BDF6F21CB39 /* libMRJ_QRCode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMRJ_QRCode.a; path = libMRJ_QRCode.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEDC89A4DD36053552F14D16C50A0197 /* UIView+Nib.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+Nib.m"; path = "OC-Category/Classes/UIKit/UIView/UIView+Nib.m"; sourceTree = "<group>"; };
 		EEFC4E32826FDE50436E561BE90417ED /* UIView+Constraints.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+Constraints.m"; path = "OC-Category/Classes/UIKit/UIView/UIView+Constraints.m"; sourceTree = "<group>"; };
 		EF0DA2D59371322EF9572DE53A641266 /* TZImagePickerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TZImagePickerController.m; path = TZImagePickerController/TZImagePickerController/TZImagePickerController.m; sourceTree = "<group>"; };
@@ -2200,13 +2200,13 @@
 		F3D07A6799179C1E4B12CE6EB987A7A6 /* TOCropOverlayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropOverlayView.h; path = SKFCamera/TOCropOverlayView.h; sourceTree = "<group>"; };
 		F40852521201D03B4F4153F9ABF75C65 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
 		F458C8D02F27246E137891F58CD8C9C2 /* YYReachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYReachability.m; path = YYKit/Utility/YYReachability.m; sourceTree = "<group>"; };
+		F47E14FED3EF933030A0E861AB81D763 /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAFNetworking.a; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F499BC23830AFBCFA4F34CB733336504 /* NSArray+Block.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Block.h"; path = "OC-Category/Classes/Foundation/NSArray/NSArray+Block.h"; sourceTree = "<group>"; };
 		F543BD601C7157CDF5B04FF2FB03D542 /* NSBundle+MRJ_QRCode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBundle+MRJ_QRCode.h"; path = "MRJ_QRCode/Classes/NSBundle+MRJ_QRCode.h"; sourceTree = "<group>"; };
 		F5BC84FED65744FA01290D3441935586 /* NSManagedObject+Dictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+Dictionary.h"; path = "OC-Category/Classes/CoreData/NSManagedObject/NSManagedObject+Dictionary.h"; sourceTree = "<group>"; };
 		F662E2AD5A7DD0E80B1BD349CAF90BD1 /* MRJ_QRCode-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MRJ_QRCode-dummy.m"; sourceTree = "<group>"; };
 		F6C9A74AA12E4AC30FB8FAC106E564FC /* YYImageCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYImageCoder.m; path = YYKit/Image/YYImageCoder.m; sourceTree = "<group>"; };
 		F6E5DFE7AC99BFD6466F8895CB240657 /* UIFont+TTF.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIFont+TTF.h"; path = "OC-Category/Classes/UIKit/UIFont/UIFont+TTF.h"; sourceTree = "<group>"; };
-		F6F4558D9240835C414C656761D1054C /* libYYKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libYYKit.a; path = libYYKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F749EF274082BA51054F39EF6636957F /* MWPhoto.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MWPhoto.m; path = Pod/Classes/MWPhoto.m; sourceTree = "<group>"; };
 		F754BBE26C657AE067E0598DC3E2F2B7 /* UIImage+Resize.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Resize.h"; path = "OC-Category/Classes/UIKit/UIImage/UIImage+Resize.h"; sourceTree = "<group>"; };
 		F7A395C2B86A01B3CD83BE07C5A90D64 /* Reader-Mark-N.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Reader-Mark-N.png"; path = "Graphics/Reader-Mark-N.png"; sourceTree = "<group>"; };
@@ -3029,32 +3029,6 @@
 			path = "../Target Support Files/MRJCameraTool";
 			sourceTree = "<group>";
 		};
-		5A4A4943E6AFEDE8E9928586B1FE5746 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D8A9279D399943290543EBDD4924235A /* libAFNetworking.a */,
-				C9B8023573362E69ECB36CD61ADC9A90 /* libDACircularProgress.a */,
-				4D1EE547CD6854840FDC09560B94C903 /* libFMDB.a */,
-				98B718733EF666893CE31676A5029063 /* libFSCalendar.a */,
-				146C1DE36AC6A057E4B7179F1C68B319 /* libMBProgressHUD.a */,
-				5881FD0BDF61BC63E9663DA08D42C36D /* libMJRefresh.a */,
-				096EE4C31E0FA848E8F6662D0F668AB0 /* libMRJ_Network.a */,
-				62CDD3591872D25899CE525580A1B329 /* libMRJ_QRCode.a */,
-				66BA50C6FCE2A255C2B42809ADD04410 /* libMRJActionSheet.a */,
-				E8DE25EDBD77651903A4FDAF1B9C00D8 /* libMRJCameraTool.a */,
-				46485733688AFAB8C0DA3F98FB4596DA /* libMWPhotoBrowser.a */,
-				1564D530E46A69721C8E7011B6C6975E /* libOC-Category.a */,
-				A1280DE529756DCD2BF69EE26CC6B8B5 /* libPods-LoveQi.a */,
-				E3A218431E4F9DA29D6B379A4D8B0DBE /* libSDWebImage.a */,
-				D536CEB84FC78EB8765AA0A441C402B0 /* libSKFCamera.a */,
-				7490AF7CB45E73E40936F26E4B6225C6 /* libTZImagePickerController.a */,
-				D359673076CBFF53CF8A2F16A2CB8F28 /* libvfrReader.a */,
-				F6F4558D9240835C414C656761D1054C /* libYYKit.a */,
-				50EDCE99EC2DB397BDBB76B6DD2FA988 /* MWPhotoBrowser.bundle */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		5AF32C105CAB472C4BA12679FCC85328 /* Serialization */ = {
 			isa = PBXGroup;
 			children = (
@@ -3275,7 +3249,7 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				9D3502B914AD5A0E3727E5DC81467C1F /* Frameworks */,
 				C157A91AAB0C07C3C3D18734EB4BB277 /* Pods */,
-				5A4A4943E6AFEDE8E9928586B1FE5746 /* Products */,
+				DA4D16F51CB5520453E302D978F69062 /* Products */,
 				BF8B486A93EA8B26E976E6225B7822CA /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -3706,6 +3680,32 @@
 				770232F5920A18E28340FB5AD1C52AD9 /* MKMapView+ZoomLevel.m */,
 			);
 			name = MapKit;
+			sourceTree = "<group>";
+		};
+		DA4D16F51CB5520453E302D978F69062 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F47E14FED3EF933030A0E861AB81D763 /* libAFNetworking.a */,
+				B80A2AC8F0FE4379CBCF92F9DBB1DBB3 /* libDACircularProgress.a */,
+				4C1D57428A5E3179EA8D49566715D8B8 /* libFMDB.a */,
+				C23276367E42B00C8E72635EC1D832B1 /* libFSCalendar.a */,
+				8F963F3187869E3D3D8B3C0FE5857994 /* libMBProgressHUD.a */,
+				C254117CCE57E9368210135767CB42F9 /* libMJRefresh.a */,
+				200E0E227419195569F6D18674486EF3 /* libMRJ_Network.a */,
+				EECB3514761ACEE5DEAC9BDF6F21CB39 /* libMRJ_QRCode.a */,
+				4A2AFEF02CCA6D07D9B543F584F4123D /* libMRJActionSheet.a */,
+				97715F12A77F9CDC16F2463BFF0ACE65 /* libMRJCameraTool.a */,
+				1E54FAF8A8865BE2822B69FFCEFF8DA6 /* libMWPhotoBrowser.a */,
+				8B4AE5FB1C0CA95380DFF865A846A3E5 /* libOC-Category.a */,
+				7970D656F05A340C83F86484071D4E99 /* libPods-LoveQi.a */,
+				9391DAF67526DAA85913F1D151C4B92B /* libSDWebImage.a */,
+				7C37908B2B333E367994D3A3C537E70B /* libSKFCamera.a */,
+				82AC92D53CD3FDEF16FC392D7B0A2FED /* libTZImagePickerController.a */,
+				EAAA2F54909407F9203F4D419E473370 /* libvfrReader.a */,
+				D8C060994D0AD4E789CE99DBABD392B5 /* libYYKit.a */,
+				0807E81F38283761725B7EC962499DFE /* MWPhotoBrowser.bundle */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		DE34B0CA3825991FEF6338BC9B8AD54F /* OC-Category */ = {
@@ -4622,7 +4622,7 @@
 			);
 			name = MBProgressHUD;
 			productName = MBProgressHUD;
-			productReference = 146C1DE36AC6A057E4B7179F1C68B319 /* libMBProgressHUD.a */;
+			productReference = 8F963F3187869E3D3D8B3C0FE5857994 /* libMBProgressHUD.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		2F5625583DBCA9EC84092F58FB6124A4 /* MRJActionSheet */ = {
@@ -4639,7 +4639,7 @@
 			);
 			name = MRJActionSheet;
 			productName = MRJActionSheet;
-			productReference = 66BA50C6FCE2A255C2B42809ADD04410 /* libMRJActionSheet.a */;
+			productReference = 4A2AFEF02CCA6D07D9B543F584F4123D /* libMRJActionSheet.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		5D0230BC649DB8BF9FCBD1A11DE727A1 /* AFNetworking */ = {
@@ -4656,7 +4656,7 @@
 			);
 			name = AFNetworking;
 			productName = AFNetworking;
-			productReference = D8A9279D399943290543EBDD4924235A /* libAFNetworking.a */;
+			productReference = F47E14FED3EF933030A0E861AB81D763 /* libAFNetworking.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		624FE0C30D87B72F354DD168B162AB32 /* MWPhotoBrowser-MWPhotoBrowser */ = {
@@ -4673,7 +4673,7 @@
 			);
 			name = "MWPhotoBrowser-MWPhotoBrowser";
 			productName = "MWPhotoBrowser-MWPhotoBrowser";
-			productReference = 50EDCE99EC2DB397BDBB76B6DD2FA988 /* MWPhotoBrowser.bundle */;
+			productReference = 0807E81F38283761725B7EC962499DFE /* MWPhotoBrowser.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		630AAE003592EAFC2FC39FEEC4EC7633 /* Pods-LoveQi */ = {
@@ -4706,7 +4706,7 @@
 			);
 			name = "Pods-LoveQi";
 			productName = "Pods-LoveQi";
-			productReference = A1280DE529756DCD2BF69EE26CC6B8B5 /* libPods-LoveQi.a */;
+			productReference = 7970D656F05A340C83F86484071D4E99 /* libPods-LoveQi.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		660EFDA5293CD380052C3CE89B6B6ED6 /* FMDB */ = {
@@ -4723,7 +4723,7 @@
 			);
 			name = FMDB;
 			productName = FMDB;
-			productReference = 4D1EE547CD6854840FDC09560B94C903 /* libFMDB.a */;
+			productReference = 4C1D57428A5E3179EA8D49566715D8B8 /* libFMDB.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		71D135B4A42692A26254D8087A751479 /* MRJ_QRCode */ = {
@@ -4740,7 +4740,7 @@
 			);
 			name = MRJ_QRCode;
 			productName = MRJ_QRCode;
-			productReference = 62CDD3591872D25899CE525580A1B329 /* libMRJ_QRCode.a */;
+			productReference = EECB3514761ACEE5DEAC9BDF6F21CB39 /* libMRJ_QRCode.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		7B78AE54C8061D8AD15C64BAD4560A01 /* FSCalendar */ = {
@@ -4757,7 +4757,7 @@
 			);
 			name = FSCalendar;
 			productName = FSCalendar;
-			productReference = 98B718733EF666893CE31676A5029063 /* libFSCalendar.a */;
+			productReference = C23276367E42B00C8E72635EC1D832B1 /* libFSCalendar.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		8B710CE7664BDB7CC5C47C6285B0143E /* TZImagePickerController */ = {
@@ -4774,7 +4774,7 @@
 			);
 			name = TZImagePickerController;
 			productName = TZImagePickerController;
-			productReference = 7490AF7CB45E73E40936F26E4B6225C6 /* libTZImagePickerController.a */;
+			productReference = 82AC92D53CD3FDEF16FC392D7B0A2FED /* libTZImagePickerController.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		901FDA5F0F4EB228BB0AAAFE62651ECA /* MRJCameraTool */ = {
@@ -4794,7 +4794,7 @@
 			);
 			name = MRJCameraTool;
 			productName = MRJCameraTool;
-			productReference = E8DE25EDBD77651903A4FDAF1B9C00D8 /* libMRJCameraTool.a */;
+			productReference = 97715F12A77F9CDC16F2463BFF0ACE65 /* libMRJCameraTool.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		927A00F01A7D4E792871DBEC4F2849BF /* vfrReader */ = {
@@ -4811,7 +4811,7 @@
 			);
 			name = vfrReader;
 			productName = vfrReader;
-			productReference = D359673076CBFF53CF8A2F16A2CB8F28 /* libvfrReader.a */;
+			productReference = EAAA2F54909407F9203F4D419E473370 /* libvfrReader.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		95AD2927CF523205818900570607771F /* YYKit */ = {
@@ -4828,7 +4828,7 @@
 			);
 			name = YYKit;
 			productName = YYKit;
-			productReference = F6F4558D9240835C414C656761D1054C /* libYYKit.a */;
+			productReference = D8C060994D0AD4E789CE99DBABD392B5 /* libYYKit.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		A4C269D8A17E0A00E3DD4AF501D0BE1A /* SKFCamera */ = {
@@ -4845,7 +4845,7 @@
 			);
 			name = SKFCamera;
 			productName = SKFCamera;
-			productReference = D536CEB84FC78EB8765AA0A441C402B0 /* libSKFCamera.a */;
+			productReference = 7C37908B2B333E367994D3A3C537E70B /* libSKFCamera.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		A9372B63284C36BAE3A6EF0FFF26AE9B /* MJRefresh */ = {
@@ -4862,7 +4862,7 @@
 			);
 			name = MJRefresh;
 			productName = MJRefresh;
-			productReference = 5881FD0BDF61BC63E9663DA08D42C36D /* libMJRefresh.a */;
+			productReference = C254117CCE57E9368210135767CB42F9 /* libMJRefresh.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		C82F33AB94F66F19C29649DE0FE51706 /* DACircularProgress */ = {
@@ -4879,7 +4879,7 @@
 			);
 			name = DACircularProgress;
 			productName = DACircularProgress;
-			productReference = C9B8023573362E69ECB36CD61ADC9A90 /* libDACircularProgress.a */;
+			productReference = B80A2AC8F0FE4379CBCF92F9DBB1DBB3 /* libDACircularProgress.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		DF4CCF2D7BF555F09AB28CE918EB3720 /* MRJ_Network */ = {
@@ -4897,7 +4897,7 @@
 			);
 			name = MRJ_Network;
 			productName = MRJ_Network;
-			productReference = 096EE4C31E0FA848E8F6662D0F668AB0 /* libMRJ_Network.a */;
+			productReference = 200E0E227419195569F6D18674486EF3 /* libMRJ_Network.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		E9E468029AF4C77D341FE426D477EC03 /* MWPhotoBrowser */ = {
@@ -4918,7 +4918,7 @@
 			);
 			name = MWPhotoBrowser;
 			productName = MWPhotoBrowser;
-			productReference = 46485733688AFAB8C0DA3F98FB4596DA /* libMWPhotoBrowser.a */;
+			productReference = 1E54FAF8A8865BE2822B69FFCEFF8DA6 /* libMWPhotoBrowser.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		EDF2C5864FB87D44328AD1069E812614 /* SDWebImage */ = {
@@ -4935,7 +4935,7 @@
 			);
 			name = SDWebImage;
 			productName = SDWebImage;
-			productReference = E3A218431E4F9DA29D6B379A4D8B0DBE /* libSDWebImage.a */;
+			productReference = 9391DAF67526DAA85913F1D151C4B92B /* libSDWebImage.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		EE4E5183B4314FFDF7C6F76FE377181B /* OC-Category */ = {
@@ -4952,7 +4952,7 @@
 			);
 			name = "OC-Category";
 			productName = "OC-Category";
-			productReference = 1564D530E46A69721C8E7011B6C6975E /* libOC-Category.a */;
+			productReference = 8B4AE5FB1C0CA95380DFF865A846A3E5 /* libOC-Category.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -4972,7 +4972,7 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 5A4A4943E6AFEDE8E9928586B1FE5746 /* Products */;
+			productRefGroup = DA4D16F51CB5520453E302D978F69062 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -6379,7 +6379,45 @@
 			};
 			name = Debug;
 		};
-		5290E71E71D43F1030099690534D2685 /* Dev */ = {
+		54CABCEF9AABD728189DEBB9B95FD102 /* Test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2C45B059631BAA6ABB66F0F56C18C7E /* FSCalendar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/FSCalendar/FSCalendar-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Test;
+		};
+		570C80B784F42187EBB22B5386DF607B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F26DFB4251C5997987854756509FC55 /* MWPhotoBrowser.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MWPhotoBrowser";
+				INFOPLIST_FILE = "Target Support Files/MWPhotoBrowser/ResourceBundle-MWPhotoBrowser-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = MWPhotoBrowser;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		5A33228125B94623334CED6A86EF18DA /* Dev */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -6430,47 +6468,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Dev;
-		};
-		54CABCEF9AABD728189DEBB9B95FD102 /* Test */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E2C45B059631BAA6ABB66F0F56C18C7E /* FSCalendar.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/FSCalendar/FSCalendar-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Test;
-		};
-		570C80B784F42187EBB22B5386DF607B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F26DFB4251C5997987854756509FC55 /* MWPhotoBrowser.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MWPhotoBrowser";
-				INFOPLIST_FILE = "Target Support Files/MWPhotoBrowser/ResourceBundle-MWPhotoBrowser-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = MWPhotoBrowser;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
 		};
 		5B28CC11607887F24C901A856FF3BCFC /* Dev */ = {
 			isa = XCBuildConfiguration;
@@ -7170,61 +7169,6 @@
 			};
 			name = Release;
 		};
-		C8D3761290EAFB47F9E08460D3078167 /* Test */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_TEST=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Test;
-		};
 		CCB7C29B854EE68E1E4EB05448F986D9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 55C6759DF60D6B84AD540C91086A3197 /* MBProgressHUD.xcconfig */;
@@ -7645,6 +7589,60 @@
 			};
 			name = Debug;
 		};
+		FC984F4B4344F9D923257573EA684977 /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_TEST=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Test;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -7663,9 +7661,9 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E4B68EE12B21C47CB798D9B1ECA6D7A7 /* Debug */,
-				5290E71E71D43F1030099690534D2685 /* Dev */,
+				5A33228125B94623334CED6A86EF18DA /* Dev */,
 				B254DAA6CF0CE39F4A3D11B90A7E059A /* Release */,
-				C8D3761290EAFB47F9E08460D3078167 /* Test */,
+				FC984F4B4344F9D923257573EA684977 /* Test */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
