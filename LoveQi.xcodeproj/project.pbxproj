@@ -101,6 +101,7 @@
 		E70B79792021989000A4F344 /* AddIDCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = E70B79782021989000A4F344 /* AddIDCardView.m */; };
 		E7145D9A2021AF82004F4792 /* MeiTuanDeatilViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7145D992021AF82004F4792 /* MeiTuanDeatilViewController.m */; };
 		E7196CF32022B4480068B4BF /* RunloopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7196CF22022B4480068B4BF /* RunloopViewController.m */; };
+		E76D29522028075800EC41C7 /* SocketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E76D29512028075800EC41C7 /* SocketViewController.m */; };
 		E7B610462022F0D5000E4188 /* DynamicMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B610452022F0D5000E4188 /* DynamicMenuViewController.m */; };
 		E7B610492022F0F7000E4188 /* MenuItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B610482022F0F7000E4188 /* MenuItemView.m */; };
 		E7B6104C2022F457000E4188 /* MenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B6104B2022F457000E4188 /* MenuModel.m */; };
@@ -302,6 +303,8 @@
 		E7145D992021AF82004F4792 /* MeiTuanDeatilViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeiTuanDeatilViewController.m; sourceTree = "<group>"; };
 		E7196CF12022B4480068B4BF /* RunloopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunloopViewController.h; sourceTree = "<group>"; };
 		E7196CF22022B4480068B4BF /* RunloopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunloopViewController.m; sourceTree = "<group>"; };
+		E76D29502028075800EC41C7 /* SocketViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocketViewController.h; sourceTree = "<group>"; };
+		E76D29512028075800EC41C7 /* SocketViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocketViewController.m; sourceTree = "<group>"; };
 		E7B610442022F0D5000E4188 /* DynamicMenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicMenuViewController.h; sourceTree = "<group>"; };
 		E7B610452022F0D5000E4188 /* DynamicMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicMenuViewController.m; sourceTree = "<group>"; };
 		E7B610472022F0F7000E4188 /* MenuItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuItemView.h; sourceTree = "<group>"; };
@@ -312,12 +315,6 @@
 		E7B6104F2022F663000E4188 /* MenuRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuRequest.m; sourceTree = "<group>"; };
 		E7B6105120230789000E4188 /* MenuViewManger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuViewManger.h; sourceTree = "<group>"; };
 		E7B6105220230789000E4188 /* MenuViewManger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuViewManger.m; sourceTree = "<group>"; };
-		E7E67BF82019A9A800920C7C /* Macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
-		E7E67BF92019AA1500920C7C /* ClassMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassMacro.h; sourceTree = "<group>"; };
-		E7E67BFA2019AA2C00920C7C /* StringMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringMacro.h; sourceTree = "<group>"; };
-		E7E67BFB2019AA4100920C7C /* ScreenMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenMacro.h; sourceTree = "<group>"; };
-		E7E67BFC2019AA5C00920C7C /* IosVerionMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IosVerionMacro.h; sourceTree = "<group>"; };
-		E7E67BFD2019AA7500920C7C /* ColorMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorMacro.h; sourceTree = "<group>"; };
 		FCEB03AB92596D867E27E643 /* libPods-LoveQiWidget.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LoveQiWidget.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -432,6 +429,8 @@
 				E7196CF22022B4480068B4BF /* RunloopViewController.m */,
 				E7B610442022F0D5000E4188 /* DynamicMenuViewController.h */,
 				E7B610452022F0D5000E4188 /* DynamicMenuViewController.m */,
+				E76D29502028075800EC41C7 /* SocketViewController.h */,
+				E76D29512028075800EC41C7 /* SocketViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -544,7 +543,6 @@
 			children = (
 				E7E67BF72019A97000920C7C /* Database */,
 				E7E67BF62019A97000920C7C /* Log */,
-				E7E67BF52019A97000920C7C /* Macro */,
 				E7E67BF42019A97000920C7C /* Network */,
 				E7E67BF32019A8DD00920C7C /* Util */,
 				C2589DD81F83FA7B007736C7 /* Appdelegate */,
@@ -710,19 +708,6 @@
 			children = (
 			);
 			path = Network;
-			sourceTree = "<group>";
-		};
-		E7E67BF52019A97000920C7C /* Macro */ = {
-			isa = PBXGroup;
-			children = (
-				E7E67BF82019A9A800920C7C /* Macro.h */,
-				E7E67BF92019AA1500920C7C /* ClassMacro.h */,
-				E7E67BFA2019AA2C00920C7C /* StringMacro.h */,
-				E7E67BFB2019AA4100920C7C /* ScreenMacro.h */,
-				E7E67BFC2019AA5C00920C7C /* IosVerionMacro.h */,
-				E7E67BFD2019AA7500920C7C /* ColorMacro.h */,
-			);
-			path = Macro;
 			sourceTree = "<group>";
 		};
 		E7E67BF62019A97000920C7C /* Log */ = {
@@ -893,7 +878,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-LoveQi/Pods-LoveQi-resources.sh",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 				"${PODS_ROOT}/MRJ_QRCode/MRJ_QRCode.bundle",
-				"$PODS_CONFIGURATION_BUILD_DIR/MWPhotoBrowser/MWPhotoBrowser.bundle",
+				$PODS_CONFIGURATION_BUILD_DIR/MWPhotoBrowser/MWPhotoBrowser.bundle,
 				"${PODS_ROOT}/SKFCamera/SKFCamera/SKFCamera.bundle",
 				"${PODS_ROOT}/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle",
 				"${PODS_ROOT}/vfrReader/Graphics/Reader-Button-H.png",
@@ -998,6 +983,7 @@
 				C268D74B1FCD524100872615 /* CrashHandle.m in Sources */,
 				C2589DCE1F83FA65007736C7 /* RootViewController.m in Sources */,
 				C2DDFB2920031F7800454A0A /* CreditScoreCardView.m in Sources */,
+				E76D29522028075800EC41C7 /* SocketViewController.m in Sources */,
 				E7B6104C2022F457000E4188 /* MenuModel.m in Sources */,
 				C2DDFB15200319FE00454A0A /* IOSpeScaleLayoutButton.m in Sources */,
 				C29718301FAAB47F00D2D599 /* PDFListViewController.m in Sources */,

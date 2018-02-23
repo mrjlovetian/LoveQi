@@ -31,6 +31,7 @@ PODS:
     - MRJActionSheet
     - SKFCamera
     - TZImagePickerController
+  - MRJTool (0.1.1)
   - MWPhotoBrowser (2.1.2):
     - DACircularProgress (~> 2.3)
     - MBProgressHUD (~> 0.9)
@@ -62,9 +63,10 @@ DEPENDENCIES:
   - FMDB
   - FSCalendar (= 2.3)
   - MJRefresh (~> 3.1.15.1)
-  - MRJ_Network (~> 0.2.0.4)
+  - MRJ_Network (~> 0.2.0.9)
   - MRJ_QRCode (~> 0.3.1)
   - MRJCameraTool (~> 0.1.6)
+  - MRJTool
   - MWPhotoBrowser (~> 2.1.2)
   - OC-Category (~> 0.1.3.8)
   - vfrReader (~> 2.8.6)
@@ -81,6 +83,7 @@ SPEC CHECKSUMS:
   MRJ_QRCode: 5288d56196edec5a9f00370a2efc0941e9b0eb1c
   MRJActionSheet: 1418026cbd04b43a263044fa2d0c8f3938b069c7
   MRJCameraTool: 5fcbcb271912deb62d1a4415bffec9cef71853ce
+  MRJTool: 772000360bc1d4136d26805ea567111341e4d380
   MWPhotoBrowser: 5836d7aa041dc05a13de380c246826578adc5ea5
   OC-Category: e1f2f10ff52e0be897deac0c06719fa371afa7aa
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
@@ -89,6 +92,6 @@ SPEC CHECKSUMS:
   vfrReader: 94ea739a545e39093c93802ca1c5b203a5df46b1
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 9ae6d28d561fc768b5e547052299a505ae6c5408
+PODFILE CHECKSUM: f849e8e4102b8b2c43eae088bba15fc72b6f8e89
 
 COCOAPODS: 1.3.1

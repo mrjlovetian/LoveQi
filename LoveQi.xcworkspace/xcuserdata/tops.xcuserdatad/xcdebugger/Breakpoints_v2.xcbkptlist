@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LoveQi/Today/Model/JumpVCHandler.m"
-            timestampString = "539173036.431223"
+            timestampString = "539495219.243615"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
             landmarkName = "+jumpRootVC:toIndex:"
             landmarkType = "7">
          </BreakpointContent>
@@ -111,7 +111,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "303"
             endingLineNumber = "303"
-            landmarkName = "-dataTaskWithHTTPMethod:requestSerializer:URLString:parameters:progress:constructingBodyWithBlock:error:"
+            landmarkName = "-handleRequestResult:responseObject:error:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -143,7 +143,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "283"
             endingLineNumber = "283"
-            landmarkName = "-dataTaskWithHTTPMethod:requestSerializer:URLString:parameters:error:"
+            landmarkName = "-dataTaskWithHTTPMethod:requestSerializer:URLString:parameters:progress:constructingBodyWithBlock:error:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -175,7 +175,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "117"
             endingLineNumber = "117"
-            landmarkName = "-buildRequestUrl:"
+            landmarkName = "-requestSerializerForRequest:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

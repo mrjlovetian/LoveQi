@@ -18,6 +18,7 @@
 #import "MeiTuanDeatilViewController.h"
 #import "RunloopViewController.h"
 #import "DynamicMenuViewController.h"
+#import "SocketViewController.h"
 
 @implementation JumpVCHandler
 
@@ -31,7 +32,8 @@
 
 + (void)jumpRootVC:(UIViewController *)rootVC toIndex:(NSInteger)index {
     if (index == 0) {
-        DynamicMenuViewController *vc = [[DynamicMenuViewController alloc] init];
+        SocketViewController *vc = [[SocketViewController alloc] init];
+//        DynamicMenuViewController *vc = [[DynamicMenuViewController alloc] init];
 //        RunloopViewController *vc = [[RunloopViewController alloc] init];
 //        MeiTuanDeatilViewController *vc = [[MeiTuanDeatilViewController alloc] init];
         [rootVC.navigationController pushViewController:vc animated:YES];

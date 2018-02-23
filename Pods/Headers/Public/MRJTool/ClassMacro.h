@@ -1,0 +1,1 @@
+../../../MRJTool/MRJTool/Classes/Marco/ClassMacro.h
