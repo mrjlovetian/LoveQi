@@ -6,8 +6,10 @@
 //  Copyright © 2017年 李琦. All rights reserved.
 //
 
+#import <MRJTool/MRJViewController.h>
 #import "PDFListViewController.h"
 #import <vfrReader/ReaderViewController.h>
+#import "Macro.h"
 
 @interface PDFListViewController () <UICollectionViewDelegate, UICollectionViewDataSource, ReaderViewControllerDelegate>
 

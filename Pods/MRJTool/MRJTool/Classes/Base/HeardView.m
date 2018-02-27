@@ -7,6 +7,9 @@
 //
 
 #import "HeardView.h"
+#import "Macro.h"
+#import "UIColor+HEX.h"
+#import "UIView+Frame.h"
 
 @interface HeardView()
 
@@ -54,7 +57,6 @@
         _titleLab = [[UILabel alloc] initWithFrame:CGRectMake(44, 20, SCREEN_WIDTH - 88, 44)];
         _titleLab.font = [UIFont systemFontOfSize:18.0];
         _titleLab.textColor = [UIColor colorWithHexString:@"333333"];
-//        _titleLab.backgroundColor = [UIColor redColor];
         _titleLab.textAlignment = NSTextAlignmentCenter;
     }
     return _titleLab;

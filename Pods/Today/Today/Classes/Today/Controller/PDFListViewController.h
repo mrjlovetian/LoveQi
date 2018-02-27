@@ -6,7 +6,9 @@
 //  Copyright © 2017年 李琦. All rights reserved.
 //
 
-#import "MRJViewController.h"
+#import <MRJTool/MRJViewController.h>
+//#import <UIKit/UIKit.h>
+//@class MRJViewController;
 
 @interface PDFListViewController : MRJViewController
 

@@ -7,7 +7,8 @@
 //
 
 #import "MRJViewController.h"
-
+#import "UIColor+HEX.h"
+#import "Macro.h"
 
 @interface MRJViewController ()
 

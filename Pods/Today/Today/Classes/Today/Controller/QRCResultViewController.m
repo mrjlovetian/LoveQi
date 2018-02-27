@@ -6,9 +6,11 @@
 //  Copyright © 2017年 李琦. All rights reserved.
 //
 
+#import <MRJTool/MRJViewController.h>
 #import "QRCResultViewController.h"
 #import <WebKit/WebKit.h>
-#import <MRJActionSheet.h>
+#import "MRJActionSheet.h"
+#import "Macro.h"
 
 @interface QRCResultViewController ()
 

@@ -36,13 +36,9 @@
 		C294BCAF1FF3A20B0041C90A /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C294BCAD1FF3A2050041C90A /* AlipaySDK.bundle */; };
 		C294BCB01FF3A20B0041C90A /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C294BCAE1FF3A20B0041C90A /* AlipaySDK.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		C297182D1FAAB28700D2D599 /* JumpVCHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C297182C1FAAB28700D2D599 /* JumpVCHandler.m */; };
-		C29718301FAAB47F00D2D599 /* PDFListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C297182F1FAAB47F00D2D599 /* PDFListViewController.m */; };
 		C29867FC1FF1FA6D00155F52 /* MRJFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = C29867FB1FF1FA6D00155F52 /* MRJFooter.m */; };
 		C29867FF1FF1FB0600155F52 /* MRJHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = C29867FE1FF1FB0600155F52 /* MRJHeader.m */; };
 		C29868061FF233F800155F52 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C29868051FF233F800155F52 /* WebViewController.m */; };
-		C2A9BC1A1F8B685900571564 /* MRJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A9BC191F8B685900571564 /* MRJViewController.m */; };
-		C2A9BC1D1F8B692600571564 /* HeardView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A9BC1C1F8B692600571564 /* HeardView.m */; };
-		C2BCFC121F8C7664005180AA /* QRCResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BCFC111F8C7664005180AA /* QRCResultViewController.m */; };
 		C2CE1BFC1E2E2347003AE6D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2CE1BFB1E2E2347003AE6D3 /* main.m */; };
 		C2CE1C071E2E2347003AE6D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2CE1C061E2E2347003AE6D3 /* Assets.xcassets */; };
 		C2DDFA512002FF8600454A0A /* RealNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DDFA502002FF8600454A0A /* RealNameViewController.m */; };
@@ -202,20 +198,12 @@
 		C294BCAE1FF3A20B0041C90A /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
 		C297182B1FAAB28700D2D599 /* JumpVCHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JumpVCHandler.h; sourceTree = "<group>"; };
 		C297182C1FAAB28700D2D599 /* JumpVCHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JumpVCHandler.m; sourceTree = "<group>"; };
-		C297182E1FAAB47F00D2D599 /* PDFListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDFListViewController.h; sourceTree = "<group>"; };
-		C297182F1FAAB47F00D2D599 /* PDFListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDFListViewController.m; sourceTree = "<group>"; };
 		C29867FA1FF1FA6D00155F52 /* MRJFooter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRJFooter.h; sourceTree = "<group>"; };
 		C29867FB1FF1FA6D00155F52 /* MRJFooter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRJFooter.m; sourceTree = "<group>"; };
 		C29867FD1FF1FB0600155F52 /* MRJHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRJHeader.h; sourceTree = "<group>"; };
 		C29867FE1FF1FB0600155F52 /* MRJHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRJHeader.m; sourceTree = "<group>"; };
 		C29868041FF233F800155F52 /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		C29868051FF233F800155F52 /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
-		C2A9BC181F8B685900571564 /* MRJViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRJViewController.h; sourceTree = "<group>"; };
-		C2A9BC191F8B685900571564 /* MRJViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRJViewController.m; sourceTree = "<group>"; };
-		C2A9BC1B1F8B692600571564 /* HeardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeardView.h; sourceTree = "<group>"; };
-		C2A9BC1C1F8B692600571564 /* HeardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeardView.m; sourceTree = "<group>"; };
-		C2BCFC101F8C7664005180AA /* QRCResultViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRCResultViewController.h; sourceTree = "<group>"; };
-		C2BCFC111F8C7664005180AA /* QRCResultViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCResultViewController.m; sourceTree = "<group>"; };
 		C2CE1BF71E2E2347003AE6D3 /* LoveQi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoveQi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2CE1BFB1E2E2347003AE6D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C2CE1C061E2E2347003AE6D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -407,12 +395,6 @@
 				C2589DBA1F83FA65007736C7 /* SQLViewconTroller.m */,
 				C2589DDC1F849E3D007736C7 /* PhotoViewController.h */,
 				C2589DDD1F849E3D007736C7 /* PhotoViewController.m */,
-				C2A9BC181F8B685900571564 /* MRJViewController.h */,
-				C2A9BC191F8B685900571564 /* MRJViewController.m */,
-				C2BCFC101F8C7664005180AA /* QRCResultViewController.h */,
-				C2BCFC111F8C7664005180AA /* QRCResultViewController.m */,
-				C297182E1FAAB47F00D2D599 /* PDFListViewController.h */,
-				C297182F1FAAB47F00D2D599 /* PDFListViewController.m */,
 				C2EB63621FB05500008B0A57 /* AddressBookViewController.h */,
 				C2EB63631FB05500008B0A57 /* AddressBookViewController.m */,
 				C289F18B1FF11D16009F6D3D /* RefreshViewController.h */,
@@ -487,8 +469,6 @@
 				C2589DCC1F83FA65007736C7 /* LQItemView.m */,
 				C2589DE21F8521BE007736C7 /* AddImageBottomView.h */,
 				C2589DE31F8521BE007736C7 /* AddImageBottomView.m */,
-				C2A9BC1B1F8B692600571564 /* HeardView.h */,
-				C2A9BC1C1F8B692600571564 /* HeardView.m */,
 				C29867FA1FF1FA6D00155F52 /* MRJFooter.h */,
 				C29867FB1FF1FA6D00155F52 /* MRJFooter.m */,
 				C29867FD1FF1FB0600155F52 /* MRJHeader.h */,
@@ -955,7 +935,6 @@
 				C2589DD41F83FA65007736C7 /* JumpDateView.m in Sources */,
 				C2DDFA512002FF8600454A0A /* RealNameViewController.m in Sources */,
 				C2589DCF1F83FA65007736C7 /* SQLViewconTroller.m in Sources */,
-				C2A9BC1A1F8B685900571564 /* MRJViewController.m in Sources */,
 				C2DDFB1A200319FE00454A0A /* AipImageView.m in Sources */,
 				C2589DD61F83FA65007736C7 /* LQItem.m in Sources */,
 				C2EB63641FB05500008B0A57 /* AddressBookViewController.m in Sources */,
@@ -986,15 +965,12 @@
 				E76D29522028075800EC41C7 /* SocketViewController.m in Sources */,
 				E7B6104C2022F457000E4188 /* MenuModel.m in Sources */,
 				C2DDFB15200319FE00454A0A /* IOSpeScaleLayoutButton.m in Sources */,
-				C29718301FAAB47F00D2D599 /* PDFListViewController.m in Sources */,
 				C2589DE41F8521BE007736C7 /* AddImageBottomView.m in Sources */,
 				C2DDFB422003579700454A0A /* ImageCell.m in Sources */,
-				C2BCFC121F8C7664005180AA /* QRCResultViewController.m in Sources */,
 				C2589DD51F83FA65007736C7 /* LaunchImageView.m in Sources */,
 				C29867FC1FF1FA6D00155F52 /* MRJFooter.m in Sources */,
 				C2589DD11F83FA65007736C7 /* DateModel.m in Sources */,
 				C2589DD31F83FA65007736C7 /* BtnColumnView.m in Sources */,
-				C2A9BC1D1F8B692600571564 /* HeardView.m in Sources */,
 				C2589DDE1F849E3D007736C7 /* PhotoViewController.m in Sources */,
 				C2589DEA1F8626E8007736C7 /* IMManger.m in Sources */,
 				E7B6105320230789000E4188 /* MenuViewManger.m in Sources */,

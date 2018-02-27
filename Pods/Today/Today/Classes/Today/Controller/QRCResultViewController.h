@@ -6,7 +6,8 @@
 //  Copyright © 2017年 李琦. All rights reserved.
 //
 
-#import "MRJViewController.h"
+#import <MRJTool/MRJViewController.h>
+//@class MRJViewController;
 
 @interface QRCResultViewController : MRJViewController
 
