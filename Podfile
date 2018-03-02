@@ -24,6 +24,8 @@ target :'LoveQi' do
    pod 'MJRefresh', '~> 3.1.15.1'
    pod 'MRJTool', '~> 0.1.3'
    pod 'Today', '~> 0.1.1'
+   pod 'BATableView', '~> 1.0.0'
+   pod 'MJExtension', '~> 3.0.13'
 
 end
 

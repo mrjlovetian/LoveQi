@@ -19,6 +19,7 @@
 #import "RunloopViewController.h"
 #import "DynamicMenuViewController.h"
 #import "SocketViewController.h"
+#import "CitySelectViewController.h"
 
 @implementation JumpVCHandler
 
@@ -32,7 +33,8 @@
 
 + (void)jumpRootVC:(UIViewController *)rootVC toIndex:(NSInteger)index {
     if (index == 0) {
-        SocketViewController *vc = [[SocketViewController alloc] init];
+//        SocketViewController *vc = [[SocketViewController alloc] init];
+        CitySelectViewController *vc = [[CitySelectViewController alloc] init];
 //        DynamicMenuViewController *vc = [[DynamicMenuViewController alloc] init];
 //        RunloopViewController *vc = [[RunloopViewController alloc] init];
 //        MeiTuanDeatilViewController *vc = [[MeiTuanDeatilViewController alloc] init];
