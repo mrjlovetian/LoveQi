@@ -98,8 +98,6 @@
 		E7145D9A2021AF82004F4792 /* MeiTuanDeatilViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7145D992021AF82004F4792 /* MeiTuanDeatilViewController.m */; };
 		E7196CF32022B4480068B4BF /* RunloopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7196CF22022B4480068B4BF /* RunloopViewController.m */; };
 		E74E331920467AD1003D2CF1 /* PlayerHander.m in Sources */ = {isa = PBXBuildFile; fileRef = E74E331820467AD1003D2CF1 /* PlayerHander.m */; };
-		E76491322047D799007A4CAE /* CitySelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E76491312047D799007A4CAE /* CitySelectViewController.m */; };
-		E76491352047D945007A4CAE /* CityModelManger.m in Sources */ = {isa = PBXBuildFile; fileRef = E76491342047D945007A4CAE /* CityModelManger.m */; };
 		E76491382047E2F4007A4CAE /* CityRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E76491372047E2F4007A4CAE /* CityRequest.m */; };
 		E76D29522028075800EC41C7 /* SocketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E76D29512028075800EC41C7 /* SocketViewController.m */; };
 		E7B610462022F0D5000E4188 /* DynamicMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B610452022F0D5000E4188 /* DynamicMenuViewController.m */; };
@@ -297,10 +295,6 @@
 		E7196CF22022B4480068B4BF /* RunloopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunloopViewController.m; sourceTree = "<group>"; };
 		E74E331720467AD1003D2CF1 /* PlayerHander.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayerHander.h; sourceTree = "<group>"; };
 		E74E331820467AD1003D2CF1 /* PlayerHander.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayerHander.m; sourceTree = "<group>"; };
-		E76491302047D799007A4CAE /* CitySelectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CitySelectViewController.h; sourceTree = "<group>"; };
-		E76491312047D799007A4CAE /* CitySelectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CitySelectViewController.m; sourceTree = "<group>"; };
-		E76491332047D945007A4CAE /* CityModelManger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CityModelManger.h; sourceTree = "<group>"; };
-		E76491342047D945007A4CAE /* CityModelManger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CityModelManger.m; sourceTree = "<group>"; };
 		E76491362047E2F4007A4CAE /* CityRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CityRequest.h; sourceTree = "<group>"; };
 		E76491372047E2F4007A4CAE /* CityRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CityRequest.m; sourceTree = "<group>"; };
 		E76D29502028075800EC41C7 /* SocketViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocketViewController.h; sourceTree = "<group>"; };
@@ -693,10 +687,6 @@
 		E764912F2047D724007A4CAE /* SelectCity */ = {
 			isa = PBXGroup;
 			children = (
-				E76491302047D799007A4CAE /* CitySelectViewController.h */,
-				E76491312047D799007A4CAE /* CitySelectViewController.m */,
-				E76491332047D945007A4CAE /* CityModelManger.h */,
-				E76491342047D945007A4CAE /* CityModelManger.m */,
 			);
 			path = SelectCity;
 			sourceTree = "<group>";
@@ -893,6 +883,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-LoveQi/Pods-LoveQi-resources.sh",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				$PODS_CONFIGURATION_BUILD_DIR/MRJCitySelect/MRJCitySelect.bundle,
 				"${PODS_ROOT}/MRJ_QRCode/MRJ_QRCode.bundle",
 				$PODS_CONFIGURATION_BUILD_DIR/MWPhotoBrowser/MWPhotoBrowser.bundle,
 				"${PODS_ROOT}/SKFCamera/SKFCamera/SKFCamera.bundle",
@@ -967,7 +958,6 @@
 				E74E331920467AD1003D2CF1 /* PlayerHander.m in Sources */,
 				E70B79792021989000A4F344 /* AddIDCardView.m in Sources */,
 				E7B610492022F0F7000E4188 /* MenuItemView.m in Sources */,
-				E76491352047D945007A4CAE /* CityModelManger.m in Sources */,
 				C2DDFB1E200319FE00454A0A /* AipNavigationController.m in Sources */,
 				C2CE1BFC1E2E2347003AE6D3 /* main.m in Sources */,
 				E76491382047E2F4007A4CAE /* CityRequest.m in Sources */,
@@ -979,7 +969,6 @@
 				C2EB63641FB05500008B0A57 /* AddressBookViewController.m in Sources */,
 				C29867FF1FF1FB0600155F52 /* MRJHeader.m in Sources */,
 				C2DDFB19200319FE00454A0A /* AipCutImageView.m in Sources */,
-				E76491322047D799007A4CAE /* CitySelectViewController.m in Sources */,
 				C2589DD01F83FA65007736C7 /* DataBaseHander.m in Sources */,
 				C2589DD71F83FA65007736C7 /* LQItemView.m in Sources */,
 				E7145D9A2021AF82004F4792 /* MeiTuanDeatilViewController.m in Sources */,
