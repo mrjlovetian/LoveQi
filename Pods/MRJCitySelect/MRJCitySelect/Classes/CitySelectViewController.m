@@ -7,10 +7,17 @@
 //
 
 #import "CitySelectViewController.h"
+<<<<<<< HEAD
 
 #import "BATableView.h"
 #import "MJExtension.h"
 #import "UIColor+Additions.h"
+=======
+#import "CityHeadView.h"
+#import "BATableView.h"
+#import "MJExtension.h"
+#import "UIColor+MRJAdditions.h"
+>>>>>>> dad6e130f1af6f665aeca2ca86f0ae881bb586c4
 
 #define MRJ_iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
 #define MRJ_SCREEN [[UIScreen mainScreen] bounds].size
@@ -24,6 +31,10 @@
 @property (nonatomic, strong) NSDictionary *DataSource;
 @property (nonatomic, strong) NSMutableArray *arrayKeys;
 @property (nonatomic, strong) NSMutableArray *searchArray;
+<<<<<<< HEAD
+=======
+@property (nonatomic, strong) CityHeadView *headView;
+>>>>>>> dad6e130f1af6f665aeca2ca86f0ae881bb586c4
 
 @end
 
@@ -32,7 +43,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+<<<<<<< HEAD
     self.title = @"城市选择";
+=======
+    [self.view addSubview:self.headView];
+    __weak typeof(self) weakSelf = self;
+    self.headView.handleBlock = ^{
+        [weakSelf goBack];
+    };
+>>>>>>> dad6e130f1af6f665aeca2ca86f0ae881bb586c4
     
     NSURL *boundleUrl = [[NSBundle bundleForClass:[CitySelectViewController class]] URLForResource:@"MRJCitySelect" withExtension:@"bundle"];
     NSBundle *citysBundle = [NSBundle bundleWithURL:boundleUrl];
@@ -55,10 +74,17 @@
     _searchBar.delegate = self;
     _searchBar.placeholder = @"搜索城市";
     UIView *bgdView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, MRJ_SCREEN.height, _searchBar.frame.size.height)];
+<<<<<<< HEAD
     bgdView.backgroundColor = [UIColor add_colorWithRGBHexString:@"efeff4"];
     bgdView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     [_searchBar insertSubview:bgdView atIndex:1];
     _searchBar.tintColor = [UIColor add_colorWithRGBHexString:@"0091e8"];
+=======
+    bgdView.backgroundColor = [UIColor colorWithHexString:@"efeff4"];
+    bgdView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    [_searchBar insertSubview:bgdView atIndex:1];
+    _searchBar.tintColor = [UIColor colorWithHexString:@"0091e8"];
+>>>>>>> dad6e130f1af6f665aeca2ca86f0ae881bb586c4
     if (@available(iOS 11, *)) {
         UITextField *txfSearchField = [_searchBar valueForKey:@"_searchField"];
         [txfSearchField setDefaultTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:13.5]}];
@@ -132,8 +158,13 @@ shouldReloadTableForSearchString:(NSString *)searchString {
     
     UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, MRJ_SCREEN.width, 24)];
     label.font = [UIFont systemFontOfSize:13];
+<<<<<<< HEAD
     label.backgroundColor = [UIColor add_colorWithRGBHexString:@"efeff4"];
     label.textColor = [UIColor add_colorWithRGBHexString:@"999999"];
+=======
+    label.backgroundColor = [UIColor colorWithHexString:@"efeff4"];
+    label.textColor = [UIColor colorWithHexString:@"999999"];
+>>>>>>> dad6e130f1af6f665aeca2ca86f0ae881bb586c4
     label.text = [NSString stringWithFormat:@"\t\t%@",_arrayKeys[section]];
     return label;
 }
@@ -163,7 +194,11 @@ shouldReloadTableForSearchString:(NSString *)searchString {
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellName];
         cell.accessoryType = UITableViewCellAccessoryNone;
+<<<<<<< HEAD
         cell.textLabel.textColor = [UIColor add_colorWithRGBHexString:@"333333"];
+=======
+        cell.textLabel.textColor = [UIColor colorWithHexString:@"333333"];
+>>>>>>> dad6e130f1af6f665aeca2ca86f0ae881bb586c4
         cell.textLabel.font = [UIFont systemFontOfSize:16];
         cell.textLabel.frame = CGRectMake(15, cell.textLabel.frame.origin.y, cell.textLabel.frame.size.width, cell.textLabel.frame.size.height);
         UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(15, 0, MRJ_SCREEN.width, 0.5)];
@@ -207,6 +242,27 @@ shouldReloadTableForSearchString:(NSString *)searchString {
     }
 }
 
+<<<<<<< HEAD
+=======
+- (CityHeadView *)headView {
+    if (!_headView) {
+        _headView = [[CityHeadView alloc] initWithFrame:CGRectMake(0, 0, MRJ_SCREEN.width, MRJ_NavBAR_HEIGHT)];
+        _headView.backgroundColor = [UIColor whiteColor];
+    }
+    return _headView;
+}
+
+- (void)setNavTitle:(NSString *)navTitle {
+    _navTitle = [navTitle copy];
+    self.headView.titleStr = navTitle;
+}
+
+- (void)setBackImage:(UIImage *)backImage {
+    _backImage = backImage;
+    [_headView.backBtn setImage:backImage forState:UIControlStateNormal];
+}
+
+>>>>>>> dad6e130f1af6f665aeca2ca86f0ae881bb586c4
 /*
 #pragma mark - Navigation
 

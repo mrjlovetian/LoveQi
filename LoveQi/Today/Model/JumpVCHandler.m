@@ -35,6 +35,10 @@
     if (index == 0) {
 //        SocketViewController *vc = [[SocketViewController alloc] init];
         CitySelectViewController *vc = [[CitySelectViewController alloc] init];
+        vc.navTitle = @"城市选择";
+        vc.cityBlock = ^(CityModelManger *city) {
+            MRJLog(@"选择的城市是%@", city.regionName);
+        };
 //        DynamicMenuViewController *vc = [[DynamicMenuViewController alloc] init];
 //        RunloopViewController *vc = [[RunloopViewController alloc] init];
 //        MeiTuanDeatilViewController *vc = [[MeiTuanDeatilViewController alloc] init];
