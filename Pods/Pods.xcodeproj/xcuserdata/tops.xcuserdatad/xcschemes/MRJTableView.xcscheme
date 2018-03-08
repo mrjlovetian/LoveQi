@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '24993C6BACB1C76F62CB56AE085A80C1'
+               BlueprintIdentifier = '5436BF7E2406E47529692CB3D9D00176'
                BlueprintName = 'MRJTableView'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libMRJTableView.a'>

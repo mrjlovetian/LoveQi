@@ -7,17 +7,10 @@
 //
 
 #import "CitySelectViewController.h"
-<<<<<<< HEAD
-
-#import "BATableView.h"
-#import "MJExtension.h"
-#import "UIColor+Additions.h"
-=======
 #import "CityHeadView.h"
 #import "BATableView.h"
 #import "MJExtension.h"
 #import "UIColor+MRJAdditions.h"
->>>>>>> dad6e130f1af6f665aeca2ca86f0ae881bb586c4
 
 #define MRJ_iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
 #define MRJ_SCREEN [[UIScreen mainScreen] bounds].size
@@ -31,10 +24,7 @@
 @property (nonatomic, strong) NSDictionary *DataSource;
 @property (nonatomic, strong) NSMutableArray *arrayKeys;
 @property (nonatomic, strong) NSMutableArray *searchArray;
-<<<<<<< HEAD
-=======
 @property (nonatomic, strong) CityHeadView *headView;
->>>>>>> dad6e130f1af6f665aeca2ca86f0ae881bb586c4
 
 @end
 
@@ -42,63 +32,44 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-<<<<<<< HEAD
-    self.title = @"城市选择";
-=======
+    [self initUI];
+    [self getData];
+}
+
+- (void)initUI {
     [self.view addSubview:self.headView];
+    [self.view addSubview:self.contactTableView];
+    [self.view addSubview:self.searchBar];
+    [self setSearchDisPlayCon:self.searchDisPlayCon];
+    self.searchArray = [[NSMutableArray alloc] initWithCapacity:1];
     __weak typeof(self) weakSelf = self;
     self.headView.handleBlock = ^{
         [weakSelf goBack];
     };
->>>>>>> dad6e130f1af6f665aeca2ca86f0ae881bb586c4
-    
-    NSURL *boundleUrl = [[NSBundle bundleForClass:[CitySelectViewController class]] URLForResource:@"MRJCitySelect" withExtension:@"bundle"];
-    NSBundle *citysBundle = [NSBundle bundleWithURL:boundleUrl];
-    NSData *data = [[NSData alloc] initWithContentsOfFile:[citysBundle pathForResource:@"city" ofType:@"json"]];
-    NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
-    NSArray *arr = [CityModelManger mj_objectArrayWithKeyValuesArray:dic[@"Data"]];
-    [CityModelManger sorterFromArray:arr success:^(NSArray *entryWords, NSDictionary *sorterArray) {
-        _arrayKeys = [[NSMutableArray alloc] initWithCapacity:1];
-        [_arrayKeys addObjectsFromArray:entryWords];
-        self.DataSource = sorterArray;
-        [self.contactTableView reloadData];
-    }];
-    
-    self.contactTableView = [[BATableView alloc]initWithFrame:CGRectMake(0, MRJ_NavBAR_HEIGHT + 56 , MRJ_SCREEN.width, MRJ_SCREEN.height - MRJ_NavBAR_HEIGHT - 56)];
-    self.contactTableView.delegate = self;
-    self.contactTableView.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    [self.view addSubview:_contactTableView];
-    
-    _searchBar = [[UISearchBar alloc]initWithFrame:CGRectMake(0, MRJ_NavBAR_HEIGHT, MRJ_SCREEN.width, 28)];
-    _searchBar.delegate = self;
-    _searchBar.placeholder = @"搜索城市";
-    UIView *bgdView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, MRJ_SCREEN.height, _searchBar.frame.size.height)];
-<<<<<<< HEAD
-    bgdView.backgroundColor = [UIColor add_colorWithRGBHexString:@"efeff4"];
-    bgdView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    [_searchBar insertSubview:bgdView atIndex:1];
-    _searchBar.tintColor = [UIColor add_colorWithRGBHexString:@"0091e8"];
-=======
-    bgdView.backgroundColor = [UIColor colorWithHexString:@"efeff4"];
-    bgdView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    [_searchBar insertSubview:bgdView atIndex:1];
-    _searchBar.tintColor = [UIColor colorWithHexString:@"0091e8"];
->>>>>>> dad6e130f1af6f665aeca2ca86f0ae881bb586c4
-    if (@available(iOS 11, *)) {
-        UITextField *txfSearchField = [_searchBar valueForKey:@"_searchField"];
-        [txfSearchField setDefaultTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:13.5]}];
+}
+
+- (void)getData {
+    NSInteger version = [[[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"] stringByReplacingOccurrencesOfString:@"." withString:@""] integerValue];
+    if ([CityModelManger getAllCitys].count == 0 || version > [[[NSUserDefaults standardUserDefaults] objectForKey:@"version"] integerValue]) {
+        NSURL *boundleUrl = [[NSBundle bundleForClass:[CitySelectViewController class]] URLForResource:@"MRJCitySelect" withExtension:@"bundle"];
+        NSBundle *citysBundle = [NSBundle bundleWithURL:boundleUrl];
+        NSData *data = [[NSData alloc] initWithContentsOfFile:[citysBundle pathForResource:@"city" ofType:@"json"]];
+        NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
+        NSArray *arr = [CityModelManger mj_objectArrayWithKeyValuesArray:dic[@"Data"]];
+        [CityModelManger sorterFromArray:arr success:^(NSArray *entryWords, NSDictionary *sorterArray) {
+            [self reloadCity:entryWords sortArray:sorterArray];
+        }];
+    } else {
+        [self reloadCity:[CityModelManger getAllCitys] sortArray:[CityModelManger getAllSortCity]];
     }
-    [self.view addSubview:_searchBar];
+}
+
+- (void)reloadCity:(NSArray *)entryWords sortArray:(NSDictionary *)sorterArray {
+    _arrayKeys = [[NSMutableArray alloc]initWithObjects:nil];
     
-    _searchDisPlayCon = [[UISearchDisplayController alloc] initWithSearchBar:_searchBar contentsController:self];
-    _searchDisPlayCon.delegate = self;
-    [self setSearchDisPlayCon:_searchDisPlayCon];
-    _searchDisPlayCon.searchResultsDataSource = self;
-    _searchDisPlayCon.searchResultsDelegate = self;
-    self.searchArray = [[NSMutableArray alloc] initWithCapacity:1];
-    
-    // Do any additional setup after loading the view.
+    [_arrayKeys addObjectsFromArray:entryWords];
+    self.DataSource = sorterArray;
+    [self.contactTableView reloadData];
 }
 
 - (void)goBack {
@@ -110,6 +81,7 @@
 }
 
 #pragma mark - UISearchDisplayController delegate methods
+
 - (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
@@ -122,7 +94,7 @@ shouldReloadTableForSearchString:(NSString *)searchString {
     return YES;
 }
 
-- (void)filterContentForSearchText:(NSString*)searchText scope:(NSInteger )scopeOption {
+- (void)filterContentForSearchText:(NSString *)searchText scope:(NSInteger )scopeOption {
     [self.searchArray removeAllObjects];
     NSPredicate *resultPredicate = [NSPredicate predicateWithFormat:@"SELF contains[cd] %@",searchText];
     for (NSArray *array in self.DataSource.allValues) {
@@ -156,17 +128,15 @@ shouldReloadTableForSearchString:(NSString *)searchString {
         return nil;
     }
     
-    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, MRJ_SCREEN.width, 24)];
-    label.font = [UIFont systemFontOfSize:13];
-<<<<<<< HEAD
-    label.backgroundColor = [UIColor add_colorWithRGBHexString:@"efeff4"];
-    label.textColor = [UIColor add_colorWithRGBHexString:@"999999"];
-=======
-    label.backgroundColor = [UIColor colorWithHexString:@"efeff4"];
-    label.textColor = [UIColor colorWithHexString:@"999999"];
->>>>>>> dad6e130f1af6f665aeca2ca86f0ae881bb586c4
-    label.text = [NSString stringWithFormat:@"\t\t%@",_arrayKeys[section]];
-    return label;
+    UIView *backView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, MRJ_SCREEN.width, 24)];
+    backView.backgroundColor = [UIColor colorWithHexString:@"efeff4"];
+    CATextLayer *textLayer = [CATextLayer layer];
+    textLayer.frame = CGRectMake(15, 0, MRJ_SCREEN.width - 30, 24);
+    [textLayer setFontSize:13];
+    [textLayer setForegroundColor:[UIColor colorWithHexString:@"999999"].CGColor];
+    [textLayer setString:[NSString stringWithFormat:@"%@",_arrayKeys[section]]];
+    [backView.layer addSublayer:textLayer];
+    return backView;
 }
 
 - (CGFloat)tableView:( UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -189,24 +159,15 @@ shouldReloadTableForSearchString:(NSString *)searchString {
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString * cellName = @"CityListTableViewCell";
-    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:cellName];
+    static NSString *cellName = @"CityListTableViewCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellName];
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellName];
         cell.accessoryType = UITableViewCellAccessoryNone;
-<<<<<<< HEAD
-        cell.textLabel.textColor = [UIColor add_colorWithRGBHexString:@"333333"];
-=======
         cell.textLabel.textColor = [UIColor colorWithHexString:@"333333"];
->>>>>>> dad6e130f1af6f665aeca2ca86f0ae881bb586c4
         cell.textLabel.font = [UIFont systemFontOfSize:16];
         cell.textLabel.frame = CGRectMake(15, cell.textLabel.frame.origin.y, cell.textLabel.frame.size.width, cell.textLabel.frame.size.height);
-        UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(15, 0, MRJ_SCREEN.width, 0.5)];
-        lineView.tag = 1000;
-        [cell.contentView addSubview:lineView];
     }
-    UIView *lineView = [cell viewWithTag:1000];
-    lineView.hidden = indexPath.row == 0;
     if ([tableView isEqual:_searchDisPlayCon.searchResultsTableView]) {
         CityModelManger *city = self.searchArray[indexPath.row];
         cell.textLabel.text  = city.regionName;
@@ -221,7 +182,6 @@ shouldReloadTableForSearchString:(NSString *)searchString {
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Kid  城市id
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     CityModelManger *city = nil;
     if ([tableView isEqual:_searchDisPlayCon.searchResultsTableView]) {
@@ -242,8 +202,8 @@ shouldReloadTableForSearchString:(NSString *)searchString {
     }
 }
 
-<<<<<<< HEAD
-=======
+#pragma mark UI
+
 - (CityHeadView *)headView {
     if (!_headView) {
         _headView = [[CityHeadView alloc] initWithFrame:CGRectMake(0, 0, MRJ_SCREEN.width, MRJ_NavBAR_HEIGHT)];
@@ -251,6 +211,45 @@ shouldReloadTableForSearchString:(NSString *)searchString {
     }
     return _headView;
 }
+
+- (BATableView *)contactTableView {
+    if (!_contactTableView) {
+        _contactTableView = [[BATableView alloc]initWithFrame:CGRectMake(0, MRJ_NavBAR_HEIGHT + 56 , MRJ_SCREEN.width, MRJ_SCREEN.height - MRJ_NavBAR_HEIGHT - 56)];
+        _contactTableView.delegate = self;
+        _contactTableView.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    }
+    return _contactTableView;
+}
+
+- (UISearchBar *)searchBar {
+    if (!_searchBar) {
+        _searchBar = [[UISearchBar alloc]initWithFrame:CGRectMake(0, MRJ_NavBAR_HEIGHT, MRJ_SCREEN.width, 28)];
+        _searchBar.delegate = self;
+        _searchBar.placeholder = @"搜索城市";
+        UIView *bgdView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, MRJ_SCREEN.height, _searchBar.frame.size.height)];
+        bgdView.backgroundColor = [UIColor colorWithHexString:@"efeff4"];
+        bgdView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+        [_searchBar insertSubview:bgdView atIndex:1];
+        _searchBar.tintColor = [UIColor colorWithHexString:@"0091e8"];
+        if (@available(iOS 11, *)) {
+            UITextField *txfSearchField = [_searchBar valueForKey:@"_searchField"];
+            [txfSearchField setDefaultTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:13.5]}];
+        }
+    }
+    return _searchBar;
+}
+
+- (UISearchDisplayController *)searchDisPlayCon {
+    if (!_searchDisPlayCon) {
+        _searchDisPlayCon = [[UISearchDisplayController alloc] initWithSearchBar:_searchBar contentsController:self];
+        _searchDisPlayCon.delegate = self;
+        _searchDisPlayCon.searchResultsDataSource = self;
+        _searchDisPlayCon.searchResultsDelegate = self;
+    }
+    return _searchDisPlayCon;
+}
+
+#pragma mark Set
 
 - (void)setNavTitle:(NSString *)navTitle {
     _navTitle = [navTitle copy];
@@ -261,16 +260,5 @@ shouldReloadTableForSearchString:(NSString *)searchString {
     _backImage = backImage;
     [_headView.backBtn setImage:backImage forState:UIControlStateNormal];
 }
-
->>>>>>> dad6e130f1af6f665aeca2ca86f0ae881bb586c4
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

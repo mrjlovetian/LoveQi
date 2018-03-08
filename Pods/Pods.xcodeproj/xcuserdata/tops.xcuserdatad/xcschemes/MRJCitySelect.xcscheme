@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '511C8EB3D0CC3BC4780E5A3E37A0D688'
+               BlueprintIdentifier = 'A9B18EEA4A6553BFA1DA5271D910D1D9'
                BlueprintName = 'MRJCitySelect'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libMRJCitySelect.a'>

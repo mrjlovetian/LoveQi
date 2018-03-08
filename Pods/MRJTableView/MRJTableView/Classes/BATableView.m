@@ -9,7 +9,7 @@
 #import "BATableView.h"
 #import "BATableViewIndex.h"
 
-@interface BATableView()<BATableViewIndexDelegate>
+@interface BATableView() <BATableViewIndexDelegate>
 
 @property (nonatomic, strong) UILabel *flotageLabel;
 @property (nonatomic, strong) BATableViewIndex *tableViewIndex;
@@ -22,16 +22,26 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.tableView = [[UITableView alloc] initWithFrame:self.bounds style:UITableViewStylePlain];
+        _tableView.estimatedRowHeight = 0;
+        _tableView.estimatedSectionHeaderHeight = 0;
+        _tableView.estimatedSectionFooterHeight = 0;
         [self addSubview:self.tableView];
         
+        if (@available(iOS 11.0, *)) {
+            self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+        }
         self.tableViewIndex = [[BATableViewIndex alloc] initWithFrame:(CGRect){self.tableView.frame.size.width - 20,0,20,frame.size.height}];
         [self addSubview:self.tableViewIndex];
         
         self.flotageLabel = [[UILabel alloc] initWithFrame:(CGRect){(self.bounds.size.width - 64 ) / 2,(self.bounds.size.height - 64) / 2,64,64}];
-        self.flotageLabel.backgroundColor = RGB(18, 29, 45, 0.9);
+        self.flotageLabel.backgroundColor = RGB(18, 29, 45, 0.9);//[UIColor colorWithPatternImage:[UIImage imageNamed:@"flotageBackgroud"]];
         self.flotageLabel.hidden = YES;
         self.flotageLabel.textAlignment = NSTextAlignmentCenter;
         self.flotageLabel.textColor = [UIColor whiteColor];
+        self.flotageLabel.font = [UIFont boldSystemFontOfSize:25];
+        self.flotageLabel.clipsToBounds = YES;
+        self.flotageLabel.layer.cornerRadius = 4;
+        self.flotageLabel.layer.masksToBounds = YES;
         [self addSubview:self.flotageLabel];
     }
     return self;

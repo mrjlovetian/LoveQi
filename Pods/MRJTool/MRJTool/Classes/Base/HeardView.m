@@ -13,9 +13,9 @@
 
 @interface HeardView()
 
-@property (nonatomic, strong)UIButton *backBtn;
-@property (nonatomic, strong)UILabel *titleLab;
-@property (nonatomic, strong)UIView *bottomLine;
+@property (nonatomic, strong) UIButton *backBtn;
+@property (nonatomic, strong) UILabel *titleLab;
+@property (nonatomic, strong) CALayer *bottomLine;
 
 @end
 
@@ -32,7 +32,7 @@
 - (void)initUI {
     [self addSubview:self.backBtn];
     [self addSubview:self.titleLab];
-    [self addSubview:self.bottomLine];
+    [self.layer addSublayer:self.bottomLine];
 }
 
 - (void)goBack {
@@ -44,7 +44,7 @@
 - (UIButton *)backBtn {
     if (!_backBtn) {
         _backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        _backBtn.frame = CGRectMake(0, 20, 50, 44);
+        _backBtn.frame = CGRectMake(0, NavBAR_HEIGHT, 50, 44);
         [_backBtn setImage:[UIImage imageNamed:@"ico/bar_back_blue"] forState:UIControlStateNormal];
         _backBtn.contentMode = UIViewContentModeScaleAspectFit;
         [_backBtn addTarget:self action:@selector(goBack) forControlEvents:UIControlEventTouchUpInside];
@@ -54,7 +54,7 @@
 
 - (UILabel *)titleLab {
     if (!_titleLab) {
-        _titleLab = [[UILabel alloc] initWithFrame:CGRectMake(44, 20, SCREEN_WIDTH - 88, 44)];
+        _titleLab = [[UILabel alloc] initWithFrame:CGRectMake(44, NavBAR_HEIGHT, SCREEN_WIDTH - 88, 44)];
         _titleLab.font = [UIFont systemFontOfSize:18.0];
         _titleLab.textColor = [UIColor colorWithHexString:@"333333"];
         _titleLab.textAlignment = NSTextAlignmentCenter;
@@ -62,10 +62,11 @@
     return _titleLab;
 }
 
-- (UIView *)bottomLine {
+- (CALayer *)bottomLine {
     if (!_bottomLine) {
-        _bottomLine = [[UIView alloc] initWithFrame:CGRectMake(0, self.height - 0.5, SCREEN_WIDTH, 0.5)];
-        _bottomLine.backgroundColor = [UIColor colorWithHexString:@"e5e5e5"];
+        _bottomLine = [CALayer layer];
+        _bottomLine.frame = CGRectMake(0, self.frame.size.height - 0.5, [UIScreen mainScreen].bounds.size.width, 0.5);
+        _bottomLine.backgroundColor = [UIColor colorWithHexString:@"e5e5e5"].CGColor;
     }
     return _bottomLine;
 }

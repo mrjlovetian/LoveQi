@@ -24,7 +24,6 @@
 
 @end
 
-
 @implementation BATableViewIndex
 
 - (id)initWithFrame:(CGRect)frame{
@@ -97,7 +96,7 @@
     self.frame = rect;
 }
 
-- (CATextLayer*)textLayerWithSize:(CGFloat)size string:(NSString*)string andFrame:(CGRect)frame     {
+- (CATextLayer *)textLayerWithSize:(CGFloat)size string:(NSString*)string andFrame:(CGRect)frame {
     CATextLayer *textLayer = [CATextLayer layer];
     [textLayer setFont:@"ArialMT"];
     [textLayer setFontSize:size];
@@ -128,13 +127,13 @@
     [self.tableViewIndexDelegate tableViewIndexTouchesEnd:self];
 }
 
-- (void)sendEventToDelegate:(UIEvent*)event {
+- (void)sendEventToDelegate:(UIEvent *)event {
     UITouch *touch = [[event allTouches] anyObject];
     CGPoint point = [touch locationInView:self];
     
     NSInteger indx = ((NSInteger) floorf(point.y) / self.letterHeight);
     
-    if (indx< 0 || indx > self.letters.count - 1) {
+    if (indx < 0 || indx > self.letters.count - 1) {
         return;
     }
     

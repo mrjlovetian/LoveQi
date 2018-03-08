@@ -13,7 +13,7 @@
 @interface BATableView : UIView
 
 @property (nonatomic, strong) UITableView *tableView;
-@property (nonatomic, weak) id<BATableViewDelegate> delegate;
+@property (nonatomic, weak) id <BATableViewDelegate> delegate;
 
 - (void)reloadData;
 - (void)hideFlotage;

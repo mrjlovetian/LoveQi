@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'A6D36D5CB496873769FD6EA07146A479'
-               BlueprintName = 'UIColor+Additions'
+               BlueprintIdentifier = '42008DD544EEB47ECD5E52F695ABC6FB'
+               BlueprintName = 'MRJUIColorAdditions'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libUIColor+Additions.a'>
+               BuildableName = 'libMRJUIColorAdditions.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

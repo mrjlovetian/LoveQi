@@ -22,11 +22,11 @@ target :'LoveQi' do
 #  pod 'MRJActionSheet', '~> 0.2.0'
   pod 'vfrReader', '~> 2.8.6'
    pod 'MJRefresh', '~> 3.1.15.1'
-   pod 'MRJTool', '~> 0.1.3'
+   pod 'MRJTool', '~> 0.1.3.2'
    pod 'Today', '~> 0.1.1'
 #   pod 'BATableView', '~> 1.0.0'
    pod 'MJExtension', '~> 3.0.13'
-   pod 'MRJCitySelect', '~> 0.1.3.1'
+   pod 'MRJCitySelect', '~> 0.2.0'
 
 end
 

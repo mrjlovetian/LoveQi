@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'BAD50075837C46AA5505298CB3CADFA4'
+               BlueprintIdentifier = '8020E980C8951DD18932B9B26B1F636E'
                BlueprintName = 'MRJCitySelect-MRJCitySelect'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'MRJCitySelect.bundle'>
