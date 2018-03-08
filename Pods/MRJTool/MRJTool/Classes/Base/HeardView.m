@@ -44,7 +44,7 @@
 - (UIButton *)backBtn {
     if (!_backBtn) {
         _backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        _backBtn.frame = CGRectMake(0, NavBAR_HEIGHT, 50, 44);
+        _backBtn.frame = CGRectMake(0, StatusBarHeight, 50, 44);
         [_backBtn setImage:[UIImage imageNamed:@"ico/bar_back_blue"] forState:UIControlStateNormal];
         _backBtn.contentMode = UIViewContentModeScaleAspectFit;
         [_backBtn addTarget:self action:@selector(goBack) forControlEvents:UIControlEventTouchUpInside];
@@ -54,7 +54,7 @@
 
 - (UILabel *)titleLab {
     if (!_titleLab) {
-        _titleLab = [[UILabel alloc] initWithFrame:CGRectMake(44, NavBAR_HEIGHT, SCREEN_WIDTH - 88, 44)];
+        _titleLab = [[UILabel alloc] initWithFrame:CGRectMake(44, StatusBarHeight, SCREEN_WIDTH - 88, 44)];
         _titleLab.font = [UIFont systemFontOfSize:18.0];
         _titleLab.textColor = [UIColor colorWithHexString:@"333333"];
         _titleLab.textAlignment = NSTextAlignmentCenter;

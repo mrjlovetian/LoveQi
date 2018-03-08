@@ -37,7 +37,7 @@ PODS:
     - MRJTableView
     - MRJUIColorAdditions
   - MRJTableView (0.1.0.3)
-  - MRJTool (0.1.3.2):
+  - MRJTool (0.1.3.3):
     - OC-Category (~> 0.1.3.8)
   - MRJUIColorAdditions (0.1.0)
   - MWPhotoBrowser (2.1.2):
@@ -80,7 +80,7 @@ DEPENDENCIES:
   - MRJ_QRCode (~> 0.3.1)
   - MRJCameraTool (~> 0.1.6)
   - MRJCitySelect (~> 0.2.0)
-  - MRJTool (~> 0.1.3.2)
+  - MRJTool (~> 0.1.3.3)
   - MWPhotoBrowser (~> 2.1.2)
   - OC-Category (~> 0.1.3.8)
   - Today (~> 0.1.1)
@@ -101,7 +101,7 @@ SPEC CHECKSUMS:
   MRJCameraTool: 5fcbcb271912deb62d1a4415bffec9cef71853ce
   MRJCitySelect: db5fcb73b70a732a88ec983903f81bbccb134756
   MRJTableView: d8a6eab701f9346736c16095a1a4eef25f91770a
-  MRJTool: a20cda422715b5ea20f06422e01671a1b6f80379
+  MRJTool: dd05e13b1d5d5926e2413b39dc5cd9e42f8fffa4
   MRJUIColorAdditions: a72dd04fb5d358f81fbd7eae8fc9da76b6f03590
   MWPhotoBrowser: 5836d7aa041dc05a13de380c246826578adc5ea5
   OC-Category: ae8a4f887ff8a59922404526e537fb1d2fdc5c48
@@ -112,6 +112,6 @@ SPEC CHECKSUMS:
   vfrReader: 94ea739a545e39093c93802ca1c5b203a5df46b1
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 27a1d5b12fec0bc8cb44b82ec5fa27c333373693
+PODFILE CHECKSUM: 592e000804311c4e22515c6e49f900994233823e
 
 COCOAPODS: 1.3.1

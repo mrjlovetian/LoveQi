@@ -151,7 +151,7 @@
 
 - (AddImageBottomView *)bottomView {
     if (!_bottomView) {
-        _bottomView = [[AddImageBottomView alloc] initWithFrame:CGRectMake(0, SCREEN_HEIGHT - 49, SCREEN_WIDTH, 40)];
+        _bottomView = [[AddImageBottomView alloc] initWithFrame:CGRectMake(0, SCREEN_HEIGHT - 49 - SCREEN_Bottom_height, SCREEN_WIDTH, 49)];
     }
     return _bottomView;
 }

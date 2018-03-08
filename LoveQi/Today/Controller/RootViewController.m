@@ -305,7 +305,7 @@
 
 - (AddEventView *)bottomView {
     if (!_bottomView) {
-        _bottomView = [[AddEventView alloc] initWithFrame:CGRectMake(0, SCREEN_HEIGHT - 44, SCREEN_WIDTH, 44)];
+        _bottomView = [[AddEventView alloc] initWithFrame:CGRectMake(0, SCREEN_HEIGHT - 44 - SCREEN_Bottom_height, SCREEN_WIDTH, 44+SCREEN_Bottom_height)];
         [_bottomView.addEventBtn addTarget:self action:@selector(addEvent) forControlEvents:UIControlEventTouchUpInside];
     }
     return _bottomView;
@@ -322,7 +322,7 @@
 - (UIButton *)selectDayBtn {
     if (!_selectDayBtn) {
         _selectDayBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        _selectDayBtn.frame = CGRectMake(15, 20, 50, 44);
+        _selectDayBtn.frame = CGRectMake(15, StatusBarHeight, 50, 44);
         [_selectDayBtn setTitle:@"选择" forState:UIControlStateNormal];
         [_selectDayBtn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
         [_selectDayBtn addTarget:self action:@selector(selectDateFromWheel) forControlEvents:UIControlEventTouchUpInside];
@@ -333,7 +333,7 @@
 - (UIButton *)todayBtn {
     if (!_todayBtn) {
         _todayBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        _todayBtn.frame = CGRectMake(SCREEN_WIDTH - 65, 20, 50, 44);
+        _todayBtn.frame = CGRectMake(SCREEN_WIDTH - 65, StatusBarHeight, 50, 44);
         [_todayBtn setTitle:@"今天" forState:UIControlStateNormal];
         [_todayBtn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
         [_todayBtn addTarget:self action:@selector(today) forControlEvents:UIControlEventTouchUpInside];
