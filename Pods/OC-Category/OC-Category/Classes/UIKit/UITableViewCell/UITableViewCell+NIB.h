@@ -8,10 +8,12 @@
 #import <UIKit/UIKit.h>
 
 @interface UITableViewCell (NIB)
+
 /**
  *  @brief  加载同类名的nib
  *
  *  @return nib
  */
-+(UINib*)nib;
++ (UINib *)nib;
+
 @end

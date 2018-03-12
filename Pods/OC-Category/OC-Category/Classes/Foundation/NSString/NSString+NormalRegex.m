@@ -9,7 +9,7 @@
 
 @implementation NSString (NormalRegex)
 #pragma mark - 正则相关
-- (BOOL)isValidateByRegex:(NSString *)regex{
+- (BOOL)isValidateByRegex:(NSString *)regex {
     NSPredicate *pre = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",regex];
     return [pre evaluateWithObject:self];
 }
@@ -17,7 +17,7 @@
 #pragma mark -
 
 //手机号分服务商
-- (BOOL)isMobileNumberClassification{
+- (BOOL)isMobileNumberClassification {
     /**
      * 手机号码
      * 移动：134[0-8],135,136,137,138,139,150,151,157,158,159,182,187,188,1705
@@ -56,56 +56,50 @@
     if (([self isValidateByRegex:CM])
         || ([self isValidateByRegex:CU])
         || ([self isValidateByRegex:CT])
-        || ([self isValidateByRegex:PHS]))
-    {
+        || ([self isValidateByRegex:PHS])) {
         return YES;
-    }
-    else
-    {
+    } else {
         return NO;
     }
 }
 
 //手机号有效性
-- (BOOL)isMobileNumber{
+- (BOOL)isMobileNumber {
      NSString *mobileRegex = @"^(0|86|17951)?(13[0-9]|15[012356789]|17[0678]|18[0-9]|14[57])[0-9]{8}$";
     BOOL ret1 = [self isValidateByRegex:mobileRegex];
     return ret1;
 }
 
 //邮箱
-- (BOOL)isEmailAddress{
+- (BOOL)isEmailAddress {
     NSString *emailRegex = @"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
     return [self isValidateByRegex:emailRegex];
 }
 
 //身份证号
-- (BOOL)simpleVerifyIdentityCardNum
-{
+- (BOOL)simpleVerifyIdentityCardNum {
     NSString *regex2 = @"^(\\d{14}|\\d{17})(\\d|[xX])$";
     return [self isValidateByRegex:regex2];
 }
 
 //车牌
-- (BOOL)isCarNumber{
+- (BOOL)isCarNumber {
     //车牌号:湘K-DE829 香港车牌号码:粤Z-J499港
     NSString *carRegex = @"^[\u4e00-\u9fff]{1}[a-zA-Z]{1}[-][a-zA-Z_0-9]{4}[a-zA-Z_0-9_\u4e00-\u9fff]$";//其中\u4e00-\u9fa5表示unicode编码中汉字已编码部分，\u9fa5-\u9fff是保留部分，将来可能会添加
     return [self isValidateByRegex:carRegex];
 }
 
-- (BOOL)isMacAddress{
+- (BOOL)isMacAddress {
     NSString * macAddRegex = @"([A-Fa-f\\d]{2}:){5}[A-Fa-f\\d]{2}";
     return  [self isValidateByRegex:macAddRegex];
 }
 
-- (BOOL)isValidUrl
-{
+- (BOOL)isValidUrl {
     NSString *regex = @"^((http)|(https))+:[^\\s]+\\.[^\\s]*$";
     return [self isValidateByRegex:regex];
 }
 
-- (BOOL)isValidChinese;
-{
+- (BOOL)isValidChinese {
     NSString *chineseRegex = @"^[\u4e00-\u9fa5]+$";
     return [self isValidateByRegex:chineseRegex];
 }
@@ -115,8 +109,7 @@
     return [self isValidateByRegex:postalRegex];
 }
 
-- (BOOL)isValidTaxNo
-{
+- (BOOL)isValidTaxNo {
     NSString *taxNoRegex = @"[0-9]\\d{13}([0-9]|X)$";
     return [self isValidateByRegex:taxNoRegex];
 }
@@ -124,12 +117,10 @@
 - (BOOL)isValidWithMinLenth:(NSInteger)minLenth
                    maxLenth:(NSInteger)maxLenth
              containChinese:(BOOL)containChinese
-        firstCannotBeDigtal:(BOOL)firstCannotBeDigtal;
-{
+        firstCannotBeDigtal:(BOOL)firstCannotBeDigtal {
     //  [\u4e00-\u9fa5A-Za-z0-9_]{4,20}
     NSString *hanzi = containChinese ? @"\u4e00-\u9fa5" : @"";
     NSString *first = firstCannotBeDigtal ? @"^[a-zA-Z_]" : @"";
-    
     NSString *regex = [NSString stringWithFormat:@"%@[%@A-Za-z0-9_]{%d,%d}", first, hanzi, (int)(minLenth-1), (int)(maxLenth-1)];
     return [self isValidateByRegex:regex];
 }
@@ -140,8 +131,7 @@
               containDigtal:(BOOL)containDigtal
               containLetter:(BOOL)containLetter
       containOtherCharacter:(NSString *)containOtherCharacter
-        firstCannotBeDigtal:(BOOL)firstCannotBeDigtal;
-{
+        firstCannotBeDigtal:(BOOL)firstCannotBeDigtal {
     NSString *hanzi = containChinese ? @"\u4e00-\u9fa5" : @"";
     NSString *first = firstCannotBeDigtal ? @"^[a-zA-Z_]" : @"";
     NSString *lengthRegex = [NSString stringWithFormat:@"(?=^.{%@,%@}$)", @(minLenth), @(maxLenth)];
@@ -160,7 +150,7 @@
     int length =0;
     if (!value) {
         return NO;
-    }else {
+    } else {
         length = (int)value.length;
         
         if (length !=15 && length !=18) {
@@ -248,8 +238,6 @@
     }
 }
 
-
-
 /** 银行卡号有效性问题Luhn算法
  *  现行 16 位银联卡现行卡号开头 6 位是 622126～622925 之间的，7 到 15 位是银行自定义的，
  *  可能是发卡分行，发卡网点，发卡序号，第 16 位是校验码。
@@ -315,14 +303,13 @@
     return (luhmTotal%10 ==0)?YES:NO;
 }
 
-- (BOOL)isIPAddress{
+- (BOOL)isIPAddress {
     NSString *regex = [NSString stringWithFormat:@"^(\\d{1,3})\\.(\\d{1,3})\\.(\\d{1,3})\\.(\\d{1,3})$"];
     NSPredicate *pre = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",regex];
     BOOL rc = [pre evaluateWithObject:self];
     
     if (rc) {
         NSArray *componds = [self componentsSeparatedByString:@","];
-        
         BOOL v = YES;
         for (NSString *s in componds) {
             if (s.integerValue > 255) {
@@ -330,13 +317,9 @@
                 break;
             }
         }
-        
         return v;
     }
-    
     return NO;
 }
-
-
 
 @end

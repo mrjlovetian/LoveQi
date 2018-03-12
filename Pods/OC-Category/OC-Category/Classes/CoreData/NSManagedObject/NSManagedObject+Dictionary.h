@@ -8,6 +8,7 @@
 #import <CoreData/CoreData.h>
 
 @interface NSManagedObject (Dictionary)
+
 /**
  *  @author Categories
  *
@@ -16,6 +17,7 @@
  *  @return <#return value description#>
  */
 - (NSDictionary *)toDictionary;
+
 //http://stackoverflow.com/questions/5664423/storing-nsmanagedobject-in-a-dictionary-nsdictionary
 /**
  *  @author Categories
@@ -25,4 +27,5 @@
  *  @return <#return value description#>
  */
 - (NSDictionary *)dictionary;
+
 @end

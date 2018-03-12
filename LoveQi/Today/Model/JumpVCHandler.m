@@ -20,6 +20,9 @@
 #import "DynamicMenuViewController.h"
 #import "SocketViewController.h"
 #import "CitySelectViewController.h"
+#import "AutoLayoutViewController.h"
+
+#import "PlayViewController.h"
 
 @implementation JumpVCHandler
 
@@ -33,12 +36,14 @@
 
 + (void)jumpRootVC:(UIViewController *)rootVC toIndex:(NSInteger)index {
     if (index == 0) {
+        PlayViewController *vc = [[PlayViewController alloc] init];
+//        AutoLayoutViewController *vc = [[AutoLayoutViewController alloc] init];
 //        SocketViewController *vc = [[SocketViewController alloc] init];
-        CitySelectViewController *vc = [[CitySelectViewController alloc] init];
-        vc.navTitle = @"城市选择";
-        vc.cityBlock = ^(CityModelManger *city) {
-            MRJLog(@"选择的城市是%@", city.regionName);
-        };
+//        CitySelectViewController *vc = [[CitySelectViewController alloc] init];
+//        vc.navTitle = @"城市选择";
+//        vc.cityBlock = ^(CityModelManger *city) {
+//            MRJLog(@"选择的城市是%@", city.regionName);
+//        };
 //        DynamicMenuViewController *vc = [[DynamicMenuViewController alloc] init];
 //        RunloopViewController *vc = [[RunloopViewController alloc] init];
 //        MeiTuanDeatilViewController *vc = [[MeiTuanDeatilViewController alloc] init];

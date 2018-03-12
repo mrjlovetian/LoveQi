@@ -8,6 +8,7 @@
 #import <Foundation/Foundation.h>
 
 @interface NSUserDefaults (SafeAccess)
+
 + (NSString *)stringForKey:(NSString *)defaultName;
 
 + (NSArray *)arrayForKey:(NSString *)defaultName;
@@ -39,4 +40,5 @@
 #pragma mark - WRITE ARCHIVE FOR STANDARD
 
 + (void)setArcObject:(id)value forKey:(NSString *)defaultName;
+
 @end

@@ -8,8 +8,8 @@
 
 #import "HeardView.h"
 #import "Macro.h"
-#import "UIColor+HEX.h"
-#import "UIView+Frame.h"
+#import "UIColor+MRJAdditions.h"
+#import "UIView+MRJFrame.h"
 
 @interface HeardView()
 

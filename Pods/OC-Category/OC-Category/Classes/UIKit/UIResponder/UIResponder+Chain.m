@@ -8,13 +8,13 @@
 #import "UIResponder+Chain.h"
 
 @implementation UIResponder (Chain)
+
 /**
  *  @brief  响应者链
  *
  *  @return  响应者链
  */
-- (NSString *)responderChainDescription
-{
+- (NSString *)responderChainDescription {
     NSMutableArray *responderChainStrings = [NSMutableArray array];
     [responderChainStrings addObject:[self class]];
     UIResponder *nextResponder = self;
@@ -40,4 +40,5 @@
                                             }];
     return returnString;
 }
+
 @end

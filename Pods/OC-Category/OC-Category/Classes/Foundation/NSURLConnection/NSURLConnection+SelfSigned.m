@@ -10,11 +10,12 @@
 /**
  *  Internal wrapper for the connection and handler
  */
-@interface NSURLConnectionDelegateWrapper : NSObject<NSURLConnectionDelegate,NSURLConnectionDataDelegate>
+@interface NSURLConnectionDelegateWrapper : NSObject<NSURLConnectionDelegate, NSURLConnectionDataDelegate>
 
 + (NSURLConnectionDelegateWrapper*)wrapperWithHandler:(void (^)(NSURLResponse *, NSData *, NSError *))handler;
 + (NSMutableArray*)wrappers;
-@property (nonatomic,strong) NSURLConnection* connection;
+
+@property (nonatomic, strong) NSURLConnection *connection;
 
 @end
 

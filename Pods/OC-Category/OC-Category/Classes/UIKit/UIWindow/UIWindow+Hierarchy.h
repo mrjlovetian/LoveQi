@@ -8,17 +8,19 @@
 #import <UIKit/UIKit.h>
 
 @interface UIWindow (Hierarchy)
+
 /*!
  @method topMostController
  
  @return Returns the current Top Most ViewController in hierarchy.
  */
-- (UIViewController*)topMostController;
+- (UIViewController *)topMostController;
 
 /*!
  @method currentViewController
  
  @return Returns the topViewController in stack of topMostController.
  */
-- (UIViewController*)currentViewController;
+- (UIViewController *)currentViewController;
+
 @end

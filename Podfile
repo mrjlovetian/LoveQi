@@ -11,7 +11,7 @@ target :'LoveQi' do
   pod 'FSCalendar', '2.3'
 #  pod 'BHBPopView'
 #  pod 'TRMJPhotoBrowser', '~> 1.0.6'
-  pod 'OC-Category', '~> 0.1.3.8'
+  pod 'OC-Category', '~> 0.3.4.9'
 #  pod 'YHJQRCode', '~> 0.2.0.7'
   pod 'MWPhotoBrowser', '~> 2.1.2'
   pod 'MRJCameraTool', '~> 0.1.6'
@@ -22,11 +22,14 @@ target :'LoveQi' do
 #  pod 'MRJActionSheet', '~> 0.2.0'
   pod 'vfrReader', '~> 2.8.6'
    pod 'MJRefresh', '~> 3.1.15.1'
-   pod 'MRJTool', '~> 0.1.3.3'
+   pod 'MRJTool', '~> 0.1.3.4'
    pod 'Today', '~> 0.1.1'
 #   pod 'BATableView', '~> 1.0.0'
    pod 'MJExtension', '~> 3.0.13'
    pod 'MRJCitySelect', '~> 0.2.0'
+   pod 'Masonry', '~> 1.1.0'
+   pod 'MRJAttributedMarkup'
+   pod 'MRJUIColorAdditions', '~> 0.1.0'
 
 end
 

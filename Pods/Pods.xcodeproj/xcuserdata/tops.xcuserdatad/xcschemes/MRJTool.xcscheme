@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '8CE840ECED208425BA98E025B5C6D1D7'
+               BlueprintIdentifier = 'E023923471B9000068467EEA55A6701E'
                BlueprintName = 'MRJTool'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libMRJTool.a'>

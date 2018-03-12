@@ -14,8 +14,7 @@
 // =====================================================
 - (void)adjustLabelToMaximumSize:(CGSize)maxSize
                      minimumSize:(CGSize)minSize 
-                 minimumFontSize:(int)minFontSize
-{
+                 minimumFontSize:(int)minFontSize {
   //// 1) Calculate new label size
   //// ---------------------------
   // First, reset some basic parameters  
@@ -28,7 +27,6 @@
   if (maxSize.height == CGSizeZero.height) {
     maxSize.width = [[UIScreen mainScreen] bounds].size.width - 40.0;
     maxSize.height = MAXFLOAT; // infinite height
-    
   }
   
   // Now, calculate the size of the label constrained to maxSize
@@ -45,7 +43,7 @@
   }
   
   // Create rect
-  CGRect newFrameSize = CGRectMake(  [self frame].origin.x
+  CGRect newFrameSize = CGRectMake([self frame].origin.x
                                    , [self frame].origin.y
                                    , tempSize.width
                                    , tempSize.height);
@@ -86,8 +84,7 @@
 // font size as constraints
 // =====================================================
 - (void)adjustLabelToMaximumSize:(CGSize)maxSize
-                 minimumFontSize:(int)minFontSize
-{
+                 minimumFontSize:(int)minFontSize {
   [self adjustLabelToMaximumSize:maxSize
                      minimumSize:CGSizeZero 
                  minimumFontSize:minFontSize];
@@ -97,8 +94,7 @@
 // size as a constraint (the maximum size will be
 // calculated automatically based on the screen size)
 // =====================================================
-- (void)adjustLabelSizeWithMinimumFontSize:(int)minFontSize
-{
+- (void)adjustLabelSizeWithMinimumFontSize:(int)minFontSize {
   [self adjustLabelToMaximumSize:CGSizeZero
                      minimumSize:CGSizeZero 
                  minimumFontSize:minFontSize];
@@ -108,8 +104,7 @@
 // size will be calculated automatically based on the
 // screen size)
 // =====================================================
-- (void)adjustLabel
-{
+- (void)adjustLabel {
   [self adjustLabelToMaximumSize:CGSizeZero 
                      minimumSize:CGSizeZero 
                  minimumFontSize:[self minimumScaleFactor]];

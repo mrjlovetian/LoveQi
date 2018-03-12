@@ -8,6 +8,7 @@
 #import "CATransaction+AnimateWithDuration.h"
 
 @implementation CATransaction (AnimateWithDuration)
+
 /**
  *  @author Denys Telezhkin
  *
@@ -17,20 +18,15 @@
  *  @param animations 动画块
  *  @param completion 动画结束回调
  */
-+(void)animateWithDuration:(NSTimeInterval)duration
++ (void)animateWithDuration:(NSTimeInterval)duration
                    animations:(void (^)(void))animations
-                   completion:(void (^)())completion
-{
+                   completion:(void (^)())completion {
     [CATransaction begin];
     [CATransaction setAnimationDuration:duration];
-    
-    if (completion)
-    {
+    if (completion) {
         [CATransaction setCompletionBlock:completion];
     }
-    
-    if (animations)
-    {
+    if (animations) {
         animations();
     }
     [CATransaction commit];

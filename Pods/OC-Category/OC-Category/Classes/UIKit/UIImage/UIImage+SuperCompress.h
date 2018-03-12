@@ -8,6 +8,7 @@
 #import <UIKit/UIKit.h>
 
 @interface UIImage (SuperCompress)
+
 /**
  *  压缩上传图片到指定字节
  *
@@ -38,6 +39,6 @@
  */
 + (CGSize)scaleImage:(UIImage *) image withLength:(CGFloat) imageLength;
 
-
 + (UIImage*)resizableHalfImage:(NSString *)name;
+
 @end

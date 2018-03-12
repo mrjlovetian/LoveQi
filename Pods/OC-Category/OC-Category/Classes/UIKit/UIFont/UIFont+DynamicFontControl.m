@@ -9,47 +9,35 @@
 
 @implementation UIFont (DynamicFontControl)
 
-+(UIFont *)preferredFontForTextStyle:(NSString *)style withFontName:(NSString *)fontName{
++ (UIFont *)preferredFontForTextStyle:(NSString *)style withFontName:(NSString *)fontName{
     return [UIFont preferredFontForTextStyle:style withFontName:fontName scale:1.0f];
 }
 
-+(UIFont *)preferredFontForTextStyle:(NSString *)style withFontName:(NSString *)fontName scale:(CGFloat)scale{
++ (UIFont *)preferredFontForTextStyle:(NSString *)style withFontName:(NSString *)fontName scale:(CGFloat)scale{
     
     
     UIFont * font = nil;
     if([[UIFont class] resolveClassMethod:@selector(preferredFontForTextStyle:)]){
         font = [UIFont preferredFontForTextStyle:fontName];
-    }else{
+    } else {
         font = [UIFont fontWithName:fontName size:14 * scale];
     }
-    
-    
     return [font adjustFontForTextStyle:style];
-
 }
 
--(UIFont *)adjustFontForTextStyle:(NSString *)style{
+- (UIFont *)adjustFontForTextStyle:(NSString *)style{
     return [self adjustFontForTextStyle:style scale:1.0f];
 }
 
--(UIFont *)adjustFontForTextStyle:(NSString *)style scale:(CGFloat)scale{
-    
+- (UIFont *)adjustFontForTextStyle:(NSString *)style scale:(CGFloat)scale{
     UIFontDescriptor * fontDescriptor = nil;
-    
     if([[UIFont class] resolveClassMethod:@selector(preferredFontForTextStyle:)]){
-        
         fontDescriptor = [UIFontDescriptor preferredFontDescriptorWithTextStyle:style];
-        
-    }else{
-        
+    } else {
         fontDescriptor = self.fontDescriptor;
-        
     }
-    
     float dynamicSize = [fontDescriptor pointSize] * scale + 3;
-    
     return [UIFont fontWithName:self.fontName size:dynamicSize];
-    
 }
 
 @end

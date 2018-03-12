@@ -9,14 +9,11 @@
 #import <CoreImage/CoreImage.h>
 #import <QuartzCore/QuartzCore.h>
 
-
 static CIDetector * _faceDetector;
-
 
 @implementation UIImageView (FaceAwareFill)
 
-+ (void)initialize
-{
++ (void)initialize{
     _faceDetector = [CIDetector detectorOfType:CIDetectorTypeFace
                                        context:nil
                                        options:@{CIDetectorAccuracy:CIDetectorAccuracyLow}];

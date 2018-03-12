@@ -10,13 +10,11 @@
 
 @implementation UIBezierPath (ThroughPointsBezier)
 
-- (void)setContractionFactor:(CGFloat)contractionFactor
-{
+- (void)setContractionFactor:(CGFloat)contractionFactor {
     objc_setAssociatedObject(self, @selector(contractionFactor), @(contractionFactor), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-- (CGFloat)contractionFactor
-{
+- (CGFloat)contractionFactor {
     id contractionFactorAssociatedObject = objc_getAssociatedObject(self, @selector(contractionFactor));
     if (contractionFactorAssociatedObject == nil) {
         return 0.7;
@@ -24,8 +22,7 @@
     return [contractionFactorAssociatedObject floatValue];
 }
 
-- (void)addBezierThroughPoints:(NSArray *)pointArray
-{
+- (void)addBezierThroughPoints:(NSArray *)pointArray {
     NSAssert(pointArray.count > 0, @"You must give at least 1 point for drawing the curve.");
     
     if (pointArray.count < 3) {
@@ -84,15 +81,12 @@
         }
         
         if (i == 1) {
-            
             [self addQuadCurveToPoint:previousPoint controlPoint:previousControlPoint2];
         }
         else if (i > 1 && i < pointArray.count - 1) {
-            
             [self addCurveToPoint:previousPoint controlPoint1:previousControlPoint1 controlPoint2:previousControlPoint2];
         }
         else if (i == pointArray.count - 1) {
-            
             [self addCurveToPoint:previousPoint controlPoint1:previousControlPoint1 controlPoint2:previousControlPoint2];
             [self addQuadCurveToPoint:pointI controlPoint:controlPoint1];
         }
@@ -105,44 +99,37 @@
     }
 }
 
-CGFloat ObliqueAngleOfStraightThrough(CGPoint point1, CGPoint point2)   //  [-π/2, 3π/2)
-{
+///  [-π/2, 3π/2)
+CGFloat ObliqueAngleOfStraightThrough(CGPoint point1, CGPoint point2)   {
     CGFloat obliqueRatio = 0;
     CGFloat obliqueAngle = 0;
     
     if (point1.x > point2.x) {
-        
         obliqueRatio = (point2.y - point1.y) / (point2.x - point1.x);
         obliqueAngle = atan(obliqueRatio);
-    }
-    else if (point1.x < point2.x) {
+    } else if (point1.x < point2.x) {
         
         obliqueRatio = (point2.y - point1.y) / (point2.x - point1.x);
         obliqueAngle = M_PI + atan(obliqueRatio);
-    }
-    else if (point2.y - point1.y >= 0) {
+    } else if (point2.y - point1.y >= 0) {
         
         obliqueAngle = M_PI/2;
-    }
-    else {
+    } else {
         obliqueAngle = -M_PI/2;
     }
     
     return obliqueAngle;
 }
 
-CGPoint ControlPointForTheBezierCanThrough3Point(CGPoint point1, CGPoint point2, CGPoint point3)
-{
+CGPoint ControlPointForTheBezierCanThrough3Point(CGPoint point1, CGPoint point2, CGPoint point3) {
     return CGPointMake(2 * point2.x - (point1.x + point3.x) / 2, 2 * point2.y - (point1.y + point3.y) / 2);
 }
 
-CGFloat DistanceBetweenPoint(CGPoint point1, CGPoint point2)
-{
+CGFloat DistanceBetweenPoint(CGPoint point1, CGPoint point2) {
     return sqrt((point1.x - point2.x) * (point1.x - point2.x) + (point1.y - point2.y) * (point1.y - point2.y));
 }
 
-CGPoint CenterPointOf(CGPoint point1, CGPoint point2)
-{
+CGPoint CenterPointOf(CGPoint point1, CGPoint point2) {
     return CGPointMake((point1.x + point2.x) / 2, (point1.y + point2.y) / 2);
 }
 

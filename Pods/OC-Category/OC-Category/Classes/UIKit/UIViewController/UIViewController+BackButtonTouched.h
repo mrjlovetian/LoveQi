@@ -6,8 +6,11 @@
 //
 
 #import <UIKit/UIKit.h>
+
 typedef void (^BackButtonHandler)(UIViewController *vc);
+
 @interface UIViewController (BackButtonTouched)
+
 /**
  *  @author Categories
  *
@@ -15,5 +18,6 @@ typedef void (^BackButtonHandler)(UIViewController *vc);
  *
  *  @param backButtonHandler <#backButtonHandler description#>
  */
--(void)backButtonTouched:(BackButtonHandler)backButtonHandler;
+- (void)backButtonTouched:(BackButtonHandler)backButtonHandler;
+
 @end

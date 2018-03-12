@@ -33,9 +33,7 @@
     gradientLayer.startPoint = CGPointMake(0.5,0.5);
     gradientLayer.endPoint = CGPointMake(0.5,1.0);
     reflectionLayer.mask = gradientLayer;
-    
     [self.superview addSubview:reflectionImageView];
-
 }
 
 @end

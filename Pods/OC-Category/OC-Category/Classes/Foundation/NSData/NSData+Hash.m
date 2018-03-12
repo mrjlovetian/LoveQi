@@ -11,39 +11,39 @@
 /**
  *  @brief  md5 NSData
  */
-- (NSData *)md5Data
-{
+- (NSData *)md5Data {
     unsigned char bytes[CC_MD5_DIGEST_LENGTH];
     CC_MD5(self.bytes, (CC_LONG)self.length, bytes);
     return [NSData dataWithBytes:bytes length:CC_MD5_DIGEST_LENGTH];
 }
+
 /**
  *  @brief  sha1Data NSData
  */
-- (NSData *)sha1Data
-{
+- (NSData *)sha1Data {
     unsigned char bytes[CC_SHA1_DIGEST_LENGTH];
     CC_SHA1(self.bytes, (CC_LONG)self.length, bytes);
     return [NSData dataWithBytes:bytes length:CC_SHA1_DIGEST_LENGTH];
 }
+
 /**
  *  @brief  sha256Data NSData
  */
-- (NSData *)sha256Data
-{
+- (NSData *)sha256Data {
     unsigned char bytes[CC_SHA256_DIGEST_LENGTH];
     CC_SHA256(self.bytes, (CC_LONG)self.length, bytes);
     return [NSData dataWithBytes:bytes length:CC_SHA256_DIGEST_LENGTH];
 }
+
 /**
  *  @brief  sha512Data NSData
  */
-- (NSData *)sha512Data
-{
+- (NSData *)sha512Data {
     unsigned char bytes[CC_SHA512_DIGEST_LENGTH];
     CC_SHA512(self.bytes, (CC_LONG)self.length, bytes);
     return [NSData dataWithBytes:bytes length:CC_SHA512_DIGEST_LENGTH];
 }
+
 /**
  *  @brief  md5 NSData
  *
@@ -54,6 +54,7 @@
 - (NSData *)hmacMD5DataWithKey:(NSData *)key {
     return [self hmacDataUsingAlg:kCCHmacAlgMD5 withKey:key];
 }
+
 /**
  *  @brief  sha1Data NSData
  *
@@ -61,8 +62,7 @@
  *
  *  @return 结果
  */
-- (NSData *)hmacSHA1DataWithKey:(NSData *)key
-{
+- (NSData *)hmacSHA1DataWithKey:(NSData *)key {
     return [self hmacDataUsingAlg:kCCHmacAlgSHA1 withKey:key];
 }
 /**
@@ -72,10 +72,10 @@
  *
  *  @return 结果
  */
-- (NSData *)hmacSHA256DataWithKey:(NSData *)key
-{
+- (NSData *)hmacSHA256DataWithKey:(NSData *)key {
     return [self hmacDataUsingAlg:kCCHmacAlgSHA256 withKey:key];
 }
+
 /**
  *  @brief  sha512Data NSData
  *
@@ -83,14 +83,11 @@
  *
  *  @return 结果
  */
-- (NSData *)hmacSHA512DataWithKey:(NSData *)key
-{
+- (NSData *)hmacSHA512DataWithKey:(NSData *)key {
     return [self hmacDataUsingAlg:kCCHmacAlgSHA512 withKey:key];
 }
 
-
 - (NSData *)hmacDataUsingAlg:(CCHmacAlgorithm)alg withKey:(NSData *)key {
-
     size_t size;
     switch (alg) {
         case kCCHmacAlgMD5: size = CC_MD5_DIGEST_LENGTH; break;

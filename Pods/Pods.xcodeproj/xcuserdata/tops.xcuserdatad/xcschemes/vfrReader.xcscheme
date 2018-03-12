@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '853CD2E7C3EB4EC59312C0FFB8C91DF8'
+               BlueprintIdentifier = 'D55AFE38C2D914F75B8753876640C91F'
                BlueprintName = 'vfrReader'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libvfrReader.a'>

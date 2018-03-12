@@ -8,6 +8,7 @@
 #import "NSDictionary+URL.h"
 
 @implementation NSDictionary (URI)
+
 /**
  *  @brief  将url参数转换成NSDictionary
  *
@@ -15,8 +16,7 @@
  *
  *  @return NSDictionary
  */
-+ (NSDictionary *)dictionaryWithURLQuery:(NSString *)query
-{
++ (NSDictionary *)dictionaryWithURLQuery:(NSString *)query {
     NSMutableDictionary *dict = [NSMutableDictionary dictionary];
     NSArray *parameters = [query componentsSeparatedByString:@"&"];
     for(NSString *parameter in parameters) {
@@ -32,13 +32,13 @@
     }
     return [NSDictionary dictionaryWithDictionary:dict];
 }
+
 /**
  *  @brief  将NSDictionary转换成url 参数字符串
  *
  *  @return url 参数字符串
  */
-- (NSString *)URLQueryString 
-{
+- (NSString *)URLQueryString {
     NSMutableString *string = [NSMutableString string];
     for (NSString *key in [self allKeys]) {
         if ([string length]) {
@@ -52,4 +52,5 @@
     }
     return string;
 }
+
 @end

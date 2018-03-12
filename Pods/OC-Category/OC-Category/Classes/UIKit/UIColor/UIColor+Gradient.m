@@ -10,6 +10,7 @@
 @implementation UIColor (Gradient)
 
 #pragma mark - Gradient Color
+
 /**
  *  @brief  渐变颜色
  *
@@ -19,8 +20,7 @@
  *
  *  @return 渐变颜色
  */
-+ (UIColor*)gradientFromColor:(UIColor*)c1 toColor:(UIColor*)c2 withHeight:(int)height
-{
++ (UIColor *)gradientFromColor:(UIColor *)c1 toColor:(UIColor *)c2 withHeight:(int)height {
     CGSize size = CGSizeMake(1, height);
     UIGraphicsBeginImageContextWithOptions(size, NO, 0);
     CGContextRef context = UIGraphicsGetCurrentContext();
@@ -38,4 +38,5 @@
     
     return [UIColor colorWithPatternImage:image];
 }
+
 @end

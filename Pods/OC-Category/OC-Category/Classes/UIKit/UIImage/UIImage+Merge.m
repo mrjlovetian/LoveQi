@@ -8,6 +8,7 @@
 #import "UIImage+Merge.h"
 
 @implementation UIImage (Merge)
+
 /**
  *  @brief  合并两个图片
  *
@@ -31,4 +32,5 @@
     UIGraphicsEndImageContext();
     return image;
 }
+
 @end

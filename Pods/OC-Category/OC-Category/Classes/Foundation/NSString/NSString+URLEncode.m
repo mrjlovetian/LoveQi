@@ -9,6 +9,7 @@
 #import "NSString+URLEncode.h"
 
 @implementation NSString (URLEncode)
+
 /**
  *  @brief  urlEncode
  *
@@ -17,6 +18,7 @@
 - (NSString *)urlEncode {
     return [self urlEncodeUsingEncoding:NSUTF8StringEncoding];
 }
+
 /**
  *  @brief  urlEncode
  *
@@ -29,6 +31,7 @@
                 (__bridge CFStringRef)self,NULL,(CFStringRef)@"!*'\"();:@&=+$,/?%#[]% ",
                  CFStringConvertNSStringEncodingToEncoding(encoding));
 }
+
 /**
  *  @brief  urlDecode
  *
@@ -37,6 +40,7 @@
 - (NSString *)urlDecode {
     return [self urlDecodeUsingEncoding:NSUTF8StringEncoding];
 }
+
 /**
  *  @brief  urlDecode
  *
@@ -48,13 +52,13 @@
 	return (__bridge_transfer NSString *)CFURLCreateStringByReplacingPercentEscapesUsingEncoding(NULL,
              (__bridge CFStringRef)self,CFSTR(""),CFStringConvertNSStringEncodingToEncoding(encoding));
 }
+
 /**
  *  @brief  url query转成NSDictionary
  *
  *  @return NSDictionary
  */
-- (NSDictionary *)dictionaryFromURLParameters
-{
+- (NSDictionary *)dictionaryFromURLParameters {
     NSArray *pairs = [self componentsSeparatedByString:@"&"];
     NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
     for (NSString *pair in pairs) {

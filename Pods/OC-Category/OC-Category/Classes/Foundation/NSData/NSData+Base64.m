@@ -10,6 +10,7 @@
 #import <Availability.h>
 
 @implementation NSData (Base64)
+
 /**
  *  @brief  字符串base64后转data
  *
@@ -17,8 +18,7 @@
  *
  *  @return 传入字符串 base64后的data
  */
-+ (NSData *)dataWithBase64EncodedString:(NSString *)string
-{
++ (NSData *)dataWithBase64EncodedString:(NSString *)string {
     if (![string length]) return nil;
     NSData *decoded = nil;
 #if __MAC_OS_X_VERSION_MIN_REQUIRED < __MAC_10_9 || __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_7_0
@@ -43,8 +43,7 @@
  *
  *  @return base64后的字符串
  */
-- (NSString *)base64EncodedStringWithWrapWidth:(NSUInteger)wrapWidth
-{
+- (NSString *)base64EncodedStringWithWrapWidth:(NSUInteger)wrapWidth {
     if (![self length]) return nil;
     NSString *encoded = nil;
 #if __MAC_OS_X_VERSION_MIN_REQUIRED < __MAC_10_9 || __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_7_0
@@ -75,16 +74,14 @@
             }
         }
     }
-    if (!wrapWidth || wrapWidth >= [encoded length])
-    {
+    if (!wrapWidth || wrapWidth >= [encoded length]) {
         return encoded;
     }
     wrapWidth = (wrapWidth / 4) * 4;
     NSMutableString *result = [NSMutableString string];
     for (NSUInteger i = 0; i < [encoded length]; i+= wrapWidth)
     {
-        if (i + wrapWidth >= [encoded length])
-        {
+        if (i + wrapWidth >= [encoded length]) {
             [result appendString:[encoded substringFromIndex:i]];
             break;
         }
@@ -93,13 +90,14 @@
     }
     return result;
 }
+
 /**
  *  @brief  NSData转string 换行长度默认64
  *
  *  @return base64后的字符串
  */
-- (NSString *)base64EncodedString
-{
+- (NSString *)base64EncodedString {
     return [self base64EncodedStringWithWrapWidth:0];
 }
+
 @end

@@ -11,6 +11,7 @@
 static __weak id currentFirstResponder;
 
 @implementation UIResponder (FirstResponder)
+
 /**
  *  @brief  当前第一响应者
  *
@@ -18,9 +19,7 @@ static __weak id currentFirstResponder;
  */
 + (id)currentFirstResponder {
     currentFirstResponder = nil;
-    
     [[UIApplication sharedApplication] sendAction:@selector(findCurrentFirstResponder:) to:nil from:nil forEvent:nil];
-    
     return currentFirstResponder;
 }
 

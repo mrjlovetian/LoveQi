@@ -8,6 +8,7 @@
 #import <UIKit/UIKit.h>
 
 @interface UIImage (Capture)
+
 /**
  *  @brief  截图指定view成图片
  *
@@ -30,4 +31,5 @@
  *  @return 截图
  */
 + (UIImage *)screenshotWithView:(UIView *)aView limitWidth:(CGFloat)maxWidth;
+
 @end

@@ -8,12 +8,14 @@
 #import "UITableViewCell+NIB.h"
 
 @implementation UITableViewCell (NIB)
+
 /**
  *  @brief  加载同类名的nib
  *
  *  @return nib
  */
-+(UINib*)nib{
++ (UINib *)nib{
    return  [UINib nibWithNibName:NSStringFromClass([self class]) bundle:nil];
 }
+
 @end

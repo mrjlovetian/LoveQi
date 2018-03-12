@@ -7,10 +7,12 @@
 #import <UIKit/UIKit.h>
 
 @interface UIResponder (Chain)
+
 /**
  *  @brief  响应者链
  *
  *  @return  响应者链
  */
 - (NSString *)responderChainDescription;
+
 @end

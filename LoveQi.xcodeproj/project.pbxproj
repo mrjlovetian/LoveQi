@@ -98,9 +98,12 @@
 		E7145D9A2021AF82004F4792 /* MeiTuanDeatilViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7145D992021AF82004F4792 /* MeiTuanDeatilViewController.m */; };
 		E7196CF32022B4480068B4BF /* RunloopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7196CF22022B4480068B4BF /* RunloopViewController.m */; };
 		E74E331920467AD1003D2CF1 /* PlayerHander.m in Sources */ = {isa = PBXBuildFile; fileRef = E74E331820467AD1003D2CF1 /* PlayerHander.m */; };
+		E75D345D20566783002B536C /* PlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E75D345C20566783002B536C /* PlayViewController.m */; };
 		E75E3AA02050D887004BAC39 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E75E3A9F2050D887004BAC39 /* Launch Screen.storyboard */; };
 		E76491382047E2F4007A4CAE /* CityRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E76491372047E2F4007A4CAE /* CityRequest.m */; };
 		E76D29522028075800EC41C7 /* SocketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E76D29512028075800EC41C7 /* SocketViewController.m */; };
+		E77BFC5B20523C0A008FA50E /* AutoLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E77BFC5A20523C0A008FA50E /* AutoLayoutViewController.m */; };
+		E77BFC6020528840008FA50E /* AtuoLayoutTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E77BFC5F20528840008FA50E /* AtuoLayoutTableViewCell.m */; };
 		E7B610462022F0D5000E4188 /* DynamicMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B610452022F0D5000E4188 /* DynamicMenuViewController.m */; };
 		E7B610492022F0F7000E4188 /* MenuItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B610482022F0F7000E4188 /* MenuItemView.m */; };
 		E7B6104C2022F457000E4188 /* MenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B6104B2022F457000E4188 /* MenuModel.m */; };
@@ -296,11 +299,17 @@
 		E7196CF22022B4480068B4BF /* RunloopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunloopViewController.m; sourceTree = "<group>"; };
 		E74E331720467AD1003D2CF1 /* PlayerHander.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayerHander.h; sourceTree = "<group>"; };
 		E74E331820467AD1003D2CF1 /* PlayerHander.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayerHander.m; sourceTree = "<group>"; };
+		E75D345B20566783002B536C /* PlayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayViewController.h; sourceTree = "<group>"; };
+		E75D345C20566783002B536C /* PlayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayViewController.m; sourceTree = "<group>"; };
 		E75E3A9F2050D887004BAC39 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		E76491362047E2F4007A4CAE /* CityRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CityRequest.h; sourceTree = "<group>"; };
 		E76491372047E2F4007A4CAE /* CityRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CityRequest.m; sourceTree = "<group>"; };
 		E76D29502028075800EC41C7 /* SocketViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocketViewController.h; sourceTree = "<group>"; };
 		E76D29512028075800EC41C7 /* SocketViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocketViewController.m; sourceTree = "<group>"; };
+		E77BFC5920523C0A008FA50E /* AutoLayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoLayoutViewController.h; sourceTree = "<group>"; };
+		E77BFC5A20523C0A008FA50E /* AutoLayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutViewController.m; sourceTree = "<group>"; };
+		E77BFC5E20528840008FA50E /* AtuoLayoutTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AtuoLayoutTableViewCell.h; sourceTree = "<group>"; };
+		E77BFC5F20528840008FA50E /* AtuoLayoutTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AtuoLayoutTableViewCell.m; sourceTree = "<group>"; };
 		E7B610442022F0D5000E4188 /* DynamicMenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicMenuViewController.h; sourceTree = "<group>"; };
 		E7B610452022F0D5000E4188 /* DynamicMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicMenuViewController.m; sourceTree = "<group>"; };
 		E7B610472022F0F7000E4188 /* MenuItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuItemView.h; sourceTree = "<group>"; };
@@ -421,6 +430,8 @@
 				E7B610452022F0D5000E4188 /* DynamicMenuViewController.m */,
 				E76D29502028075800EC41C7 /* SocketViewController.h */,
 				E76D29512028075800EC41C7 /* SocketViewController.m */,
+				E77BFC5920523C0A008FA50E /* AutoLayoutViewController.h */,
+				E77BFC5A20523C0A008FA50E /* AutoLayoutViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -489,6 +500,8 @@
 				E7B6105220230789000E4188 /* MenuViewManger.m */,
 				E7B610472022F0F7000E4188 /* MenuItemView.h */,
 				E7B610482022F0F7000E4188 /* MenuItemView.m */,
+				E77BFC5E20528840008FA50E /* AtuoLayoutTableViewCell.h */,
+				E77BFC5F20528840008FA50E /* AtuoLayoutTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -530,6 +543,7 @@
 		C2CE1BF91E2E2347003AE6D3 /* LoveQi */ = {
 			isa = PBXGroup;
 			children = (
+				E75D345A20566769002B536C /* Play */,
 				E764912F2047D724007A4CAE /* SelectCity */,
 				E74E331620467AA6003D2CF1 /* Player */,
 				E7E67BF72019A97000920C7C /* Database */,
@@ -685,6 +699,15 @@
 				E74E331820467AD1003D2CF1 /* PlayerHander.m */,
 			);
 			path = Player;
+			sourceTree = "<group>";
+		};
+		E75D345A20566769002B536C /* Play */ = {
+			isa = PBXGroup;
+			children = (
+				E75D345B20566783002B536C /* PlayViewController.h */,
+				E75D345C20566783002B536C /* PlayViewController.m */,
+			);
+			path = Play;
 			sourceTree = "<group>";
 		};
 		E764912F2047D724007A4CAE /* SelectCity */ = {
@@ -957,6 +980,7 @@
 				C2589DE11F851EF9007736C7 /* PhotoManger.m in Sources */,
 				C2DDFB3F2003506000454A0A /* AddImageViewController.m in Sources */,
 				E7196CF32022B4480068B4BF /* RunloopViewController.m in Sources */,
+				E77BFC6020528840008FA50E /* AtuoLayoutTableViewCell.m in Sources */,
 				E7B610502022F663000E4188 /* MenuRequest.m in Sources */,
 				C289F18D1FF11D16009F6D3D /* RefreshViewController.m in Sources */,
 				E74E331920467AD1003D2CF1 /* PlayerHander.m in Sources */,
@@ -1005,8 +1029,10 @@
 				C2589DD11F83FA65007736C7 /* DateModel.m in Sources */,
 				C2589DD31F83FA65007736C7 /* BtnColumnView.m in Sources */,
 				C2589DDE1F849E3D007736C7 /* PhotoViewController.m in Sources */,
+				E77BFC5B20523C0A008FA50E /* AutoLayoutViewController.m in Sources */,
 				C2589DEA1F8626E8007736C7 /* IMManger.m in Sources */,
 				E7B6105320230789000E4188 /* MenuViewManger.m in Sources */,
+				E75D345D20566783002B536C /* PlayViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
